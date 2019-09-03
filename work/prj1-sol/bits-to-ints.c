@@ -49,5 +49,24 @@ bits_to_ints(FILE *inFile, const char *inName, int nBits, bool *isEof)
   assert(0 < nBits && nBits <= CHAR_BIT*sizeof(BitsValue));
   BitsValue value = 0;
   //@TODO
+  //unsigned int printVal = 0;
+  for(unsigned int i = 0; i <= nBits - 1; i++){
+    //printf(fgetc(inFile));
+    // char digit = (char)fgetc(inFile);
+    // if(digit == '0'){
+    //   printVal >>
+    //
+    // } else if (digit == '1'){
+    //
+    // }
+    unsigned char x = fgetc(inFile);
+    if(feof(inFile)){
+      break;
+    }
+    printf("%d  ", x);
+  }
+
+  //fclose(inFile);
+  *isEof = true;
   return value;
 }
