@@ -50,7 +50,15 @@ bits_to_ints(FILE *inFile, const char *inName, int nBits, bool *isEof)
   BitsValue value = 0;
   //@TODO
   //unsigned int printVal = 0;
-  for(unsigned int i = 0; i <= nBits - 1; i++){
+
+  // unsigned char c = fgetc(inFile);
+  // unsigned char c1 = fgetc(inFile);
+  // unsigned char c2 = fgetc(inFile);
+  // printf("%c", c);
+  // printf("%c", c1);
+  // printf("%c", c2);
+  // printf("///////////////////");
+  //for(unsigned int i = nBits; i > 0; i--){
     //printf(fgetc(inFile));
     // char digit = (char)fgetc(inFile);
     // if(digit == '0'){
@@ -59,11 +67,16 @@ bits_to_ints(FILE *inFile, const char *inName, int nBits, bool *isEof)
     // } else if (digit == '1'){
     //
     // }
-    unsigned char x = fgetc(inFile);
+  for(unsigned int i = nBits; i > 0; i--){
+    unsigned int c;
+    //if(!isspace(fgetc(inFile))){
+    c = fgetc(inFile);
+    //}
+
     if(feof(inFile)){
       break;
     }
-    printf("%d  ", x);
+    printf("%d ", c);
   }
 
   //fclose(inFile);
