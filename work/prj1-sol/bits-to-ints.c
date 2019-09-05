@@ -67,18 +67,32 @@ bits_to_ints(FILE *inFile, const char *inName, int nBits, bool *isEof)
     // } else if (digit == '1'){
     //
     // }
-  for(unsigned int i = nBits; i > 0; i--){
+    long counter = 0;
+    while(1){
+  //for(unsigned int i = 0; i <= nBits * 2 - 1; i++){
     unsigned int c;
-    //if(!isspace(fgetc(inFile))){
     c = fgetc(inFile);
-    //}
+    if(isspace(c)){
+      //set c=space then skip else
+      //c = fgetc(inFile);
+    } else{
+      if(c == (char)'1'){
+        counter = counter + 1;
+        printf("test successful for 1 \n");
+        printf("counter%ld ", counter);
+      }
+      if(c == (char)'0'){
+        printf("test successful for 0 \n");
+      }
+      printf("current c: %c ", c);
+      printf("\n");
+    }
 
     if(feof(inFile)){
       break;
     }
-    printf("%d ", c);
+  //}
   }
-
   //fclose(inFile);
   *isEof = true;
   return value;
