@@ -1,0 +1,390 @@
+Script started on 2019-09-05 16:37:29-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+trecupe1@g7-10:/import/linux/home1/trecupe1/git-repos/i220b/work/lab3$ ls
+lab3.log
+trecupe1@g7-10:/import/linux/home1/trecupe1/git-repos/i220b/work/lab3$ gedit lab 3.log
+
+(gedit:7062): Gtk-[1;33mWARNING[0m **: [34m16:37:57.168[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+trecupe1@g7-10:/import/linux/home1/trecupe1/git-repos/i220b/work/lab3$ cd files. ex1
+bash: cd: files.ex1: No such file or directory
+trecupe1@g7-10:/import/linux/home1/trecupe1/git-repos/i220b/work/lab3$ cd [K ~/file s/ex1
+bash: cd: /home/trecupe1/files/ex1: No such file or directory
+trecupe1@g7-10:/import/linux/home1/trecupe1/git-repos/i220b/work/lab3$ cd ![K`[K~
+trecupe1@g7-10:~$ ls
+Arduino  cs220lab1  dir        git-repos  Music     Templates
+cs120	 cs240	    Documents  i220b	  Pictures  tmp
+cs220	 Desktop    Downloads  lab	  Public    Videos
+trecupe1@g7-10:~$ lscd ~/files/ex1[2Pfiles.ex1gedit lab3.logls[Kmake cleanls[K./mainbits-to-ints.o[1P .omain[K[4Plsmake cleanls[Kgedit lab3.log[2Pcd files.ex1~/files/ex1[2Pfiles.ex1~/files/ex1[K[2Pls[Kcd git-repos/i220b/i[Klab3
+bash: cd: git-repos/i220b/lab3: No such file or directory
+trecupe1@g7-10:~$ cd git-repos/i220b/lab3[K[K[K[K
+trecupe1@g7-10:~/git-repos/i220b$ cd work/
+trecupe1@g7-10:~/git-repos/i220b/work$ ls
+lab3  prj1-sol
+trecupe1@g7-10:~/git-repos/i220b/work$ cd [K[Kd lab3/
+trecupe1@g7-10:~/git-repos/i220b/work/lab3$ ls
+lab3.log
+trecupe1@g7-10:~/git-repos/i220b/work/lab3$ cp -r ~/cs220/labs/lab2/files/* .[C[1P[1@3
+trecupe1@g7-10:~/git-repos/i220b/work/lab3$ ls
+ex1  ex2  lab3.log  Makefile
+trecupe1@g7-10:~/git-repos/i220b/work/lab3$ mancp[K[K p[Kcp
+[?1049h[22;0;0t[?1h=CP(1)                            User Commands                           CP(1)[m
+[m
+[1mNAME[0m[m
+       cp - copy files and directories[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mcp[0m [[4mOPTION[24m]... [[4m-T[24m] [4mSOURCE[24m [4mDEST[24m[m
+       [1mcp[0m [[4mOPTION[24m]... [4mSOURCE[24m... [4mDIRECTORY[24m[m
+       [1mcp[0m [[4mOPTION[24m]... [4m-t[24m [4mDIRECTORY[24m [4mSOURCE[24m...[m
+[m
+[1mDESCRIPTION[0m[m
+       Copy SOURCE to DEST, or multiple SOURCE(s) to DIRECTORY.[m
+[m
+       Mandatory  arguments  to  long  options are mandatory for short options[m
+       too.[m
+[m
+       [1m-a[0m, [1m--archive[0m[m
+              same as [1m-dR[0m [1m--preserve[0m=[4mall[24m[m
+[m
+       [1m--attributes-only[0m[m
+              don't copy the file data, just the attributes[m
+[m
+       [1m--backup[0m[=[4mCONTROL[24m][m
+[7m Manual page cp(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page cp(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              make a backup of each existing destination file[m
+[7m Manual page cp(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page cp(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-b[0m     like [1m--backup[0m but does not accept an argument[m
+[7m Manual page cp(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page cp(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--copy-contents[0m[m
+[7m Manual page cp(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              copy contents of special files when recursive[m
+[7m Manual page cp(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page cp(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-d[0m     same as [1m--no-dereference[0m [1m--preserve[0m=[4mlinks[24m[m
+[7m Manual page cp(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page cp(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-f[0m, [1m--force[0m[m
+[7m Manual page cp(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              if an existing destination file cannot be opened, remove it  and[m
+[7m Manual page cp(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              try  again  (this  option  is ignored when the [1m-n[0m option is also[m
+[7m Manual page cp(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              used)[m
+[7m Manual page cp(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page cp(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-i[0m, [1m--interactive[0m[m
+[7m Manual page cp(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              prompt before overwrite (overrides a previous [1m-n[0m option)[m
+[7m Manual page cp(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page cp(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-H[0m     follow command-line symbolic links in SOURCE[m
+[7m Manual page cp(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page cp(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-l[0m, [1m--link[0m[m
+[7m Manual page cp(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              hard link files instead of copying[m
+[7m Manual page cp(1) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page cp(1) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-L[0m, [1m--dereference[0m[m
+[7m Manual page cp(1) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              always follow symbolic links in SOURCE[m
+[7m Manual page cp(1) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page cp(1) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-n[0m, [1m--no-clobber[0m[m
+[7m Manual page cp(1) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              do not overwrite an existing file (overrides a previous  [1m-i[0m  op‐[m
+[7m Manual page cp(1) line 28 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              tion)[m
+[7m Manual page cp(1) line 29 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page cp(1) line 30 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-P[0m, [1m--no-dereference[0m[m
+[7m Manual page cp(1) line 31 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              never follow symbolic links in SOURCE[m
+[7m Manual page cp(1) line 32 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page cp(1) line 33 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-p[0m     same as [1m--preserve[0m=[4mmode[24m,ownership,timestamps[m
+[7m Manual page cp(1) line 34 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page cp(1) line 35 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--preserve[0m[=[4mATTR_LIST[24m][m
+[7m Manual page cp(1) line 36 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              preserve the specified attributes (default: mode,ownership,time‐[m
+[7m Manual page cp(1) line 37 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              stamps), if  possible  additional  attributes:  context,  links,[m
+[7m Manual page cp(1) line 38 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              xattr, all[m
+[7m Manual page cp(1) line 39 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page cp(1) line 40 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--no-preserve[0m=[4mATTR_LIST[24m[m
+[7m Manual page cp(1) line 41 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              don't preserve the specified attributes[m
+[7m Manual page cp(1) line 42 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page cp(1) line 43 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--parents[0m[m
+[7m Manual page cp(1) line 44 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              use full source file name under DIRECTORY[m
+[7m Manual page cp(1) line 45 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page cp(1) line 46 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-R[0m, [1m-r[0m, [1m--recursive[0m[m
+[7m Manual page cp(1) line 47 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              copy directories recursively[m
+[7m Manual page cp(1) line 48 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page cp(1) line 49 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--reflink[0m[=[4mWHEN[24m][m
+[7m Manual page cp(1) line 50 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              control clone/CoW copies. See below[m
+[7m Manual page cp(1) line 51 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page cp(1) line 52 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--remove-destination[0m[m
+[7m Manual page cp(1) line 53 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              remove  each existing destination file before attempting to open[m
+[7m Manual page cp(1) line 54 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              it (contrast with [1m--force[0m)[m
+[7m Manual page cp(1) line 55 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page cp(1) line 56 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--sparse[0m=[4mWHEN[24m[m
+[7m Manual page cp(1) line 57 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              control creation of sparse files. See below[m
+[7m Manual page cp(1) line 58 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page cp(1) line 59 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--strip-trailing-slashes[0m[m
+[7m Manual page cp(1) line 60 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0ttrecupe1@g7-10:~/git-repos/i220b/work/lab3$ ls
+ex1  ex2  lab3.log  Makefile
+trecupe1@g7-10:~/git-repos/i220b/work/lab3$ make
+Makefile:2: *** missing separator (did you mean TAB instead of 8 spaces?).  Stop.
+trecupe1@g7-10:~/git-repos/i220b/work/lab3$ make [K[K[K[K[Kgedit *
+trecupe1@g7-10:~/git-repos/i220b/work/lab3$ ls
+ex1  ex2  lab3.log  Makefile
+trecupe1@g7-10:~/git-repos/i220b/work/lab3$ git [K[K[K[Kls
+ex1  ex2  lab3.log  Makefile
+trecupe1@g7-10:~/git-repos/i220b/work/lab3$ make
+Makefile:2: *** missing separator (did you mean TAB instead of 8 spaces?).  Stop.
+trecupe1@g7-10:~/git-repos/i220b/work/lab3$ make[2Plsgedit *
+trecupe1@g7-10:~/git-repos/i220b/work/lab3$ cd ex1
+trecupe1@g7-10:~/git-repos/i220b/work/lab3/ex1$ ls
+hello.c  Makefile  README
+trecupe1@g7-10:~/git-repos/i220b/work/lab3/ex1$ make
+cc -g -Wall -std=c99    hello.c   -o hello
+trecupe1@g7-10:~/git-repos/i220b/work/lab3/ex1$ ./hello
+usage: ./hello NAME...
+trecupe1@g7-10:~/git-repos/i220b/work/lab3/ex1$ ./hello bart list
+hello bart
+hello list
+hello (null)
+trecupe1@g7-10:~/git-repos/i220b/work/lab3/ex1$ [Ktrecupe1@g7-10:~/git-repos/i220b/work/lab3/ex1$ [Ktrecupe1@g7-10:~/git-repos/i220b/work/lab3/ex1$ [Ktrecupe1@g7-10:~/git-repos/i220b/work/lab3/ex1$ [Ktrecupe1@g7-10:~/git-repos/i220b/work/lab3/ex1$ [Ktrecupe1@g7-10:~/git-repos/i220b/work/lab3/ex1$ ls
+hello  hello.c	Makefile  README
+trecupe1@g7-10:~/git-repos/i220b/work/lab3/ex1$ make clean
+make: *** No rule to make target 'clean'.  Stop.
+trecupe1@g7-10:~/git-repos/i220b/work/lab3/ex1$ gdb
+GNU gdb (Debian 8.2.1-2) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+(gdb) Quit
+(gdb) Quit
+(gdb) Quit
+(gdb) q
+trecupe1@g7-10:~/git-repos/i220b/work/lab3/ex1$ gdb hello
+GNU gdb (Debian 8.2.1-2) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from hello...done.
+(gdb) start bart lisa
+Temporary breakpoint 1 at 0x118b: file hello.c, line 13.
+Starting program: /import/linux/home1/trecupe1/git-repos/i220b/work/lab3/ex1/hello bart lisa
+
+Temporary breakpoint 1, main (argc=3, argv=0x7fffffffe778) at hello.c:13
+13	  if (argc == 1) {
+(gdb) l
+8	}
+9	
+10	int 
+11	main(int argc, const char *argv[])
+12	{
+13	  if (argc == 1) {
+14	    fprintf(stderr, "usage: %s NAME...\n", argv[0]);
+15	    exit(1);
+16	  }
+17	  else {
+(gdb) 
+18	    for (int i = 1; i <= argc; i++) {
+19	      say_hello(argv[i]);
+20	    }
+21	  }
+22	  return 0;
+23	}
+(gdb) l 17
+12	{
+13	  if (argc == 1) {
+14	    fprintf(stderr, "usage: %s NAME...\n", argv[0]);
+15	    exit(1);
+16	  }
+17	  else {
+18	    for (int i = 1; i <= argc; i++) {
+19	      say_hello(argv[i]);
+20	    }
+21	  }
+(gdb) b say_hl[Kello
+Breakpoint 2 at 0x555555555161: file hello.c, line 7.
+(gdb) say [K[K[K[Kb say_hello [K[K[K[K[K[K[K[K[K[K[K[K[K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) [K(gdb) p arc[Kgc
+$1 = 3
+(gdb) p argv
+$2 = (const char **) 0x7fffffffe778
+(gdb) p argv[0], p argvp1[[K[K[K[Kv[1]
+No symbol "p" in current context.
+(gdb) p argv[0], p argv[1][C[C[C[C[K[K[K[K[K[K[K[K[K[K[K
+$3 = 0x7fffffffea66 "/import/linux/home1/trecupe1/git-repos/i220b/work/lab3/ex1/hello"
+(gdb) p argv[0][C[1P]1]
+$4 = 0x7fffffffeaa7 "bart"
+(gdb) p argv[1][Kp argv[1][1P]2]
+$5 = 0x7fffffffeaac "lisa"
+(gdb) n
+18	    for (int i = 1; i <= argc; i++) {
+(gdb) n
+19	      say_hello(argv[i]);
+(gdb) i
+"info" must be followed by the name of an info command.
+List of info subcommands:
+
+info address -- Describe where symbol SYM is stored
+info all-registers -- List of all registers and their contents
+info args -- Argument variables of current stack frame
+info auto-load -- Print current status of auto-loaded files
+info auxv -- Display the inferior's auxiliary vector
+info bookmarks -- Status of user-settable bookmarks
+info breakpoints -- Status of specified breakpoints (all user-settable breakpoints if no argument)
+info checkpoints -- IDs of currently known checkpoints
+info classes -- All Objective-C classes
+info common -- Print out the values contained in a Fortran COMMON block
+info copying -- Conditions for redistributing copies of GDB
+info dcache -- Print information on the dcache performance
+info display -- Expressions to display when program stops
+info exceptions -- List all Ada exception names
+info extensions -- All filename extensions associated with a source language
+info files -- Names of targets and files being debugged
+info float -- Print the status of the floating point unit
+info frame -- All about selected stack frame
+info frame-filter -- List all registered Python frame-filters
+info functions -- All function names
+info guile -- Prefix command for Guile info displays
+info handle -- What debugger does when program gets various signals
+info inferiors -- Print a list of inferiors being managed
+info line -- Core addresses of the code for a source line
+info locals -- Local variables of current stack frame
+info macro -- Show the definition of MACRO
+info macros -- Show the definitions of all macros at LINESPEC
+info mem -- Memory region attributes
+info os -- Show OS data ARG
+info pretty-printer -- GDB command to list all registered pretty-printers
+info probes -- Show available static probes
+info proc -- Show /proc process information about any running process
+info program -- Execution status of the program
+info record -- Info record options
+info registers -- List of integer registers and their contents
+info scope -- List the variables local to a scope
+info selectors -- All Objective-C selectors
+info set -- Show all GDB settings
+info sharedlibrary -- Status of loaded shared object libraries
+info signals -- What debugger does when program gets various signals
+info skip -- Display the status of skips
+--Type <RET> for more, q to quit, c to continue without paging--q
+Quit
+(gdb) p [K[Kinp argv[2]1][1P]i]
+$6 = 0x7fffffffeaa7 "bart"
+(gdb) c. hell[K[K[K[Ksay_hello()
+Not stopped at any breakpoint; argument ignored.
+Continuing.
+
+Breakpoint 2, say_hello (name=0x7fffffffeaa7 "bart") at hello.c:7
+7	  printf("hello %s\n", name);
+(gdb) l
+2	#include <stdlib.h>
+3	
+4	static void
+5	say_hello(const char *name)
+6	{
+7	  printf("hello %s\n", name);
+8	}
+9	
+10	int 
+11	main(int argc, const char *argv[])
+(gdb) backtrace
+#0  say_hello (name=0x7fffffffeaa7 "bart") at hello.c:7
+#1  0x00005555555551e5 in main (argc=3, argv=0x7fffffffe778)
+    at hello.c:19
+(gdb) up
+#1  0x00005555555551e5 in main (argc=3, argv=0x7fffffffe778)
+    at hello.c:19
+19	      say_hello(argv[i]);
+(gdb) q
+A debugging session is active.
+
+	Inferior 1 [process 8932] will be killed.
+
+Quit anyway? (y or n) y
+trecupe1@g7-10:~/git-repos/i220b/work/lab3/ex1$ ls
+hello  hello.c	Makefile  README
+trecupe1@g7-10:~/git-repos/i220b/work/lab3/ex1$ gedit *
+
+(gedit:11057): Gtk-[1;33mWARNING[0m **: [34m17:03:26.644[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+trecupe1@g7-10:~/git-repos/i220b/work/lab3/ex1$ ls
+hello  hello.c	Makefile  README
+trecupe1@g7-10:~/git-repos/i220b/work/lab3/ex1$ make 
+cc -g -Wall -std=c99    hello.c   -o hello
+trecupe1@g7-10:~/git-repos/i220b/work/lab3/ex1$ ./hello
+usage: ./hello NAME...
+trecupe1@g7-10:~/git-repos/i220b/work/lab3/ex1$ ./hello bar t[K[Kt kl[K[Klisa [K
+hello bart
+hello lisa
+trecupe1@g7-10:~/git-repos/i220b/work/lab3/ex1$ cd ..
+trecupe1@g7-10:~/git-repos/i220b/work/lab3$ cd ex2
+trecupe1@g7-10:~/git-repos/i220b/work/lab3/ex2$ ls
+hello.c  Makefile  README
+trecupe1@g7-10:~/git-repos/i220b/work/lab3/ex2$ lscd ex2[1P.../hello bart lisa[K[2Pmake 
+cc -g -Wall -std=c99    hello.c   -o hello
+trecupe1@g7-10:~/git-repos/i220b/work/lab3/ex2$ ls
+hello  hello.c	Makefile  README
+trecupe1@g7-10:~/git-repos/i220b/work/lab3/ex2$ gedit *
+
+(gedit:11922): Gtk-[1;33mWARNING[0m **: [34m17:12:19.306[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+trecupe1@g7-10:~/git-repos/i220b/work/lab3/ex2$ ls
+hello  hello.c	Makefile  README
+trecupe1@g7-10:~/git-repos/i220b/work/lab3/ex2$ make 
+cc -g -Wall -std=c99    hello.c   -o hello
+trecupe1@g7-10:~/git-repos/i220b/work/lab3/ex2$ ./hello list[Ka bart
+Hello Lisa
+Hello Bart
+trecupe1@g7-10:~/git-repos/i220b/work/lab3/ex2$ ./hello lisa bart[C[K[K[K[K[1@'[C[C[C[C[Csimpson' ''b' [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca'r't' 's'i'm'p's'o'n'
+Hello Lisa Simpson
+Hello Bart Simpson
+trecupe1@g7-10:~/git-repos/i220b/work/lab3/ex2$ make cel[K[Klean
+make: *** No rule to make target 'clean'.  Stop.
+trecupe1@g7-10:~/git-repos/i220b/work/lab3/ex2$ make 
+make: 'hello' is up to date.
+trecupe1@g7-10:~/git-repos/i220b/work/lab3/ex2$ ls
+hello  hello.c	Makefile  README
+trecupe1@g7-10:~/git-repos/i220b/work/lab3/ex2$ cd..[K[K ..
+trecupe1@g7-10:~/git-repos/i220b/work/lab3$ os
+bash: os: command not found
+trecupe1@g7-10:~/git-repos/i220b/work/lab3$ ls
+ex1  ex2  lab3.log  Makefile
+trecupe1@g7-10:~/git-repos/i220b/work/lab3$ push[K[K[K[Klab3 [K.logelab3.logglab3.log[1Plab3.log[1Plab3.logglab3.logelab3.logdlab3.logilab3.logtlab3.log lab3.log
+trecupe1@g7-10:~/git-repos/i220b/work/lab3$ ls
+ex1  ex2  lab3.log  Makefile
+trecupe1@g7-10:~/git-repos/i220b/work/lab3$ cd ex2
+trecupe1@g7-10:~/git-repos/i220b/work/lab3/ex2$ ls
+hello  hello.c	Makefile  README
+trecupe1@g7-10:~/git-repos/i220b/work/lab3/ex2$ gdb hello
+GNU gdb (Debian 8.2.1-2) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from hello...done.
+(gdb) p[Kp [K[Kstart bart list[Ka [K
+Temporary breakpoint 1 at 0x12be: file hello.c, line 35.
+Starting program: /import/linux/home1/trecupe1/git-repos/i220b/work/lab3/ex2/hello bart lisa
+
+Temporary breakpoint 1, main (argc=3, argv=0x7fffffffe778) at hello.c:35
+35	  if (argc == 1) {
+(gdb) n
+40	    for (int i = 1; i < argc; i++) {
+(gdb) p i
+$1 = 21845
+(gdb) q
