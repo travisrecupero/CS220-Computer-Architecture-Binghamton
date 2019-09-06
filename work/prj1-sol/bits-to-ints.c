@@ -49,51 +49,85 @@ bits_to_ints(FILE *inFile, const char *inName, int nBits, bool *isEof)
   assert(0 < nBits && nBits <= CHAR_BIT*sizeof(BitsValue));
   BitsValue value = 0;
   //@TODO
-  //unsigned int printVal = 0;
 
-  // unsigned char c = fgetc(inFile);
-  // unsigned char c1 = fgetc(inFile);
-  // unsigned char c2 = fgetc(inFile);
-  // printf("%c", c);
-  // printf("%c", c1);
-  // printf("%c", c2);
-  // printf("///////////////////");
-  //for(unsigned int i = nBits; i > 0; i--){
-    //printf(fgetc(inFile));
-    // char digit = (char)fgetc(inFile);
-    // if(digit == '0'){
-    //   printVal >>
-    //
-    // } else if (digit == '1'){
-    //
-    // }
-    long counter = 0;
-    while(1){
-  //for(unsigned int i = 0; i <= nBits * 2 - 1; i++){
-    unsigned int c;
-    c = fgetc(inFile);
-    if(isspace(c)){
-      //set c=space then skip else
-      //c = fgetc(inFile);
-    } else{
-      if(c == (char)'1'){
-        counter = counter + 1;
-        printf("test successful for 1 \n");
-        printf("counter%ld ", counter);
-      }
-      if(c == (char)'0'){
-        printf("test successful for 0 \n");
-      }
-      printf("current c: %c ", c);
-      printf("\n");
-    }
 
-    if(feof(inFile)){
-      break;
-    }
-  //}
+  while(1){
+
+
+  char c;
+  c = fgetc(inFile);
+  unsigned mask = 0x1; //1000
+  c = (mask & value) ? '1' : '0';
+  mask >>= 1;
+  printf("test value: %c\n", c);
+
+  if(feof(inFile)){
+    *isEof = true;
+    break;
   }
-  //fclose(inFile);
-  *isEof = true;
+
+  }
+
+    /*if(!isspace(c) && c != '0' && c != '1'){
+      *isEof = true;
+      error("unexpected character %c in file", c);
+      return value;
+    } else*/
+
   return value;
 }
+/*if(!isspace(c) && c != '0' && c != '1'){
+  *isEof = true;
+  error("unexpected character %c in file", c);
+  return value;
+} else*/
+////////////////////////////////////////////////////
+// unsigned char val;
+// val = fgetc(inFile);
+// nBits = CHAR_BIT * sizeof(val);
+// if(!isspace(val)){
+  //   unsigned mask = 0x1 << (nBits - 1); //gets set to int
+  //   for(int i = 0; i < nBits; i++){
+    //     char c = (mask & val) ? '1' : '0';
+    //     mask >>= 1;
+    //     printf("test %c ", c);
+    //   }
+    // } else{
+      //   //
+      // }
+      ////////////////////////////////////////////////////////////
+//unsigned int printVal = 0;
+
+// unsigned char c = fgetc(inFile);
+// unsigned char c1 = fgetc(inFile);
+// unsigned char c2 = fgetc(inFile);
+// printf("%c", c);
+// printf("%c", c1);
+// printf("%c", c2);
+// printf("///////////////////");
+//for(unsigned int i = nBits; i > 0; i--){
+  //printf(fgetc(inFile));
+  // char digit = (char)fgetc(inFile);
+  // if(digit == '0'){
+  //   printVal >>
+  //
+  // } else if (digit == '1'){
+  //
+  // }
+////////////////////////////////////////
+  //for(unsigned int i = 0; i <= nBits * 2 - 1; i++){
+////////////////////////////////////////
+/*      if(c == '1'){
+            int one = 1;
+
+
+            printf("test successful for %c\n", c);
+            printf("counter%ld ", counter);
+          }
+          if(c == (char)'0'){
+            printf("test successful for 0 \n");
+          }
+          printf("current c: %c ", c);
+          printf("\n");
+          counter = counter + 1;
+*/
