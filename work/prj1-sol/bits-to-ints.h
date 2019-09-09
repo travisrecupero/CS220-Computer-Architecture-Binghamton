@@ -42,9 +42,9 @@ typedef unsigned long long BitsValue;
  *  function should return with *isEof set to true.
  */
 
-int getBit(FILE *inFile);
+int getBit(FILE *inFile, const char *inName);
 
-int getByte(FILE *inFile);
+int getByte(FILE *inFile, const char *inName);
 
 BitsValue bits_to_ints(FILE *inFile, const char *inName, int nBits,
                        bool *isEof);

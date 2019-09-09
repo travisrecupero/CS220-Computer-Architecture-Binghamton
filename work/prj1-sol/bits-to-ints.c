@@ -43,7 +43,7 @@
  *  function should return with *isEof set to true.
  */
 
- int getBit(FILE *inFile){
+ int getBit(FILE *inFile, const char *inName){
    char c = ' ';
    while(isspace(c)){
      c = fgetc(inFile);
@@ -52,20 +52,25 @@
      } else if(c == '0'){
        return 0;
      }
+     // if(!isspace(c) && c != '0' && c != '1'){
+     //   error("unexpected character %c in file %s", c, inName);
+     //   return 0;
+     // }
    }
    return 0;
  }
 
- int getByte(FILE *inFile){
+ int getByte(FILE *inFile, const char *inName){
    unsigned char byte = 0;
    char c[CHAR_BIT];
 
    for(int i = 0; i < CHAR_BIT; i++){
-     c[i] = getBit(inFile);
+     c[i] = getBit(inFile, inName);
      byte = byte | c[i] << i;
    }
    return byte;
  }
+
 
 
 BitsValue
@@ -76,9 +81,10 @@ bits_to_ints(FILE *inFile, const char *inName, int nBits, bool *isEof)
   BitsValue value = 0;
   //@TODO
 
-  for(int i = 0; i < CHAR_BIT; i++){
-    value = getByte(inFile);
-    printf("%x\n", value);
+  for(int i = 0; i < nBits; i++){
+    value = getByte(inFile, inName);
+    value = value << CHAR_BIT | getByte(inFile, inName);
+    printf("%llx\n", value);
   }
 
   *isEof = true;
