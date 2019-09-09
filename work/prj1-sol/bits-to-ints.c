@@ -42,6 +42,32 @@
  *  in inFile, then a suitable error message should be printed and the
  *  function should return with *isEof set to true.
  */
+
+ int getBit(FILE *inFile){
+   char c = ' ';
+   while(isspace(c)){
+     c = fgetc(inFile);
+     if(c == '1'){
+       return 1;
+     } else if(c == '0'){
+       return 0;
+     }
+   }
+   return 0;
+ }
+
+ int getByte(FILE *inFile){
+   unsigned char byte = 0;
+   char c[CHAR_BIT];
+
+   for(int i = 0; i < CHAR_BIT; i++){
+     c[i] = getBit(inFile);
+     byte = byte | c[i] << i;
+   }
+   return byte;
+ }
+
+
 BitsValue
 bits_to_ints(FILE *inFile, const char *inName, int nBits, bool *isEof)
 {
@@ -50,32 +76,33 @@ bits_to_ints(FILE *inFile, const char *inName, int nBits, bool *isEof)
   BitsValue value = 0;
   //@TODO
 
+  for(int i = 0; i < CHAR_BIT; i++){
+    value = getByte(inFile);
+    printf("%x\n", value);
+  }
 
-  while(1){
-
-
+  *isEof = true;
+  return value;
+}
+/*
+while(1){
   char c;
   c = fgetc(inFile);
   unsigned mask = 0x1; //1000
   c = (mask & value) ? '1' : '0';
   mask >>= 1;
   printf("test value: %c\n", c);
-
   if(feof(inFile)){
     *isEof = true;
     break;
   }
-
-  }
-
-    /*if(!isspace(c) && c != '0' && c != '1'){
-      *isEof = true;
-      error("unexpected character %c in file", c);
-      return value;
-    } else*/
-
-  return value;
 }
+*/
+/*if(!isspace(c) && c != '0' && c != '1'){
+  *isEof = true;
+  error("unexpected character %c in file", c);
+  return value;
+} else*/
 /*if(!isspace(c) && c != '0' && c != '1'){
   *isEof = true;
   error("unexpected character %c in file", c);
