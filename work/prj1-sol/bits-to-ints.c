@@ -6,6 +6,7 @@
 #include <limits.h>
 #include <stdbool.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 //@TODO: auxiliary definitions
 
@@ -43,7 +44,30 @@
  *  function should return with *isEof set to true.
  */
 
- int getBit(FILE *inFile, const char *inName){
+int nBitsInFile(FILE *inFile, const char *inName, bool *isEof){
+  int counter = 0;
+  char c = ' ';
+  while(c != EOF){
+    c = fgetc(inFile);
+    if(c == '1'){
+      counter++;
+    } else if(c == '0'){
+      counter++;
+    }
+    //printf("counter %d", counter);
+  }
+  //printf("returnVal %d", counter);
+  if(counter % 8 != 0){
+    error("unexpected EOF within byte in file");
+    exit(0);
+    return -1; //will exit anyway
+  }
+  return counter;
+}
+
+
+
+ unsigned int getBit(FILE *inFile, const char *inName){
    char c = ' ';
    while(isspace(c)){
      c = fgetc(inFile);
@@ -51,16 +75,22 @@
        return 1;
      } else if(c == '0'){
        return 0;
+     } else {
+        if((!isspace(c)) && (c != '0') && (c != '1') && (c != '\n') && (c == EOF)){
+        //*isEof = true;
+        printf("test%d\n", c);
+        error("unexpected character '%c' in file %s", c, inName);
+        exit(0);
+        return 0;
+        }
+
      }
-     // if(!isspace(c) && c != '0' && c != '1'){
-     //   error("unexpected character %c in file %s", c, inName);
-     //   return 0;
-     // }
    }
    return 0;
- }
+}
 
- int getByte(FILE *inFile, const char *inName){
+
+ unsigned int getByte(FILE *inFile, const char *inName){
    unsigned char byte = 0;
    char c[CHAR_BIT];
 
@@ -71,6 +101,19 @@
    return byte;
  }
 
+unsigned long long getWord(FILE *inFile, int nBits, const char *inName){
+  int nBytes = nBits >> 3; //8 bits per byte
+  unsigned long long word = 0;
+  int sizeOfWordArr = nBytes;
+  unsigned char wordArr[sizeOfWordArr];
+
+  for(int i = 0; i < sizeOfWordArr; i++){
+    wordArr[i] = getByte(inFile, inName);
+    word = (word << 8) | wordArr[i];
+  }
+
+  return word;
+}
 
 
 BitsValue
@@ -81,15 +124,66 @@ bits_to_ints(FILE *inFile, const char *inName, int nBits, bool *isEof)
   BitsValue value = 0;
   //@TODO
 
-  for(int i = 0; i < nBits; i++){
-    value = getByte(inFile, inName);
-    value = value << CHAR_BIT | getByte(inFile, inName);
+  //will read from stdin if no file specified
+  if(inName == NULL || inFile == NULL){
+    inFile = stdin;
+  }
+
+  //nBitsInFile will let test1 take any number of bits
+  int numBitsInFile = nBitsInFile(inFile, inName, isEof);
+  //reset pointer because nBitsInFile sets the inFile pointer to EOF
+  fseek(inFile, 0, SEEK_SET);
+
+
+  //print(numBitsInFile);
+  for(int i = 0; i < numBitsInFile/nBits; i++){
+    value = getWord(inFile, nBits, inName);
     printf("%llx\n", value);
   }
+
+
+  //printf("%x", value);
 
   *isEof = true;
   return value;
 }
+/*
+char line[nBits];
+unsigned char a;
+fgets(line, sizeof(line), stdin);
+for(int i = 0; i < sizeof(line)/sizeof(line[0]); i++){
+  if(!isspace(line[i])){
+    a = a | line[i] << i;
+  }
+}
+//sscanf(line, "%d", &a);
+printf("hex-test %x\n", a);
+printf("dec-test %d\n", a);
+*/
+// for(int i = 0; i < nBits; i++){
+  //   value = getByte(inFile, inName);
+  //   value = value << CHAR_BIT | getByte(inFile, inName);
+  //   printf("%llx\n", value);
+  // }
+
+
+  /*
+  for(int i = 0; i < nBits; i++){
+    value = getWord(inFile, nBits, inName);
+    //value = value << CHAR_BIT | getByte(inFile, inName);
+    printf("%llx\n", value);
+  }
+  */
+  //int n = nBits;
+  //printf("n %d\n", );
+  /*
+  int nBytes = nBits >> 3;
+  printf("nBytes: %d\n", nBytes);
+  int test = nBytes << 3;
+  printf("shift: %d\n", test);
+  unsigned long long nWords = nBits / nBytes;
+  printf("number of words%lld\n", nWords);
+  */
 /*
 while(1){
   char c;
