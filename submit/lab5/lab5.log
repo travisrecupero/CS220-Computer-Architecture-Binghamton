@@ -1,0 +1,578 @@
+Script started on 2019-09-19 16:49:27-04:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="75" LINES="24"]
+trecupe1@g7-11:~/git-repos/i220b/work/lab5$ ls
+ex1  ex2  ex3  ex4  ex5  ex6  lab5.log	lab5_output.txt
+trecupe1@g7-11:~/git-repos/i220b/work/lab5$ cd ex1
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex1$ ;s[K[Kls
+Makefile  pointers.c
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex1$ gedit *
+
+** (gedit:24104): [1;33mWARNING[0m **: [34m16:49:59.575[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:24104): [1;33mWARNING[0m **: [34m16:49:59.698[0m: atk-bridge: get_device_events_reply: unknown signature
+
+** (gedit:24104): [1;33mWARNING[0m **: [34m16:49:59.698[0m: atk-bridge: get_device_events_reply: unknown signature
+
+** (gedit:24104): [1;33mWARNING[0m **: [34m16:49:59.698[0m: atk-bridge: GetRegisteredEvents returned message with unknown signature
+
+** (gedit:24104): [1;33mWARNING[0m **: [34m16:49:59.714[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:24104): [1;33mWARNING[0m **: [34m16:49:59.714[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:24104): [1;33mWARNING[0m **: [34m16:49:59.714[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:24104): [1;33mWARNING[0m **: [34m16:49:59.714[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:24104): [1;33mWARNING[0m **: [34m16:49:59.733[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:24104): [1;33mWARNING[0m **: [34m16:49:59.822[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:24104): [1;33mWARNING[0m **: [34m16:49:59.895[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:24104): [1;33mWARNING[0m **: [34m16:49:59.895[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:24104): [1;33mWARNING[0m **: [34m16:49:59.914[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:24104): [1;33mWARNING[0m **: [34m16:49:59.931[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:24104): [1;33mWARNING[0m **: [34m16:49:59.931[0m: AT-SPI: Could not obtain desktop path or name
+
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex1$ ls
+Makefile  pointers.c
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex1$ make
+cc -g -Wall -std=c11 -m32    pointers.c   -o pointers
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex1$ ls
+Makefile  pointers  pointers.c
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex1$ ./pointers
+char pointer cp = 0xffaccbab, pointing at char a
+char pointer cp = 0xffaccbac, pointing at char b
+char pointer cp = 0xffaccbad, pointing at char c
+char pointer cp = 0xffaccbae, pointing at char d
+char pointer cp = 0xffaccbaf, pointing at char e
+int pointer ip = 0xffaccb94, pointing at int 1
+int pointer ip = 0xffaccb98, pointing at int 2
+int pointer ip = 0xffaccb9c, pointing at int 3
+int pointer ip = 0xffaccba0, pointing at int 4
+int pointer ip = 0xffaccba4, pointing at int 5
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex1$ ./pointersls[K./pointers
+char pointer cp = 0xff8b77eb, pointing at char a
+char pointer cp = 0xff8b77ec, pointing at char b
+char pointer cp = 0xff8b77ed, pointing at char c
+char pointer cp = 0xff8b77ee, pointing at char d
+char pointer cp = 0xff8b77ef, pointing at char e
+int pointer ip = 0xff8b77d4, pointing at int 1
+int pointer ip = 0xff8b77d8, pointing at int 2
+int pointer ip = 0xff8b77dc, pointing at int 3
+int pointer ip = 0xff8b77e0, pointing at int 4
+int pointer ip = 0xff8b77e4, pointing at int 5
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex1$ ls
+Makefile  pointers  pointers.c
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex1$ ls./pointersls[Kmake[2Plsgedit *ls[Kgedit *
+
+** (gedit:24558): [1;33mWARNING[0m **: [34m16:52:42.890[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:24558): [1;33mWARNING[0m **: [34m16:52:43.339[0m: atk-bridge: get_device_events_reply: unknown signature
+
+** (gedit:24558): [1;33mWARNING[0m **: [34m16:52:43.439[0m: atk-bridge: get_device_events_reply: unknown signature
+
+** (gedit:24558): [1;33mWARNING[0m **: [34m16:52:43.446[0m: atk-bridge: GetRegisteredEvents returned message with unknown signature
+
+** (gedit:24558): [1;33mWARNING[0m **: [34m16:52:43.465[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:24558): [1;33mWARNING[0m **: [34m16:52:43.465[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:24558): [1;33mWARNING[0m **: [34m16:52:43.553[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:24558): [1;33mWARNING[0m **: [34m16:52:43.602[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:24558): [1;33mWARNING[0m **: [34m16:52:43.683[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:24558): [1;33mWARNING[0m **: [34m16:52:43.712[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:24558): [1;33mWARNING[0m **: [34m16:52:43.712[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:24558): [1;33mWARNING[0m **: [34m16:52:43.811[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:24558): [1;33mWARNING[0m **: [34m16:52:43.824[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:24558): [1;33mWARNING[0m **: [34m16:52:43.824[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:24558): [1;33mWARNING[0m **: [34m16:52:43.824[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:24558): [1;33mWARNING[0m **: [34m16:52:43.841[0m: AT-SPI: Could not obtain desktop path or name
+
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex1$ cd ..
+trecupe1@g7-11:~/git-repos/i220b/work/lab5$ ls
+ex1  ex2  ex3  ex4  ex5  ex6  lab5.log	lab5_output.txt
+trecupe1@g7-11:~/git-repos/i220b/work/lab5$ cd ex2
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex2$ ls
+in-pointers.c  Makefile
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex2$ lscd ex2[4Plscd ..gedit *
+
+** (gedit:24815): [1;33mWARNING[0m **: [34m16:54:10.507[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:24815): [1;33mWARNING[0m **: [34m16:54:10.609[0m: atk-bridge: get_device_events_reply: unknown signature
+
+** (gedit:24815): [1;33mWARNING[0m **: [34m16:54:10.609[0m: atk-bridge: get_device_events_reply: unknown signature
+
+** (gedit:24815): [1;33mWARNING[0m **: [34m16:54:10.609[0m: atk-bridge: GetRegisteredEvents returned message with unknown signature
+
+** (gedit:24815): [1;33mWARNING[0m **: [34m16:54:10.624[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:24815): [1;33mWARNING[0m **: [34m16:54:10.624[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:24815): [1;33mWARNING[0m **: [34m16:54:10.624[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:24815): [1;33mWARNING[0m **: [34m16:54:10.624[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:24815): [1;33mWARNING[0m **: [34m16:54:10.642[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:24815): [1;33mWARNING[0m **: [34m16:54:10.810[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:24815): [1;33mWARNING[0m **: [34m16:54:10.810[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:24815): [1;33mWARNING[0m **: [34m16:54:10.890[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:24815): [1;33mWARNING[0m **: [34m16:54:10.890[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:24815): [1;33mWARNING[0m **: [34m16:54:10.890[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:24815): [1;33mWARNING[0m **: [34m16:54:10.905[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:24815): [1;33mWARNING[0m **: [34m16:54:10.906[0m: AT-SPI: Could not obtain desktop path or name
+
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex2$ make
+cc -g -Wall -std=c11 -m32    in-pointers.c   -o in-pointers
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex2$ ./in-pointers
+is[] is at 0xffb39b9c
+enter pointer to is[1]: x c
+Segmentation fault
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex2$ ./in-pointers
+is[] is at 0xfff12c0c
+enter pointer to is[1]: 15
+Segmentation fault
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex2$ ./in-pointersmake[Kgedit *ls[Kcd ex2[4Plscd ..gedit *ls[K./pointersls[Kgedit *
+
+** (gedit:25364): [1;33mWARNING[0m **: [34m16:57:01.484[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:25364): [1;33mWARNING[0m **: [34m16:57:09.178[0m: atk-bridge: get_device_events_reply: unknown signature
+
+** (gedit:25364): [1;33mWARNING[0m **: [34m16:57:10.045[0m: atk-bridge: get_device_events_reply: unknown signature
+
+** (gedit:25364): [1;33mWARNING[0m **: [34m16:57:10.052[0m: atk-bridge: GetRegisteredEvents returned message with unknown signature
+
+** (gedit:25364): [1;33mWARNING[0m **: [34m16:57:10.075[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:25364): [1;33mWARNING[0m **: [34m16:57:10.075[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:25364): [1;33mWARNING[0m **: [34m16:57:10.116[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:25364): [1;33mWARNING[0m **: [34m16:57:10.314[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:25364): [1;33mWARNING[0m **: [34m16:57:10.314[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:25364): [1;33mWARNING[0m **: [34m16:57:10.363[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:25364): [1;33mWARNING[0m **: [34m16:57:10.409[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:25364): [1;33mWARNING[0m **: [34m16:57:10.424[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:25364): [1;33mWARNING[0m **: [34m16:57:10.424[0m: AT-SPI: Could not obtain desktop path or name
+
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex2$ gedit *./in-pointers
+is[] is at 0xff9bd82c
+enter pointer to is[1]: 0
+Segmentation fault
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex2$ ./in-pointers
+is[] is at 0xffece97c
+enter pointer to is[1]: 1
+Segmentation fault
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex2$ ./in-pointers[6Pgedit *
+
+** (gedit:25556): [1;33mWARNING[0m **: [34m16:58:05.689[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:25556): [1;33mWARNING[0m **: [34m16:58:13.379[0m: atk-bridge: get_device_events_reply: unknown signature
+
+** (gedit:25556): [1;33mWARNING[0m **: [34m16:58:14.257[0m: atk-bridge: get_device_events_reply: unknown signature
+
+** (gedit:25556): [1;33mWARNING[0m **: [34m16:58:14.264[0m: atk-bridge: GetRegisteredEvents returned message with unknown signature
+
+** (gedit:25556): [1;33mWARNING[0m **: [34m16:58:14.287[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:25556): [1;33mWARNING[0m **: [34m16:58:14.299[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:25556): [1;33mWARNING[0m **: [34m16:58:14.302[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:25556): [1;33mWARNING[0m **: [34m16:58:14.302[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:25556): [1;33mWARNING[0m **: [34m16:58:14.342[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:25556): [1;33mWARNING[0m **: [34m16:58:14.382[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:25556): [1;33mWARNING[0m **: [34m16:58:14.397[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:25556): [1;33mWARNING[0m **: [34m16:58:14.412[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:25556): [1;33mWARNING[0m **: [34m16:58:14.412[0m: AT-SPI: Could not obtain desktop path or name
+
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex2$ ls
+in-pointers  in-pointers.c  Makefile
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex2$ lsgedit *./in-pointers
+is[] is at 0xffc7f91c
+enter pointer to is[1]: 0x00000  00001
+Segmentation fault
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex2$ ./in-pointers
+is[] is at 0xffdaecdc
+enter pointer to is[1]: 12
+Segmentation fault
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex2$ ./in-pointers
+is[] is at 0xffb1917c
+enter pointer to is[1]: 15
+Segmentation fault
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex2$ ./in-pointers
+is[] is at 0xffb6493c
+enter pointer to is[1]: f
+Segmentation fault
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex2$ ./in-pointers
+is[] is at 0xffdc756c
+enter pointer to is[1]: c
+Segmentation fault
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex2$ ./in-pointersls[Kgedit *./in-pointers[6Pgedit *
+
+** (gedit:25953): [1;33mWARNING[0m **: [34m17:00:31.658[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:25953): [1;33mWARNING[0m **: [34m17:00:39.349[0m: atk-bridge: get_device_events_reply: unknown signature
+
+** (gedit:25953): [1;33mWARNING[0m **: [34m17:00:40.213[0m: atk-bridge: get_device_events_reply: unknown signature
+
+** (gedit:25953): [1;33mWARNING[0m **: [34m17:00:40.220[0m: atk-bridge: GetRegisteredEvents returned message with unknown signature
+
+** (gedit:25953): [1;33mWARNING[0m **: [34m17:00:40.243[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:25953): [1;33mWARNING[0m **: [34m17:00:40.243[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:25953): [1;33mWARNING[0m **: [34m17:00:40.286[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:25953): [1;33mWARNING[0m **: [34m17:00:40.442[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:25953): [1;33mWARNING[0m **: [34m17:00:40.507[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:25953): [1;33mWARNING[0m **: [34m17:00:40.595[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:25953): [1;33mWARNING[0m **: [34m17:00:40.643[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:25953): [1;33mWARNING[0m **: [34m17:00:40.684[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:25953): [1;33mWARNING[0m **: [34m17:00:40.696[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:25953): [1;33mWARNING[0m **: [34m17:00:40.697[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:25953): [1;33mWARNING[0m **: [34m17:00:40.697[0m: AT-SPI: Could not obtain desktop path or name
+
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex2$ gedit *./in-pointers
+is[] is at 0xffc391bc
+enter pointer to is[1]: 3
+Segmentation fault
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex2$ ./in-pointers[6Pgedit *./in-pointers
+is[] is at 0xffd4846c
+enter pointer to is[1]: 8
+Segmentation fault
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex2$ ./in-pointers[6Pgedit *./in-pointers
+is[] is at 0xff8607ec
+enter pointer to is[1]: 16
+Segmentation fault
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex2$ ./in-pointers
+is[] is at 0xffc3ae1c
+enter pointer to is[1]: ^C
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex2$ ./in-pointers[6Pgedit *./in-pointers[6Pgedit *
+
+** (gedit:26321): [1;33mWARNING[0m **: [34m17:02:43.845[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:26321): [1;33mWARNING[0m **: [34m17:02:51.559[0m: atk-bridge: get_device_events_reply: unknown signature
+
+** (gedit:26321): [1;33mWARNING[0m **: [34m17:02:52.426[0m: atk-bridge: get_device_events_reply: unknown signature
+
+** (gedit:26321): [1;33mWARNING[0m **: [34m17:02:52.433[0m: atk-bridge: GetRegisteredEvents returned message with unknown signature
+
+** (gedit:26321): [1;33mWARNING[0m **: [34m17:02:52.463[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:26321): [1;33mWARNING[0m **: [34m17:02:52.463[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:26321): [1;33mWARNING[0m **: [34m17:02:52.505[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:26321): [1;33mWARNING[0m **: [34m17:02:52.505[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:26321): [1;33mWARNING[0m **: [34m17:02:52.701[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:26321): [1;33mWARNING[0m **: [34m17:02:52.701[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:26321): [1;33mWARNING[0m **: [34m17:02:52.753[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:26321): [1;33mWARNING[0m **: [34m17:02:52.811[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:26321): [1;33mWARNING[0m **: [34m17:02:52.876[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:26321): [1;33mWARNING[0m **: [34m17:02:52.894[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:26321): [1;33mWARNING[0m **: [34m17:02:52.895[0m: AT-SPI: Could not obtain desktop path or name
+
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex2$ gedit *./in-pointers
+is[] is at 0xffe1738c
+enter pointer to is[1]: 0xffe1738d
+not ok
+is[] is at 0xffe1738c
+enter pointer to is[1]: 0xffe17380
+not ok
+is[] is at 0xffe1738c
+enter pointer to is[1]: 0xffe176 390
+ok
+is[] is at 0xffe1738c
+enter pointer to is[3]: 0xdd  ffe1739 b
+Segmentation fault
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex2$ ./ [K[K[K./in-pointers[6Pgedit *./in-pointers
+is[] is at 0xffd1d41c
+enter pointer to is[1]: 0xdd  ffe d1d41 20
+ok
+is[] is at 0xffd1d41c
+enter pointer to is[3]: 0xffd1d429
+not ok
+is[] is at 0xffd1d41c
+enter pointer to is[3]: 0ffd1     0x0 dd  ffd1d36
+Segmentation fault
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex2$ e[K./in-pointers
+is[] is at 0xffd687dc
+enter pointer to is[1]: 0xdd  ffd687d e0
+ok
+is[] is at 0xffd687dc
+enter pointer to is[3]: 0xffd687ec
+not ok
+is[] is at 0xffd687dc
+enter pointer to is[3]: 0x0 ffd87ea
+Segmentation fault
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex2$ /[K./in-pointers
+is[] is at 0xffafecec
+enter pointer to is[1]: 0xffafecec
+not ok
+is[] is at 0xffafecec
+enter pointer to is[1]: 0ffafece f0
+ok
+is[] is at 0xffafecec
+enter pointer to is[3]: l 0x0 ffafecf8
+ok
+is[] is at 0xffafecec
+enter pointer to is[2]: 0xffafecff
+not ok
+is[] is at 0xffafecec
+enter pointer to is[2]: 0xffafec00
+not ok
+is[] is at 0xffafecec
+enter pointer to is[2]: 0xffafed00
+not ok
+is[] is at 0xffafecec
+enter pointer to is[2]: 0xffafecf5
+not ok
+is[] is at 0xffafecec
+enter pointer to is[2]: 0xx  xffafecf0 4
+ok
+is[] is at 0xffafecec
+enter pointer to is[4]: 0x0 ffafec04
+not ok
+is[] is at 0xffafecec
+enter pointer to is[4]: 0xffafecfd
+not ok
+is[] is at 0xffafecec
+enter pointer to is[4]: 0xdd  ffafex ced
+not ok
+is[] is at 0xffafecec
+enter pointer to is[4]: 0xffafecfd
+not ok
+is[] is at 0xffafecec
+enter pointer to is[4]: 0xffafexfe
+Segmentation fault
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex2$ ./in-pointers
+is[] is at 0xffef971c
+enter pointer to is[1]: 0xffed f9720
+ok
+is[] is at 0xffef971c
+enter pointer to is[3]: 0xffef971 2a
+not ok
+is[] is at 0xffef971c
+enter pointer to is[3]: 0xdd  ffef9728
+ok
+is[] is at 0xffef971c
+enter pointer to is[2]: 0xffef9724
+ok
+is[] is at 0xffef971c
+enter pointer to is[4]: 0xffeff 9734
+not ok
+is[] is at 0xffef971c
+enter pointer to is[4]: 0xffed f972c
+ok
+is[] is at 0xffef971c
+enter pointer to is[0]: 0xffef972 1 1b c
+ok
+is[] is at 0xffef971c
+enter pointer to is[3]: 0xd ffef f9728
+ok
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex2$ [Ktrecupe1@g7-11:~/git-repos/i220b/work/lab5/ex2$ ls
+in-pointers  in-pointers.c  Makefile
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex2$ cd ..
+trecupe1@g7-11:~/git-repos/i220b/work/lab5$ ls
+ex1  ex2  ex3  ex4  ex5  ex6  lab5.log	lab5_output.txt
+trecupe1@g7-11:~/git-repos/i220b/work/lab5$ cd ex3
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex3$ ls
+bad-types.c  Makefile
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex3$ gedit *
+
+** (gedit:29375): [1;33mWARNING[0m **: [34m17:22:36.497[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:29375): [1;33mWARNING[0m **: [34m17:22:36.593[0m: atk-bridge: get_device_events_reply: unknown signature
+
+** (gedit:29375): [1;33mWARNING[0m **: [34m17:22:36.593[0m: atk-bridge: get_device_events_reply: unknown signature
+
+** (gedit:29375): [1;33mWARNING[0m **: [34m17:22:36.593[0m: atk-bridge: GetRegisteredEvents returned message with unknown signature
+
+** (gedit:29375): [1;33mWARNING[0m **: [34m17:22:36.620[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:29375): [1;33mWARNING[0m **: [34m17:22:36.620[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:29375): [1;33mWARNING[0m **: [34m17:22:36.620[0m: AT-SPI: Could not obtain desktop path or name
+
+^[[A^C
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex3$ ls
+bad-types.c  Makefile
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex3$ make
+cc -g -Wall -std=c11 -m32    bad-types.c   -o bad-types
+[01m[Kbad-types.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kbad-types.c:6:14:[m[K [01;35m[Kwarning: [m[Kinitialization of ‘[01m[Kchar *[m[K’ from incompatible pointer type ‘[01m[Kint *[m[K’ [[01;35m[K-Wincompatible-pointer-types[m[K]
+   char *cp = [01;35m[Kis[m[K;
+              [01;35m[K^~[m[K
+[01m[Kbad-types.c:7:13:[m[K [01;35m[Kwarning: [m[Kinitialization of ‘[01m[Kint *[m[K’ from incompatible pointer type ‘[01m[Kchar *[m[K’ [[01;35m[K-Wincompatible-pointer-types[m[K]
+   int *ip = [01;35m[Kcs[m[K;
+             [01;35m[K^~[m[K
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex3$ ./bad-types 
+char pointer cp = 0xffeb5674, pointing at char '' (0x1)
+char pointer cp = 0xffeb5675, pointing at char ' ' (0x0)
+char pointer cp = 0xffeb5676, pointing at char ' ' (0x0)
+char pointer cp = 0xffeb5677, pointing at char ' ' (0x0)
+char pointer cp = 0xffeb5678, pointing at char '' (0x2)
+int pointer ip = 0xffeb568b, pointing at int 1684234849 (0x64636261)
+int pointer ip = 0xffeb568f, pointing at int 357 (0x165)
+int pointer ip = 0xffeb5693, pointing at int 1280 (0x500)
+int pointer ip = 0xffeb5697, pointing at int -346646784 (0xeb569700)
+int pointer ip = 0xffeb569b, pointing at int -346654209 (0xeb5679ff)
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex3$ ls
+bad-types  bad-types.c	Makefile
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex3$ cs[Kcd [K[K[Kd ..
+trecupe1@g7-11:~/git-repos/i220b/work/lab5$ ls
+ex1  ex2  ex3  ex4  ex5  ex6  lab5.log	lab5_output.txt
+trecupe1@g7-11:~/git-repos/i220b/work/lab5$ cd ex4
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex4$ ls
+cast-types.c  Makefile
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex4$ make [K
+cc -g -Wall -std=c11 -m32    cast-types.c   -o cast-types
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex4$ ls
+cast-types  cast-types.c  Makefile
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex4$ ./cast-types 
+char pointer cp = 0xff85a914, pointing at int 1 (0x1)
+char pointer cp = 0xff85a918, pointing at int 2 (0x2)
+char pointer cp = 0xff85a91c, pointing at int 3 (0x3)
+char pointer cp = 0xff85a920, pointing at int 4 (0x4)
+char pointer cp = 0xff85a924, pointing at int 5 (0x5)
+int pointer ip = 0xff85a92b, pointing at char 'a' (0x64636261)
+int pointer ip = 0xff85a92c, pointing at char 'b' (0x65646362)
+int pointer ip = 0xff85a92d, pointing at char 'c' (0x2656463)
+int pointer ip = 0xff85a92e, pointing at char 'd' (0x36564)
+int pointer ip = 0xff85a92f, pointing at char 'e' (0x465)
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex4$ cd ..
+trecupe1@g7-11:~/git-repos/i220b/work/lab5$ ls
+ex1  ex2  ex3  ex4  ex5  ex6  lab5.log	lab5_output.txt
+trecupe1@g7-11:~/git-repos/i220b/work/lab5$ cd ex3[K5
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex5$ ls
+Makefile  void-pointers.c
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex5$ make
+cc -g -Wall -std=c11 -m32    void-pointers.c   -o void-pointers
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex5$ ./void-pointers 
+void pointer p = 0xffc3899f, pointing at char a
+void pointer p = 0xffc389a0, pointing at char b
+void pointer p = 0xffc389a1, pointing at char c
+void pointer p = 0xffc389a2, pointing at char d
+void pointer p = 0xffc389a3, pointing at char e
+void pointer p = 0xf

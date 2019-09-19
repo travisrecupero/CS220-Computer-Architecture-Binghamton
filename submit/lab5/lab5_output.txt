@@ -1,0 +1,151 @@
+Ex1:
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex1$ make
+cc -g -Wall -std=c11 -m32    pointers.c   -o pointers
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex1$ ls
+Makefile  pointers  pointers.c
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex1$ ./pointers
+char pointer cp = 0xffaccbab, pointing at char a
+char pointer cp = 0xffaccbac, pointing at char b
+char pointer cp = 0xffaccbad, pointing at char c
+char pointer cp = 0xffaccbae, pointing at char d
+char pointer cp = 0xffaccbaf, pointing at char e
+int pointer ip = 0xffaccb94, pointing at int 1
+int pointer ip = 0xffaccb98, pointing at int 2
+int pointer ip = 0xffaccb9c, pointing at int 3
+int pointer ip = 0xffaccba0, pointing at int 4
+int pointer ip = 0xffaccba4, pointing at int 5
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex1$ ./pointers
+char pointer cp = 0xff8b77eb, pointing at char a
+char pointer cp = 0xff8b77ec, pointing at char b
+char pointer cp = 0xff8b77ed, pointing at char c
+char pointer cp = 0xff8b77ee, pointing at char d
+char pointer cp = 0xff8b77ef, pointing at char e
+int pointer ip = 0xff8b77d4, pointing at int 1
+int pointer ip = 0xff8b77d8, pointing at int 2
+int pointer ip = 0xff8b77dc, pointing at int 3
+int pointer ip = 0xff8b77e0, pointing at int 4
+int pointer ip = 0xff8b77e4, pointing at int 5
+
+
+
+
+Ex2:
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex2$ ./in-pointers
+is[] is at 0xffef971c
+enter pointer to is[1]: 0xffef9720
+ok
+is[] is at 0xffef971c
+enter pointer to is[3]: 0xffef972a
+not ok
+is[] is at 0xffef971c
+enter pointer to is[3]: 0xffef9728
+ok
+is[] is at 0xffef971c
+enter pointer to is[2]: 0xffef9724
+ok
+is[] is at 0xffef971c
+enter pointer to is[4]: 0xffef9734
+not ok
+is[] is at 0xffef971c
+enter pointer to is[4]: 0xffef972c
+ok
+is[] is at 0xffef971c
+enter pointer to is[0]: 0xffef971c
+ok
+is[] is at 0xffef971c
+enter pointer to is[3]: 0xffef9728
+ok
+
+
+
+
+Ex3:
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex3$ make
+cc -g -Wall -std=c11 -m32    bad-types.c   -o bad-types
+bad-types.c: In function ‘main’:
+bad-types.c:6:14: warning: initialization of ‘char *’ from incompatible pointer type ‘int *’ [-Wincompatible-pointer-types]
+   char *cp = is;
+              ^~
+bad-types.c:7:13: warning: initialization of ‘int *’ from incompatible pointer type ‘char *’ [-Wincompatible-pointer-types]
+   int *ip = cs;
+             ^~
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex3$ ./bad-types 
+char pointer cp = 0xffeb5674, pointing at char '' (0x1)
+char pointer cp = 0xffeb5675, pointing at char '' (0x0)
+char pointer cp = 0xffeb5676, pointing at char '' (0x0)
+char pointer cp = 0xffeb5677, pointing at char '' (0x0)
+char pointer cp = 0xffeb5678, pointing at char '' (0x2)
+int pointer ip = 0xffeb568b, pointing at int 1684234849 (0x64636261)
+int pointer ip = 0xffeb568f, pointing at int 357 (0x165)
+int pointer ip = 0xffeb5693, pointing at int 1280 (0x500)
+int pointer ip = 0xffeb5697, pointing at int -346646784 (0xeb569700)
+int pointer ip = 0xffeb569b, pointing at int -346654209 (0xeb5679ff)
+
+
+
+
+
+Ex4:
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex4$ make
+cc -g -Wall -std=c11 -m32    cast-types.c   -o cast-types
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex4$ ls
+cast-types  cast-types.c  Makefile
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex4$ ./cast-types 
+char pointer cp = 0xff85a914, pointing at int 1 (0x1)
+char pointer cp = 0xff85a918, pointing at int 2 (0x2)
+char pointer cp = 0xff85a91c, pointing at int 3 (0x3)
+char pointer cp = 0xff85a920, pointing at int 4 (0x4)
+char pointer cp = 0xff85a924, pointing at int 5 (0x5)
+int pointer ip = 0xff85a92b, pointing at char 'a' (0x64636261)
+int pointer ip = 0xff85a92c, pointing at char 'b' (0x65646362)
+int pointer ip = 0xff85a92d, pointing at char 'c' (0x2656463)
+int pointer ip = 0xff85a92e, pointing at char 'd' (0x36564)
+int pointer ip = 0xff85a92f, pointing at char 'e' (0x465)
+
+
+
+
+Ex5:
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex5$ make
+cc -g -Wall -std=c11 -m32    void-pointers.c   -o void-pointers
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex5$ ./void-pointers 
+void pointer p = 0xffc3899f, pointing at char a
+void pointer p = 0xffc389a0, pointing at char b
+void pointer p = 0xffc389a1, pointing at char c
+void pointer p = 0xffc389a2, pointing at char d
+void pointer p = 0xffc389a3, pointing at char e
+void pointer p = 0xffc38988, pointing at int 1
+void pointer p = 0xffc3898c, pointing at int 2
+void pointer p = 0xffc38990, pointing at int 3
+void pointer p = 0xffc38994, pointing at int 4
+void pointer p = 0xffc38998, pointing at int 5
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex5$ gedit *
+
+
+
+
+Ex6:
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex6$ ./in-voids 
+cs[] is at 0xffc240cb; is[] is at 0xffc240b4
+enter pointer to is[2]: 0xffx240bc
+not ok
+cs[] is at 0xffc240cb; is[] is at 0xffc240b4
+enter pointer to is[2]: 0xffc240bc
+ok
+cs[] is at 0xffc240cb; is[] is at 0xffc240b4
+enter pointer to cs[3]: 0xffc240ce
+ok
+cs[] is at 0xffc240cb; is[] is at 0xffc240b4
+enter pointer to is[4]: 0ffc240c4
+ok
+cs[] is at 0xffc240cb; is[] is at 0xffc240b4
+enter pointer to cs[1]: 0xffc240cc
+ok
+cs[] is at 0xffc240cb; is[] is at 0xffc240b4
+enter pointer to cs[4]: 0xffc240cf
+ok
+cs[] is at 0xffc240cb; is[] is at 0xffc240b4
+enter pointer to is[1]: 0xffc240b8
+ok
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex6$ 
+
