@@ -12,8 +12,11 @@
  */
 struct BigBits {
   //@TODO
+  size_t size;
+  size_t index;
+  char hexChar;
+  const void **unit;
 };
-
 
 
 /** Return a pointer to a representation of a big integer with value
@@ -30,7 +33,9 @@ newBigBits(const char *hex)
 {
   assert(CHAR_BIT == 8);
   //@TODO
-  return NULL;
+  BigBits *bigBits = calloc(1, sizeof(BigBits));
+  if(bigBits != NULL) bigBits->unit = NULL;
+  return bigBits;
 }
 
 /** Frees all resources used by currently valid bigBits.  bigBits
@@ -40,6 +45,8 @@ void
 freeBigBits(BigBits *bigBits)
 {
   //@TODO
+  free(bigBits->units);
+  free(bigBits);
 }
 
 
@@ -52,6 +59,15 @@ const char *
 stringBigBits(const BigBits *bigBits)
 {
   //@TODO
+  if(bigBits->index >= bigBits->size){
+    bigBits->size = bigBits->size + 1;
+    bigBits->unit = realloc(bigBits->units, bigBits->size*sizeof(void *));
+    if(!stack->unit) return NULL;
+  }
+  assert(bigBits->index < bigBits->size);
+  stack->unit[bigBits->index++] = hexChar;
+
+
   return NULL;
 }
 
