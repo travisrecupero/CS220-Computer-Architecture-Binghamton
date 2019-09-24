@@ -575,4 +575,140 @@ void pointer p = 0xffc389a0, pointing at char b
 void pointer p = 0xffc389a1, pointing at char c
 void pointer p = 0xffc389a2, pointing at char d
 void pointer p = 0xffc389a3, pointing at char e
-void pointer p = 0xf
+void pointer p = 0xffc38988, pointing at int 1
+void pointer p = 0xffc3898c, pointing at int 2
+void pointer p = 0xffc38990, pointing at int 3
+void pointer p = 0xffc38994, pointing at int 4
+void pointer p = 0xffc38998, pointing at int 5
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex5$ ls[K[Kgedit *
+
+** (gedit:30472): [1;33mWARNING[0m **: [34m17:29:01.520[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:30472): [1;33mWARNING[0m **: [34m17:29:02.078[0m: atk-bridge: get_device_events_reply: unknown signature
+
+** (gedit:30472): [1;33mWARNING[0m **: [34m17:29:02.095[0m: atk-bridge: get_device_events_reply: unknown signature
+
+** (gedit:30472): [1;33mWARNING[0m **: [34m17:29:02.096[0m: atk-bridge: GetRegisteredEvents returned message with unknown signature
+
+** (gedit:30472): [1;33mWARNING[0m **: [34m17:29:02.126[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:30472): [1;33mWARNING[0m **: [34m17:29:02.165[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:30472): [1;33mWARNING[0m **: [34m17:29:02.165[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:30472): [1;33mWARNING[0m **: [34m17:29:02.211[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:30472): [1;33mWARNING[0m **: [34m17:29:02.327[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:30472): [1;33mWARNING[0m **: [34m17:29:02.369[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:30472): [1;33mWARNING[0m **: [34m17:29:02.369[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:30472): [1;33mWARNING[0m **: [34m17:29:02.414[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:30472): [1;33mWARNING[0m **: [34m17:29:02.431[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:30472): [1;33mWARNING[0m **: [34m17:29:02.431[0m: AT-SPI: Could not obtain desktop path or name
+
+
+** (gedit:30472): [1;33mWARNING[0m **: [34m17:29:02.431[0m: AT-SPI: Could not obtain desktop path or name
+
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex5$ ^C
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex5$ ls
+Makefile  void-pointers  void-pointers.c
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex5$ ma[K[Kcd ..
+trecupe1@g7-11:~/git-repos/i220b/work/lab5$ cd ex6
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex6$ ls
+in-voids.c  Makefile
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex6$ make
+cc -g -Wall -std=c11 -m32    in-voids.c   -o in-voids
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex6$ ./ [Kin-voids 
+cs[] is at 0xffc240cb; is[] is at 0xffc240b4
+enter pointer to is[2]: 0xffx240cd   0bc
+not ok
+cs[] is at 0xffc240cb; is[] is at 0xffc240b4
+enter pointer to is[2]: 0xffc240bc
+ok
+cs[] is at 0xffc240cb; is[] is at 0xffc240b4
+enter pointer to cs[3]: 0xffc240ce
+ok
+cs[] is at 0xffc240cb; is[] is at 0xffc240b4
+enter pointer to is[4]: 0 0ffc240c4
+ok
+cs[] is at 0xffc240cb; is[] is at 0xffc240b4
+enter pointer to cs[1]: 0ffx c    0x0 ffc240ca c
+ok
+cs[] is at 0xffc240cb; is[] is at 0xffc240b4
+enter pointer to cs[4]: 0xffc240cf
+ok
+cs[] is at 0xffc240cb; is[] is at 0xffc240b4
+enter pointer to is[1]: 0xffc240b8
+ok
+trecupe1@g7-11:~/git-repos/i220b/work/lab5/ex6$ cd ..
+trecupe1@g7-11:~/git-repos/i220b/work/lab5$ ls[K[Kcd ..
+trecupe1@g7-11:~/git-repos/i220b/work$ ls
+lab5
+trecupe1@g7-11:~/git-repos/i220b/work$ cd ..
+trecupe1@g7-11:~/git-repos/i220b$ ls
+README.md  submit  work
+trecupe1@g7-11:~/git-repos/i220b$ git mv work/lab5 submit
+fatal: source directory is empty, source=work/lab5, destination=submit/lab5
+trecupe1@g7-11:~/git-repos/i220b$ cd work
+trecupe1@g7-11:~/git-repos/i220b/work$ ls
+lab5
+trecupe1@g7-11:~/git-repos/i220b/work$ lscd workgit mv work/lab5 submit
+fatal: bad source, source=work/work/lab5, destination=work/submit
+trecupe1@g7-11:~/git-repos/i220b/work$ git mv work/lab5 submitls[Kcd workgit mv work/lab5 submitls[Kcd ..[3Plscd ..
+trecupe1@g7-11:~/git-repos/i220b$ cd ..git mv work/lab5 submit[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd
+trecupe1@g7-11:~$ cd git-repos/
+trecupe1@g7-11:~/git-repos$ cd i220b/
+trecupe1@g7-11:~/git-repos/i220b$ ;[Kls
+README.md  submit  work
+trecupe1@g7-11:~/git-repos/i220b$ lscd i220b/git-repos/[K ..git mv work/lab5 submit[1P[1P[1P[1P
+trecupe1@g7-11:~/git-repos/i220b$ ls
+README.md  submit  work
+trecupe1@g7-11:~/git-repos/i220b$ cd submit/
+trecupe1@g7-11:~/git-repos/i220b/submit$ ls
+lab2  lab3  lab4  lab5	prj1-sol
+trecupe1@g7-11:~/git-repos/i220b/submit$ git add .
+trecupe1@g7-11:~/git-repos/i220b/submit$ git commi [Kt -n [K[Km ''s'u'b'm'i't't'e'd' 'l'a'b' '5'
+[master b0189d6] submitted lab 5
+ 20 files changed, 932 insertions(+)
+ create mode 100644 submit/lab5/ex1/.gitignore
+ create mode 100644 submit/lab5/ex1/Makefile
+ create mode 100644 submit/lab5/ex1/pointers.c
+ create mode 100644 submit/lab5/ex2/.gitignore
+ create mode 100644 submit/lab5/ex2/Makefile
+ create mode 100644 submit/lab5/ex2/in-pointers.c
+ create mode 100644 submit/lab5/ex3/.gitignore
+ create mode 100644 submit/lab5/ex3/Makefile
+ create mode 100644 submit/lab5/ex3/bad-types.c
+ create mode 100644 submit/lab5/ex4/.gitignore
+ create mode 100644 submit/lab5/ex4/Makefile
+ create mode 100644 submit/lab5/ex4/cast-types.c
+ create mode 100644 submit/lab5/ex5/.gitignore
+ create mode 100644 submit/lab5/ex5/Makefile
+ create mode 100644 submit/lab5/ex5/void-pointers.c
+ create mode 100644 submit/lab5/ex6/.gitignore
+ create mode 100644 submit/lab5/ex6/Makefile
+ create mode 100644 submit/lab5/ex6/in-voids.c
+ create mode 100644 submit/lab5/lab5.log
+ create mode 100644 submit/lab5/lab5_output.txt
+trecupe1@g7-11:~/git-repos/i220b/submit$ git push
+Username for 'https://github.com': travisrecupero
+Password for 'https://travisrecupero@github.com': 
+Enumerating objects: 32, done.
+Counting objects:   3% (1/32)   Counting objects:   6% (2/32)   Counting objects:   9% (3/32)   Counting objects:  12% (4/32)   Counting objects:  15% (5/32)   Counting objects:  18% (6/32)   Counting objects:  21% (7/32)   Counting objects:  25% (8/32)   Counting objects:  28% (9/32)   Counting objects:  31% (10/32)   Counting objects:  34% (11/32)   Counting objects:  37% (12/32)   Counting objects:  40% (13/32)   Counting objects:  43% (14/32)   Counting objects:  46% (15/32)   Counting objects:  50% (16/32)   Counting objects:  53% (17/32)   Counting objects:  56% (18/32)   Counting objects:  59% (19/32)   Counting objects:  62% (20/32)   Counting objects:  65% (21/32)   Counting objects:  68% (22/32)   Counting objects:  71% (23/32)   Counting objects:  75% (24/32)   Counting objects:  78% (25/32)   Counting objects:  81% (26/32)   Counting objects:  84% (27/32)   Counting objects:  87% (28/32)   Counting objects:  90% (29/32)   Counting objects:  93% (30/32)   Counting objects:  96% (31/32)   Counting objects: 100% (32/32)   Counting objects: 100% (32/32), done.
+Delta compression using up to 8 threads
+Compressing objects:   4% (1/24)   Compressing objects:   8% (2/24)   Compressing objects:  12% (3/24)   Compressing objects:  16% (4/24)   Compressing objects:  20% (5/24)   Compressing objects:  25% (6/24)   Compressing objects:  29% (7/24)   Compressing objects:  33% (8/24)   Compressing objects:  37% (9/24)   Compressing objects:  41% (10/24)   Compressing objects:  45% (11/24)   Compressing objects:  50% (12/24)   Compressing objects:  54% (13/24)   Compressing objects:  58% (14/24)   Compressing objects:  62% (15/24)   Compressing objects:  66% (16/24)   Compressing objects:  70% (17/24)   Compressing objects:  75% (18/24)   Compressing objects:  79% (19/24)   Compressing objects:  83% (20/24)   Compressing objects:  87% (21/24)   Compressing objects:  91% (22/24)   Compressing objects:  95% (23/24)   Compressing objects: 100% (24/24)   Compressing objects: 100% (24/24), done.
+Wri
