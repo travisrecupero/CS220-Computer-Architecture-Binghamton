@@ -1,0 +1,41 @@
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/process-memory$ ./process-memory 10 &
+[1] 3275
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/process-memory$ 10 MB allocated at 0x7f96a5f28010
+return
+bash: return: can only `return' from a function or sourced script
+[1]+  Done                    ./process-memory 10
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/process-memory$ ps -Fp PID
+error: process ID list syntax error
+
+Usage:
+ ps [options]
+
+ Try 'ps --help <simple|list|output|threads|misc|all>'
+  or 'ps --help <s|l|o|t|m|a>'
+ for additional help text.
+
+For more details see ps(1).
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/process-memory$ ps -Fp
+error: list of process IDs must follow -p
+
+Usage:
+ ps [options]
+
+ Try 'ps --help <simple|list|output|threads|misc|all>'
+  or 'ps --help <s|l|o|t|m|a>'
+ for additional help text.
+
+For more details see ps(1).
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/process-memory$ ps -Fp 3275
+UID        PID  PPID  C    SZ   RSS PSR STIME TTY          TIME CMD
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/process-memory$ man ps
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/process-memory$ ./process-memory 100 &
+[1] 3812
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/process-memory$ 100 MB allocated at 0x7f4502ed5010
+return
+bash: return: can only `return' from a function or sourced script
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/process-memory$ ps -Fp 3812
+UID        PID  PPID  C    SZ   RSS PSR STIME TTY          TIME CMD
+trecupe1  3812  2327  0 26170   744   1 16:38 pts/1    00:00:00 ./process-m
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/process-memory$ man ps
+[1]+  Done                    ./process-memory 100

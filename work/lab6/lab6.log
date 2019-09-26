@@ -1,0 +1,1312 @@
+Script started on 2019-09-26 16:28:33-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="75" LINES="32"]
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6$ ls
+brk  bug-program  lab6.log  process-memory
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6$ make [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[Kcd p rocess-memory/
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/process-memory$ ls
+Makefile  process-memory.c
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/process-memory$ make
+cc -g -Wall -std=c11 -O1    process-memory.c   -o process-memory
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/process-memory$ ./processm[K0[K-memort[Ky 10 &
+[1] 3275
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/process-memory$ 10 MB allocated at 0x7f96a5f28010
+return
+bash: return: can only `return' from a function or sourced script
+[1]+  Done                    ./process-memory 10
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/process-memory$ ps -Fp PID
+error: process ID list syntax error
+
+Usage:
+ ps [options]
+
+ Try 'ps --help <simple|list|output|threads|misc|all>'
+  or 'ps --help <s|l|o|t|m|a>'
+ for additional help text.
+
+For more details see ps(1).
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/process-memory$ ps -Fp PID[K[K[K[K
+error: list of process IDs must follow -p
+
+Usage:
+ ps [options]
+
+ Try 'ps --help <simple|list|output|threads|misc|all>'
+  or 'ps --help <s|l|o|t|m|a>'
+ for additional help text.
+
+For more details see ps(1).
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/process-memory$ ps -Fp PID[K[K[K3275
+UID        PID  PPID  C    SZ   RSS PSR STIME TTY          TIME CMD
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/process-memory$ man ps
+[?1049h[22;0;0t[?1h=PS(1)                         User Commands                         PS(1)[m
+[m
+[1mNAME[0m[m
+       ps - report a snapshot of the current processes.[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mps[0m [[4moptions[24m][m
+[m
+[1mDESCRIPTION[0m[m
+       [1mps[0m displays information about a selection of the active processes.[m
+       If you want a repetitive update of the selection and the displayed[m
+       information, use [4mtop[24m(1) instead.[m
+[m
+       This version of [1mps[0m accepts several kinds of options:[m
+[m
+       1   UNIX options, which may be grouped and must be preceded by a[m
+           dash.[m
+       2   BSD options, which may be grouped and must not be used with a[m
+           dash.[m
+       3   GNU long options, which are preceded by two dashes.[m
+[m
+       Options of different types may be freely mixed, but conflicts can[m
+       appear.  There are some synonymous options, which are functionally[m
+       identical, due to the many standards and [1mps[0m implementations that[m
+       this [1mps[0m is compatible with.[m
+[m
+       Note that "[1mps[0m [1m-aux[0m" is distinct from "[1mps[0m [1maux[0m".  The POSIX and UNIX[m
+       standards require that "[1mps[0m [1m-aux[0m" print all processes owned by a[m
+       user named "x", as well as printing all processes that would be[m
+       selected by the [1m-a[0m option.  If the user named "x" does not exist,[m
+       this [1mps[0m may interpret the command as "[1mps[0m [1maux[0m" instead and print a[m
+[7m Manual page ps(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0ttrecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/process-memory$ man psps -Fp 3275[K PID[4Preturn./process-memory 10 &[C[C[C[C[C[C[C[C[C[C[Cmake[K./process-memory 10 &0 &
+[1] 3812
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/process-memory$ 100 MB allocated at 0x7f4502ed5010
+return
+bash: return: can only `return' from a function or sourced script
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/process-memory$ ps - [KFP[Kp 3812
+UID        PID  PPID  C    SZ   RSS PSR STIME TTY          TIME CMD
+trecupe1  3812  2327  0 26170   744   1 16:38 pts/1    00:00:00 ./process-m
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/process-memory$ man ps
+[?1049h[22;0;0t[?1h=PS(1)                         User Commands                         PS(1)[m
+[m
+[1mNAME[0m[m
+       ps - report a snapshot of the current processes.[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mps[0m [[4moptions[24m][m
+[m
+[1mDESCRIPTION[0m[m
+       [1mps[0m displays information about a selection of the active processes.[m
+       If you want a repetitive update of the selection and the displayed[m
+       information, use [4mtop[24m(1) instead.[m
+[m
+       This version of [1mps[0m accepts several kinds of options:[m
+[m
+       1   UNIX options, which may be grouped and must be preceded by a[m
+           dash.[m
+       2   BSD options, which may be grouped and must not be used with a[m
+           dash.[m
+       3   GNU long options, which are preceded by two dashes.[m
+[m
+       Options of different types may be freely mixed, but conflicts can[m
+       appear.  There are some synonymous options, which are functionally[m
+       identical, due to the many standards and [1mps[0m implementations that[m
+       this [1mps[0m is compatible with.[m
+[m
+       Note that "[1mps[0m [1m-aux[0m" is distinct from "[1mps[0m [1maux[0m".  The POSIX and UNIX[m
+       standards require that "[1mps[0m [1m-aux[0m" print all processes owned by a[m
+       user named "x", as well as printing all processes that would be[m
+       selected by the [1m-a[0m option.  If the user named "x" does not exist,[m
+       this [1mps[0m may interpret the command as "[1mps[0m [1maux[0m" instead and print a[m
+[7m Manual page ps(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t[1]+  Done                    ./process-memory 100
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/process-memory$ c[K;s[K[Kls
+Makefile  process-memory  process-memory.c
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/process-memory$ cd ..
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6$ ls
+brk  bug-program  lab6.log  lab6.txt  process-memory
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6$ cd b 
+brk/         bug-program/ 
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6$ cd b bu[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[Kd b ug-program/
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ ls
+bug-program.c  Makefile
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ ls
+bug-program.c  Makefile
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ make
+cc -g -Wall -std=c11 -O1    bug-program.c   -o bug-program
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ gedit * &
+[1] 5202
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ cd[K[Kls
+bug-program  bug-program.c  Makefile
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ cd ..
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6$ ls
+brk  bug-program  lab6.log  lab6.txt  process-memory
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6$ cd b v[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K b ug-program/
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ ls
+bug-program  bug-program.c  Makefile
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ ls
+bug-program  bug-program.c  Makefile
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ cd bu[K[K[K[K[Klscd bug-program/[K[K[K[K[K[K[K[K[K[K[K[K[K[K[KMALLECO[K[K[KO[KC[KOC [K_CEHC[K[K[KHC[KECK_=1 ./bug-program 
+outgrabe: 22
+raths: 21
+mome: 20
+the: 19
+and: 18
+borogoves: 17
+the: 16
+were: 15
+mimsy: 14
+all: 13
+wabe: 12
+the: 11
+in: 10
+gimble: 9
+and: 8
+gyre: 7
+did: 6
+toves: 5
+slithy: 4
+the: 3
+and: 2
+brillig: 1
+twas: 0
+free(): invalid pointer
+Aborted
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ MALLOC_CHECK_=1 ./bug-program [C[C[C[C[C[C[C[Cls[KMALLOC_CHECK_=1 ./bug-program [C[C[C[C[C[C[C[C[Kvalgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind
+outgrabe: 22
+raths: 21
+mome: 20
+the: 19
+and: 18
+borogoves: 17
+the: 16
+were: 15
+mimsy: 14
+all: 13
+wabe: 12
+the: 11
+in: 10
+gimble: 9
+and: 8
+gyre: 7
+did: 6
+toves: 5
+slithy: 4
+the: 3
+and: 2
+brillig: 1
+twas: 0
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ ls
+bug-program  bug-program.c  bug-program.valgrind  Makefile
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ gexi[K[Kdit *
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ 
+(gedit:5202): Gtk-[1;33mWARNING[0m **: [34m16:58:41.700[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+^C
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ gedit *ls[Kvalgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[C[35PMALLOC_CHECK_=1 ./bug-program [C[C[C[C[C[C[C[Cls[Kcd bug-program/[C[C[C[C[C[C[C[Cls[Kcd ..[3Plsgedit * &[5Pmake[2Plsmake
+cc -g -Wall -std=c11 -O1    bug-program.c   -o bug-program
+[1]+  Done                    gedit *
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ makegedit *ls[Kvalgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[C[35PMALLOC_CHECK_=1 ./bug-program [C[C[C[C[C[C[C[Cls[KMALLOC_CHECK_=1 ./bug-program [C[C[C[C[C[C[C[Cvalgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cls[Kgedit *ls[Kvalgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind
+outgrabe: 22
+raths: 21
+mome: 20
+the: 19
+and: 18
+borogoves: 17
+the: 16
+were: 15
+mimsy: 14
+all: 13
+wabe: 12
+the: 11
+in: 10
+gimble: 9
+and: 8
+gyre: 7
+did: 6
+toves: 5
+slithy: 4
+the: 3
+and: 2
+brillig: 1
+twas: 0
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *ls[Kgedit *
+
+(gedit:6902): Gtk-[1;33mWARNING[0m **: [34m17:00:36.080[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+^[[A^[[A^C
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ gedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *ls[Kgedit *[3Pmakegedit *ls[Kvalgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[C[35PMALLOC_CHECK_=1 ./bug-program [C[C[C[C[C[C[C[Cvalgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cls[Kgedit *[3Pmake
+cc -g -Wall -std=c11 -O1    bug-program.c   -o bug-program
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ makegedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind
+^[[Aoutgrabe: 22
+raths: 21
+mome: 20
+the: 19
+and: 18
+borogoves: 17
+the: 16
+were: 15
+mimsy: 14
+all: 13
+wabe: 12
+the: 11
+in: 10
+gimble: 9
+and: 8
+gyre: 7
+did: 6
+toves: 5
+slithy: 4
+the: 3
+and: 2
+brillig: 1
+twas: 0
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cgedit *[K
+^C
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ gedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cgedit *[K
+
+(gedit:7344): Gtk-[1;33mWARNING[0m **: [34m17:02:21.332[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ gedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[K
+cc -g -Wall -std=c11 -O1    bug-program.c   -o bug-program
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ makegedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind
+outgrabe: 22
+raths: 21
+mome: 20
+the: 19
+and: 18
+borogoves: 17
+the: 16
+were: 15
+mimsy: 14
+all: 13
+wabe: 12
+the: 11
+in: 10
+gimble: 9
+and: 8
+gyre: 7
+did: 6
+toves: 5
+slithy: 4
+the: 3
+and: 2
+brillig: 1
+twas: 0
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *
+
+(gedit:7432): Gtk-[1;33mWARNING[0m **: [34m17:04:50.812[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+^C
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ gedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[K
+cc -g -Wall -std=c11 -O1    bug-program.c   -o bug-program
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ makegedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind
+outgrabe: 22
+raths: 21
+mome: 20
+the: 19
+and: 18
+borogoves: 17
+the: 16
+were: 15
+mimsy: 14
+all: 13
+wabe: 12
+the: 11
+in: 10
+gimble: 9
+and: 8
+gyre: 7
+did: 6
+toves: 5
+slithy: 4
+the: 3
+and: 2
+brillig: 1
+twas: 0
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *
+
+(gedit:7851): Gtk-[1;33mWARNING[0m **: [34m17:07:00.518[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+^C
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ gedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[K
+cc -g -Wall -std=c11 -O1    bug-program.c   -o bug-program
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ makegedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind
+outgrabe: 22
+raths: 21
+mome: 20
+the: 19
+and: 18
+borogoves: 17
+the: 16
+were: 15
+mimsy: 14
+all: 13
+wabe: 12
+the: 11
+in: 10
+gimble: 9
+and: 8
+gyre: 7
+did: 6
+toves: 5
+slithy: 4
+the: 3
+and: 2
+brillig: 1
+twas: 0
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *
+
+(gedit:8138): Gtk-[1;33mWARNING[0m **: [34m17:07:36.105[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ gedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[K
+cc -g -Wall -std=c11 -O1    bug-program.c   -o bug-program
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ 
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ makegedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind
+^[[Aoutgrabe: 22
+raths: 21
+mome: 20
+the: 19
+and: 18
+borogoves: 17
+the: 16
+were: 15
+mimsy: 14
+all: 13
+wabe: 12
+the: 11
+in: 10
+gimble: 9
+and: 8
+gyre: 7
+did: 6
+toves: 5
+slithy: 4
+the: 3
+and: 2
+brillig: 1
+twas: 0
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[K
+make: Nothing to be done for 'all'.
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ makevalgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cgedit *[K
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ gedit *[3Pmakevalgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cgedit *[K
+
+(gedit:8378): Gtk-[1;33mWARNING[0m **: [34m17:08:58.718[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+^C
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ gedit *[3Pmakevalgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *ls[Kvalgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[C[35PMALLOC_CHECK_=1 ./bug-program [C[C[C[C[C[C[C[Cls[KMALLOC_CHECK_=1 ./bug-program 
+: 22
+ðÂL«OV: 21
+ÐÂL«OV: 20
+°ÂL«OV: 19
+ÂL«OV: 18
+pÂL«OV: 17
+PÂL«OV: 16
+0ÂL«OV: 15
+ÂL«OV: 14
+ðÁL«OV: 13
+ÐÁL«OV: 12
+°ÁL«OV: 11
+ÁL«OV: 10
+pÁL«OV: 9
+PÁL«OV: 8
+0ÁL«OV: 7
+ÁL«OV: 6
+ðÀL«OV: 5
+ÐÀL«OV: 4
+°ÀL«OV: 3
+ÀL«OV: 2
+pÀL«OV: 1
+PÀL«OV: 0
+free(): invalid pointer
+Aborted
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ MALLOC_CHECK_=1 ./bug-program [C[C[C[C[C[C[C[Cgedit *[K[3Pmake
+make: Nothing to be done for 'all'.
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ makeMALLOC_CHECK_=1 ./bug-program [C[C[C[C[C[C[C[Cgedit *[K
+
+(gedit:9495): Gtk-[1;33mWARNING[0m **: [34m17:17:26.254[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+^C
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ gedit *[3PmakeMALLOC_CHECK_=1 ./bug-program [C[C[C[C[C[C[C[Cmake[K
+cc -g -Wall -std=c11 -O1    bug-program.c   -o bug-program
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ makegedit *[3Pmakegedit *[3Pmakegedit *[3PmakeMALLOC_CHECK_=1 ./bug-program [C[C[C[C[C[C[C[Cgedit *[K[3Pmakevalgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kvalgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind
+outgrabe: 22
+raths: 21
+mome: 20
+the: 19
+and: 18
+borogoves: 17
+the: 16
+were: 15
+mimsy: 14
+all: 13
+wabe: 12
+the: 11
+in: 10
+gimble: 9
+and: 8
+gyre: 7
+did: 6
+toves: 5
+slithy: 4
+the: 3
+and: 2
+brillig: 1
+twas: 0
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *[3Pmakegedit *
+
+(gedit:9831): Gtk-[1;33mWARNING[0m **: [34m17:18:44.326[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ gedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kvalgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cgedit *[Kvalgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[K
+cc -g -Wall -std=c11 -O1    bug-program.c   -o bug-program
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ makegedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind
+outgrabe: 22
+raths: 21
+mome: 20
+the: 19
+and: 18
+borogoves: 17
+the: 16
+were: 15
+mimsy: 14
+all: 13
+wabe: 12
+the: 11
+in: 10
+gimble: 9
+and: 8
+gyre: 7
+did: 6
+toves: 5
+slithy: 4
+the: 3
+and: 2
+brillig: 1
+twas: 0
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *
+
+(gedit:9936): Gtk-[1;33mWARNING[0m **: [34m17:20:00.850[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+^C
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ gedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[K
+cc -g -Wall -std=c11 -O1    bug-program.c   -o bug-program
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ makegedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind
+outgrabe: 22
+raths: 21
+mome: 20
+the: 19
+and: 18
+borogoves: 17
+the: 16
+were: 15
+mimsy: 14
+all: 13
+wabe: 12
+the: 11
+in: 10
+gimble: 9
+and: 8
+gyre: 7
+did: 6
+toves: 5
+slithy: 4
+the: 3
+and: 2
+brillig: 1
+twas: 0
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *
+
+(gedit:10120): Gtk-[1;33mWARNING[0m **: [34m17:20:37.479[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+^C
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ gedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[K
+cc -g -Wall -std=c11 -O1    bug-program.c   -o bug-program
+[01m[Kbug-program.c:[m[K In function â€˜[01m[Kfree_key_values[m[Kâ€™:
+[01m[Kbug-program.c:46:8:[m[K [01;31m[Kerror: [m[Kâ€˜[01m[Kp[m[Kâ€™ undeclared (first use in this function)
+   free([01;31m[Kp[m[K);
+        [01;31m[K^[m[K
+[01m[Kbug-program.c:46:8:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+make: *** [<builtin>: bug-program] Error 1
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ makegedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cgedit *[K
+
+(gedit:10302): Gtk-[1;33mWARNING[0m **: [34m17:21:36.367[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+^C
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ gedit *[3Pmake
+cc -g -Wall -std=c11 -O1    bug-program.c   -o bug-program
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ makegedit *[3Pmakegedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind
+^[[Aoutgrabe: 22
+raths: 21
+mome: 20
+the: 19
+and: 18
+borogoves: 17
+the: 16
+were: 15
+mimsy: 14
+all: 13
+wabe: 12
+the: 11
+in: 10
+gimble: 9
+and: 8
+gyre: 7
+did: 6
+toves: 5
+slithy: 4
+the: 3
+and: 2
+brillig: 1
+twas: 0
+(null): 0
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *
+
+(gedit:10522): Gtk-[1;33mWARNING[0m **: [34m17:23:14.292[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+^[[A^[[A^[[A^C
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ gedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *[3Pmake
+cc -g -Wall -std=c11 -O1    bug-program.c   -o bug-program
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ makegedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *
+^C
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ gedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[K
+make: Nothing to be done for 'all'.
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ makegedit *[K[K[K[K[K[K[K./bug-program 
+malloc failure: Success
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ make
+make: Nothing to be done for 'all'.
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ make./bug-program [C[C[C[C[C[C[C[Cmake[Kgedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[K./bug-program [C[C[C[C[C[C[C[Cmake[K./bug-program [C[C[C[C[C[C[C[Cmake[K./bug-program [C[C[C[C[C[C[C[Cmake[Kvalgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[C[Kgedit*[K *
+
+(gedit:10889): Gtk-[1;33mWARNING[0m **: [34m17:25:34.510[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+^[[A^[[A^C
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ gedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[K./bug-program [C[C[C[C[C[C[C[Cmake[K
+cc -g -Wall -std=c11 -O1    bug-program.c   -o bug-program
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ makegedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind
+outgrabe: 22
+raths: 21
+mome: 20
+the: 19
+and: 18
+borogoves: 17
+the: 16
+were: 15
+mimsy: 14
+all: 13
+wabe: 12
+the: 11
+in: 10
+gimble: 9
+and: 8
+gyre: 7
+did: 6
+toves: 5
+slithy: 4
+the: 3
+and: 2
+brillig: 1
+twas: 0
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *
+
+(gedit:11173): Gtk-[1;33mWARNING[0m **: [34m17:27:40.099[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+^[[A^C
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ gedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[K
+cc -g -Wall -std=c11 -O1    bug-program.c   -o bug-program
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ makegedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind
+outgrabe: 22
+raths: 21
+mome: 20
+the: 19
+and: 18
+borogoves: 17
+the: 16
+were: 15
+mimsy: 14
+all: 13
+wabe: 12
+the: 11
+in: 10
+gimble: 9
+and: 8
+gyre: 7
+did: 6
+toves: 5
+slithy: 4
+the: 3
+and: 2
+brillig: 1
+twas: 0
+(null): 0
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ gedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *
+
+(gedit:11470): Gtk-[1;33mWARNING[0m **: [34m17:29:11.366[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+^[[A^C
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ gedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[K
+cc -g -Wall -std=c11 -O1    bug-program.c   -o bug-program
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ makegedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind
+outgrabe: 22
+raths: 21
+mome: 20
+the: 19
+and: 18
+borogoves: 17
+the: 16
+were: 15
+mimsy: 14
+all: 13
+wabe: 12
+the: 11
+in: 10
+gimble: 9
+and: 8
+gyre: 7
+did: 6
+toves: 5
+slithy: 4
+the: 3
+and: 2
+brillig: 1
+twas: 0
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *
+
+(gedit:11601): Gtk-[1;33mWARNING[0m **: [34m17:30:08.075[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+^C
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ gedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[K
+cc -g -Wall -std=c11 -O1    bug-program.c   -o bug-program
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ makegedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind
+outgrabe: 22
+raths: 21
+mome: 20
+the: 19
+and: 18
+borogoves: 17
+the: 16
+were: 15
+mimsy: 14
+all: 13
+wabe: 12
+the: 11
+in: 10
+gimble: 9
+and: 8
+gyre: 7
+did: 6
+toves: 5
+slithy: 4
+the: 3
+and: 2
+brillig: 1
+twas: 0
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cgedit *[K
+^[[A^[[A^C
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ gedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *[3Pmakegedit *
+
+(gedit:11878): Gtk-[1;33mWARNING[0m **: [34m17:31:21.030[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+^C
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ gedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *[3Pmake
+cc -g -Wall -std=c11 -O1    bug-program.c   -o bug-program
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ makegedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind
+outgrabe: 22
+raths: 21
+mome: 20
+the: 19
+and: 18
+borogoves: 17
+the: 16
+were: 15
+mimsy: 14
+all: 13
+wabe: 12
+the: 11
+in: 10
+gimble: 9
+and: 8
+gyre: 7
+did: 6
+toves: 5
+slithy: 4
+the: 3
+and: 2
+brillig: 1
+twas: 0
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *
+
+(gedit:12027): Gtk-[1;33mWARNING[0m **: [34m17:32:50.229[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+^C
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ gedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[K
+cc -g -Wall -std=c11 -O1    bug-program.c   -o bug-program
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ makegedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind
+outgrabe: 22
+raths: 21
+mome: 20
+the: 19
+and: 18
+borogoves: 17
+the: 16
+were: 15
+mimsy: 14
+all: 13
+wabe: 12
+the: 11
+in: 10
+gimble: 9
+and: 8
+gyre: 7
+did: 6
+toves: 5
+slithy: 4
+the: 3
+and: 2
+brillig: 1
+twas: 0
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *
+^C
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ gedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[K
+make: Nothing to be done for 'all'.
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ makegedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *[3Pmakevalgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kvalgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind
+outgrabe: 22
+raths: 21
+mome: 20
+the: 19
+and: 18
+borogoves: 17
+the: 16
+were: 15
+mimsy: 14
+all: 13
+wabe: 12
+the: 11
+in: 10
+gimble: 9
+and: 8
+gyre: 7
+did: 6
+toves: 5
+slithy: 4
+the: 3
+and: 2
+brillig: 1
+twas: 0
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cgedit *[K
+
+(gedit:12607): Gtk-[1;33mWARNING[0m **: [34m17:37:22.449[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+^C
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ gedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[K
+cc -g -Wall -std=c11 -O1    bug-program.c   -o bug-program
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ makegedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind
+outgrabe: 22
+raths: 21
+mome: 20
+the: 19
+and: 18
+borogoves: 17
+the: 16
+were: 15
+mimsy: 14
+all: 13
+wabe: 12
+the: 11
+in: 10
+gimble: 9
+and: 8
+gyre: 7
+did: 6
+toves: 5
+slithy: 4
+the: 3
+and: 2
+brillig: 1
+twas: 0
+(null): 0
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *
+
+(gedit:12884): Gtk-[1;33mWARNING[0m **: [34m17:38:01.393[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+^[[A^C
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ gedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *[3Pmake
+cc -g -Wall -std=c11 -O1    bug-program.c   -o bug-program
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ makegedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind
+outgrabe: 22
+raths: 21
+mome: 20
+the: 19
+and: 18
+borogoves: 17
+the: 16
+were: 15
+mimsy: 14
+all: 13
+wabe: 12
+the: 11
+in: 10
+gimble: 9
+and: 8
+gyre: 7
+did: 6
+toves: 5
+slithy: 4
+the: 3
+and: 2
+brillig: 1
+twas: 0
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *
+
+(gedit:13024): Gtk-[1;33mWARNING[0m **: [34m17:38:56.387[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+^C
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ gedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[K
+cc -g -Wall -std=c11 -O1    bug-program.c   -o bug-program
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ makegedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cgedit *[K
+
+(gedit:13336): Gtk-[1;33mWARNING[0m **: [34m17:41:42.983[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+^C
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ ls
+bug-program  bug-program.c  bug-program.valgrind  Makefile
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ lsgedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *[3Pmake
+cc -g -Wall -std=c11 -O1    bug-program.c   -o bug-program
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ make[2Plsgedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind
+outgrabe: 22
+raths: 21
+mome: 20
+the: 19
+and: 18
+borogoves: 17
+the: 16
+were: 15
+mimsy: 14
+all: 13
+wabe: 12
+the: 11
+in: 10
+gimble: 9
+and: 8
+gyre: 7
+did: 6
+toves: 5
+slithy: 4
+the: 3
+and: 2
+brillig: 1
+twas: 0
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[K[2Plsgedit *ls[Kgedit *
+
+(gedit:13629): Gtk-[1;33mWARNING[0m **: [34m17:44:28.153[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+^[[A^C
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ gedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cgedit *[Kvalgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[K
+cc -g -Wall -std=c11 -O1    bug-program.c   -o bug-program
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ makegedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind
+outgrabe: 22
+raths: 21
+mome: 20
+the: 19
+and: 18
+borogoves: 17
+the: 16
+were: 15
+mimsy: 14
+all: 13
+wabe: 12
+the: 11
+in: 10
+gimble: 9
+and: 8
+gyre: 7
+did: 6
+toves: 5
+slithy: 4
+the: 3
+and: 2
+brillig: 1
+twas: 0
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *
+
+(gedit:14024): Gtk-[1;33mWARNING[0m **: [34m17:45:58.104[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+^[[A^[[A^C
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ gedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[K
+cc -g -Wall -std=c11 -O1    bug-program.c   -o bug-program
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ makegedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind
+outgrabe: 22
+raths: 21
+mome: 20
+the: 19
+and: 18
+borogoves: 17
+the: 16
+were: 15
+mimsy: 14
+all: 13
+wabe: 12
+the: 11
+in: 10
+gimble: 9
+and: 8
+gyre: 7
+did: 6
+toves: 5
+slithy: 4
+the: 3
+and: 2
+brillig: 1
+twas: 0
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ ls
+bug-program  bug-program.c  bug-program.valgrind  Makefile
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ cd ..
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6$ ls
+brk  bug-program  lab6.log  lab6_output.txt  process-memory
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6$ git  push[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kt  add .
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6$ git  commit -m ''l'a'b' '6' 'f'i'x'e'[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[Kgit add .[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Pls
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd ..[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Pls
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit *[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvalgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[A[C[C[C[C[C[C[C[C[C[Cmake [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvalgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[A[C[C[C[C[C[C[C[C[C[Cgedit *[K
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6$ ^C
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6$ ls
+brk  bug-program  lab6.log  lab6_output.txt  process-memory
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6$ g[Kcd b e[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K b rk/[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[Kd b ug-program/
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ ls
+bug-program  bug-program.c  bug-program.valgrind  Makefile
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ ls
+bug-program  bug-program.c  bug-program.valgrind  Makefile
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ gedit *
+
+(gedit:14933): Gtk-[1;33mWARNING[0m **: [34m17:51:06.070[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+^C
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ gedit *ls[Kcd bug-program/[C[C[C[C[C[C[C[Cls[Kgedit *it add .ls[Kcd ..[3Plsgedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *[3Pmake
+cc -g -Wall -std=c11 -O1    bug-program.c   -o bug-program
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ makegedit *ls[Kcd bug-program/[C[C[C[C[C[C[C[Cls[Kgedit *it add .ls[Kcd ..[3Plsgedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *[3Pmakevalgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind
+outgrabe: 22
+raths: 21
+mome: 20
+the: 19
+and: 18
+borogoves: 17
+the: 16
+were: 15
+mimsy: 14
+all: 13
+wabe: 12
+the: 11
+in: 10
+gimble: 9
+and: 8
+gyre: 7
+did: 6
+toves: 5
+slithy: 4
+the: 3
+and: 2
+brillig: 1
+twas: 0
+^[[A^C
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *
+
+(gedit:15470): Gtk-[1;33mWARNING[0m **: [34m17:54:56.487[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+^C
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ gedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[K
+cc -g -Wall -std=c11 -O1    bug-program.c   -o bug-program
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ makegedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind
+outgrabe: 22
+raths: 21
+mome: 20
+the: 19
+and: 18
+borogoves: 17
+the: 16
+were: 15
+mimsy: 14
+all: 13
+wabe: 12
+the: 11
+in: 10
+gimble: 9
+and: 8
+gyre: 7
+did: 6
+toves: 5
+slithy: 4
+the: 3
+and: 2
+brillig: 1
+twas: 0
+^[[A^[[B^^C^C
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *[3Pmakevalgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind
+outgrabe: 22
+raths: 21
+mome: 20
+the: 19
+and: 18
+borogoves: 17
+the: 16
+were: 15
+mimsy: 14
+all: 13
+wabe: 12
+the: 11
+in: 10
+gimble: 9
+and: 8
+gyre: 7
+did: 6
+toves: 5
+slithy: 4
+the: 3
+and: 2
+brillig: 1
+twas: 0
+^C
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[C[Kvalgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cgedit *[K
+
+(gedit:15656): Gtk-[1;33mWARNING[0m **: [34m17:55:56.774[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+^C
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ gedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *[3Pmake
+cc -g -Wall -std=c11 -O1    bug-program.c   -o bug-program
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ makegedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind
+outgrabe: 22
+raths: 21
+mome: 20
+the: 19
+and: 18
+borogoves: 17
+the: 16
+were: 15
+mimsy: 14
+all: 13
+wabe: 12
+the: 11
+in: 10
+gimble: 9
+and: 8
+gyre: 7
+did: 6
+toves: 5
+slithy: 4
+the: 3
+and: 2
+brillig: 1
+twas: 0
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *
+
+(gedit:15758): Gtk-[1;33mWARNING[0m **: [34m17:56:36.667[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+^C
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ gedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[K
+cc -g -Wall -std=c11 -O1    bug-program.c   -o bug-program
+[01m[Kbug-program.c:[m[K In function â€˜[01m[Kfree_key_values[m[Kâ€™:
+[01m[Kbug-program.c:43:52:[m[K [01;35m[Kwarning: [m[Koperation on â€˜[01m[Kp[m[Kâ€™ may be undefined [[01;35m[K-Wsequence-point[m[K]
+   for (struct KeyValue *p = keyValues; p != NULL;[01;35m[Kp = p = p + 1[m[K) {
+                                                  [01;35m[K~~^~~~~~~~~~~[m[K
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ makegedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cgedit *[K
+
+(gedit:15871): Gtk-[1;33mWARNING[0m **: [34m17:57:12.907[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+^C
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ gedit *[3Pmakegedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[K
+cc -g -Wall -std=c11 -O1    bug-program.c   -o bug-program
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ makegedit *[3Pmakegedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind
+outgrabe: 22
+raths: 21
+mome: 20
+the: 19
+and: 18
+borogoves: 17
+the: 16
+were: 15
+mimsy: 14
+all: 13
+wabe: 12
+the: 11
+in: 10
+gimble: 9
+and: 8
+gyre: 7
+did: 6
+toves: 5
+slithy: 4
+the: 3
+and: 2
+brillig: 1
+twas: 0
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *[3Pmakegedit *[3Pmakegedit *
+
+(gedit:16033): Gtk-[1;33mWARNING[0m **: [34m17:58:39.651[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+^C
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ gedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[K
+cc -g -Wall -std=c11 -O1    bug-program.c   -o bug-program
+[01m[Kbug-program.c:[m[K In function â€˜[01m[Kfree_key_values[m[Kâ€™:
+[01m[Kbug-program.c:44:8:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of â€˜[01m[Kfree[m[Kâ€™ discards â€˜[01m[Kconst[m[Kâ€™ qualifier from pointer target type [[01;35m[K-Wdiscarded-qualifiers[m[K]
+  free([01;35m[Kp->key[m[K);
+       [01;35m[K~^~~~~[m[K
+In file included from [01m[Kbug-program.c:3[m[K:
+[01m[K/usr/include/stdlib.h:563:25:[m[K [01;36m[Knote: [m[Kexpected â€˜[01m[Kvoid *[m[Kâ€™ but argument is of type â€˜[01m[Kconst char *[m[Kâ€™
+ extern void free ([01;36m[Kvoid *__ptr[m[K) __THROW;
+                   [01;36m[K~~~~~~^~~~~[m[K
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ makegedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cgedit *[K
+
+(gedit:16218): Gtk-[1;33mWARNING[0m **: [34m17:59:27.661[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+^[[A^[[A^[[A^C
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ gedit *[3Pmakegedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[K
+cc -g -Wall -std=c11 -O1    bug-program.c   -o bug-program
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ makegedit *[3Pmakegedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind
+outgrabe: 22
+raths: 21
+mome: 20
+the: 19
+and: 18
+borogoves: 17
+the: 16
+were: 15
+mimsy: 14
+all: 13
+wabe: 12
+the: 11
+in: 10
+gimble: 9
+and: 8
+gyre: 7
+did: 6
+toves: 5
+slithy: 4
+the: 3
+and: 2
+brillig: 1
+twas: 0
+^C
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *
+
+(gedit:16436): Gtk-[1;33mWARNING[0m **: [34m18:00:48.406[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+^C
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ gedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[K
+cc -g -Wall -std=c11 -O1    bug-program.c   -o bug-program
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ makegedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind
+^[[Aoutgrabe: 22
+raths: 21
+mome: 20
+the: 19
+and: 18
+borogoves: 17
+the: 16
+were: 15
+mimsy: 14
+all: 13
+wabe: 12
+the: 11
+in: 10
+gimble: 9
+and: 8
+gyre: 7
+did: 6
+toves: 5
+slithy: 4
+the: 3
+and: 2
+brillig: 1
+twas: 0
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cgedit *[K
+
+(gedit:16530): Gtk-[1;33mWARNING[0m **: [34m18:03:05.044[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+^C
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ gedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[K
+cc -g -Wall -std=c11 -O1    bug-program.c   -o bug-program
+[01m[Kbug-program.c:[m[K In function â€˜[01m[Kadd_key_value[m[Kâ€™:
+[01m[Kbug-program.c:21:24:[m[K [01;31m[Kerror: [m[Kinvalid initializer
+   struct KeyValue kv = [01;31m[Kmalloc[m[K(sizeof(struct KeyValue));
+                        [01;31m[K^~~~~~[m[K
+[01m[Kbug-program.c:26:10:[m[K [01;31m[Kerror: [m[Kinvalid operands to binary == (have â€˜[01m[Kstruct KeyValue[m[Kâ€™ and â€˜[01m[Kvoid *[m[Kâ€™)
+   if (kv [01;31m[K==[m[K NULL || s == NULL) { //check if allocations succeeded
+          [01;31m[K^~[m[K
+[01m[Kbug-program.c:33:5:[m[K [01;31m[Kerror: [m[Kinvalid type argument of â€˜[01m[K->[m[Kâ€™ (have â€˜[01m[Kstruct KeyValue[m[Kâ€™)
+   kv[01;31m[K->[m[Kkey = s; kv->value = v; kv->succ = keyValues;
+     [01;31m[K^~[m[K
+[01m[Kbug-program.c:33:18:[m[K [01;31m[Kerror: [m[Kinvalid type argument of â€˜[01m[K->[m[Kâ€™ (have â€˜[01m[Kstruct KeyValue[m[Kâ€™)
+   kv->key = s; kv[01;31m[K->[m[Kvalue = v; kv->succ = keyValues;
+                  [01;31m[K^~[m[K
+[01m[Kbug-program.c:33:33:[m[K [01;31m[Kerror: [m[Kinvalid type argument of â€˜[01m[K->[m[Kâ€™ (have â€˜[01m[Kstruct KeyValue[m[Kâ€™)
+   kv->key = s; kv->value = v; kv[01;31m[K->[m[Ksucc = keyValues;
+                                 [01;31m[K^~[m[K
+[01m[Kbug-program.c:35:10:[m[K [01;31m[Kerror: [m[Kincompatible types when returning type â€˜[01m[Kstruct KeyValue[m[Kâ€™ but â€˜[01m[Kstruct KeyValue *[m[Kâ€™ was expected
+   return [01;31m[Kkv[m[K;
+          [01;31m[K^~[m[K
+[01m[Kbug-program.c:36:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+ [01;35m[K}[m[K
+ [01;35m[K^[m[K
+make: *** [<builtin>: bug-program] Error 1
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ makegedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cgedit *[K
+
+(gedit:16955): Gtk-[1;33mWARNING[0m **: [34m18:04:07.317[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+^C
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ gedit *[3Pmakegedit *[3Pmake
+cc -g -Wall -std=c11 -O1    bug-program.c   -o bug-program
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ makegedit *[3Pmakegedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind
+outgrabe: 22
+raths: 21
+mome: 20
+the: 19
+and: 18
+borogoves: 17
+the: 16
+were: 15
+mimsy: 14
+all: 13
+wabe: 12
+the: 11
+in: 10
+gimble: 9
+and: 8
+gyre: 7
+did: 6
+toves: 5
+slithy: 4
+the: 3
+and: 2
+brillig: 1
+twas: 0
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *
+
+(gedit:17095): Gtk-[1;33mWARNING[0m **: [34m18:05:02.474[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+^[[A^C
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ gedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[K
+cc -g -Wall -std=c11 -O1    bug-program.c   -o bug-program
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ makegedit *valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind
+outgrabe: 22
+raths: 21
+mome: 20
+the: 19
+and: 18
+borogoves: 17
+the: 16
+were: 15
+mimsy: 14
+all: 13
+wabe: 12
+the: 11
+in: 10
+gimble: 9
+and: 8
+gyre: 7
+did: 6
+toves: 5
+slithy: 4
+the: 3
+and: 2
+brillig: 1
+twas: 0
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[C[C[C[C[C[C[C[Cmake[Kgedit *
+^C
+trecupe1@g7-12:/import/linux/home1/trecupe1/git-repos/i220b/work/lab6/bug-program$ ls
+bug-program  bug-program.c  
