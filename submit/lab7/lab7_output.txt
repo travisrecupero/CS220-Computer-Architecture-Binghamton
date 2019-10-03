@@ -1,0 +1,129 @@
+Ex1: 
+w_log10.o:
+                 U errno
+                 U _GLOBAL_OFFSET_TABLE_
+                 U __ieee754_log10
+0000000000000000 T __log10
+0000000000000000 W log10
+0000000000000000 W log10f32x
+0000000000000000 W log10f64
+
+Ex2:
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/multiple-symbols$ make
+cc -g -Wall -std=c11   -c -o def1.o def1.c
+cc -g -Wall -std=c11   -c -o def2.o def2.c
+cc -g -Wall -std=c11   -c -o main.o main.c
+cc def1.o def2.o main.o  -o multiple-symbols
+/usr/bin/ld: def2.o:/home/trecupe1/git-repos/i220b/work/lab7/multiple-symbols/def2.c:1: multiple definition of `sym'; def1.o:/home/trecupe1/git-repos/i220b/work/lab7/multiple-symbols/def1.c:1: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:4: multiple-symbols] Error 1
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/multiple-symbols$ gedit *
+
+(gedit:10253): Gtk-WARNING **: 17:10:31.280: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/multiple-symbols$ ls
+def1.c	def1.o	def2.c	def2.o	main.c	main.o	Makefile
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/multiple-symbols$ make
+cc -g -Wall -std=c11   -c -o def1.o def1.c
+cc def1.o def2.o main.o  -o multiple-symbols
+
+
+Ex3:
+There is no header file, so when f() is called both the value are changed.
+A header file with repective declarations would allow for correct definitions.
+
+
+Ex4:
+0000000000401c10 T __log10
+0000000000401c10 W log10
+0000000000401c10 W log10f32x
+0000000000401c10 W log10f64
+0000000000401c50 T __log10_finite
+00000000004021a0 i __log_finite
+00000000004cf008 b log_hashfraction
+
+
+Ex5:
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ ./testvec-static 1 2 3
+sum = 2 4 6 
+product = 1 4 9 
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ ./testvec-dynamic 1 2 3
+./testvec-dynamic: error while loading shared libraries: libvec.so: cannot open shared object file: No such file or directory
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ LD_LIBRARY_PATH=. ./testvec-dynamic 1 2 3
+sum = 2 4 6 
+product = 1 4 9 
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ ldd
+ldd: missing file arguments
+Try `ldd --help' for more information.
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ ldd testvec-dynamic
+	linux-vdso.so.1 (0x00007fff2312e000)
+	libvec.so => not found
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f212c9a9000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f212cba8000)
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ LD_LIBRARY_PATH=. ldd ./testvec-dynamic
+	linux-vdso.so.1 (0x00007ffd521f5000)
+	libvec.so => ./libvec.so (0x00007f7553d9f000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f7553ba7000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f7553dab000)
+
+
+Ex6:
+static
+(gdb) p &main
+$1 = (int (*)(int, const char **)) 0x401bf6 <main>
+(gdb) p &addvec
+$2 = (void (*)(int *, int *, int *, 
+    int)) 0x401f1f <addvec>
+(gdb) p &multvec
+$3 = (void (*)(int *, int *, int *, 
+    int)) 0x401f8e <multvec>
+    
+dynamic
+(gdb) p &main
+$1 = (int (*)(int, const char **)) 0x5555555551ee <main>
+(gdb) p &addvec
+$2 = (void (*)(int *, int *, int *, 
+    int)) 0x7ffff7fca0f5 <addvec>
+(gdb) p &multvec
+$3 = (void (*)(int *, int *, int *, 
+    int)) 0x7ffff7fca164 <multvec>
+
+
+
+
+Ex7:
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libgeom$ ls
+circ.c	geom.h	Makefile  rect.c  testgeom.c
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libgeom$ make
+cc -g -Wall -fPIC -std=c11   -c -o circ.o circ.c
+cc -g -Wall -fPIC -std=c11   -c -o rect.o rect.c
+cc -shared circ.o rect.o -o libgeom.so
+ar rcs libgeom.a circ.o rect.o
+cc -g -Wall -fPIC -std=c11   -c -o testgeom.o testgeom.c
+cc  -static testgeom.o -L. -lgeom -o testgeom-static
+cc testgeom.o -L. -lgeom -o testgeom-dynamic
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libgeom$ make clean
+rm -f *.o *.so *.a testgeom-*
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libgeom$ make
+cc -g -Wall -fPIC -std=c11   -c -o circ.o circ.c
+cc -g -Wall -fPIC -std=c11   -c -o rect.o rect.c
+cc -shared circ.o rect.o -o libgeom.so
+ar rcs libgeom.a circ.o rect.o
+cc -g -Wall -fPIC -std=c11   -c -o testgeom.o testgeom.c
+cc  -static testgeom.o -L. -lgeom -o testgeom-static
+cc testgeom.o -L. -lgeom -o testgeom-dynamic
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libgeom$ ls
+circ.c	libgeom.a   rect.c	testgeom-dynamic
+circ.o	libgeom.so  rect.o	testgeom.o
+geom.h	Makefile    testgeom.c	testgeom-static
+
+
+
+
+
+
+
+
+
+
+

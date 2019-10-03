@@ -1,0 +1,1270 @@
+Script started on 2019-10-03 16:43:46-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="94" LINES="24"]
+trecupe1@g7-04:~/git-repos/i220b/work/lab7$ ls
+lab7.log	 libgeom  log10		 multiple-symbols
+lab7_output.txt  libvec   multiple-defs  static-dynamic
+trecupe1@g7-04:~/git-repos/i220b/work/lab7$ cd log10
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ ls
+log10.c  Makefile
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ gedit *
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ make
+cc -g -Wall -std=c11   -c -o log10.o log10.c
+cc   log10.o   -o log10
+/usr/bin/ld: log10.o: in function `main':
+/home/trecupe1/git-repos/i220b/work/lab7/log10/log10.c:9: undefined reference to `log10'
+collect2: error: ld returned 1 exit status
+make: *** [<builtin>: log10] Error 1
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ man log10
+[?1049h[22;0;0t[?1h=LOG10(3)            Linux Programmer's Manual            LOG10(3)[m
+[m
+[1mNAME[0m[m
+       log10, log10f, log10l -  base-10 logarithmic function[m
+[m
+[1mSYNOPSIS[0m[m
+       [1m#include[0m [1m<math.h>[0m[m
+[m
+       [1mdouble[0m [1mlog10(double[0m [4mx[24m[1m);[0m[m
+       [1mfloat[0m [1mlog10f(float[0m [4mx[24m[1m);[0m[m
+       [1mlong[0m [1mdouble[0m [1mlog10l(long[0m [1mdouble[0m [4mx[24m[1m);[0m[m
+[m
+       Link with [4m-lm[24m.[m
+[m
+   Feature   Test   Macro   Requirements   for  glibc  (see  [1mfea‐[0m[m
+   [1mture_test_macros[0m(7)):[m
+[m
+       [1mlog10f[0m(), [1mlog10l[0m():[m
+           _ISOC99_SOURCE || _POSIX_C_SOURCE >= 200112L[m
+               || /* Since glibc 2.19: */ _DEFAULT_SOURCE[m
+               || /* Glibc versions <= 2.19: */ _BSD_SOURCE ||[m
+           _SVID_SOURCE[m
+[m
+[7m Manual page log10(3) line 1 (press h for help or q to quit)[27m[K[H[2J[H[H[2J[HLOG10(3)            Linux Programmer's Manual            LOG10(3)[m
+[m
+[1mNAME[0m[m
+       log10, log10f, log10l -  base-10 logarithmic function[m
+[m
+[1mSYNOPSIS[0m[m
+       [1m#include[0m [1m<math.h>[0m[m
+[m
+       [1mdouble[0m [1mlog10(double[0m [4mx[24m[1m);[0m[m
+       [1mfloat[0m [1mlog10f(float[0m [4mx[24m[1m);[0m[m
+       [1mlong[0m [1mdouble[0m [1mlog10l(long[0m [1mdouble[0m [4mx[24m[1m);[0m[m
+[m
+       Link with [4m-lm[24m.[m
+[m
+   Feature   Test   Macro   Requirements   for  glibc  (see  [1mfea‐[0m[m
+   [1mture_test_macros[0m(7)):[m
+[m
+       [1mlog10f[0m(), [1mlog10l[0m():[m
+           _ISOC99_SOURCE || _POSIX_C_SOURCE >= 200112L[m
+               || /* Since glibc 2.19: */ _DEFAULT_SOURCE[m
+               || /* Glibc versions <= 2.19: */ _BSD_SOURCE ||[m
+           _SVID_SOURCE[m
+[m
+[7m Manual page log10(3) line 1 (press h for help or q to quit)[27m[K[H[2J[H[H[2J[HLOG10(3)            Linux Programmer's Manual            LOG10([m 3)[m
+[m
+[1mNAME[0m[m
+       log10, log10f, log10l -  base-10 logarithmic function[m
+[m
+[1mSYNOPSIS[0m[m
+       [1m#include[0m [1m<math.h>[0m[m
+[m
+       [1mdouble[0m [1mlog10(double[0m [4mx[24m[1m);[0m[m
+       [1mfloat[0m [1mlog10f(float[0m [4mx[24m[1m);[0m[m
+       [1mlong[0m [1mdouble[0m [1mlog10l(long[0m [1mdouble[0m [4mx[24m[1m);[0m[m
+[m
+       Link with [4m-lm[24m.[m
+[m
+   Feature   Test   Macro   Requirements   for  glibc  (see  [1mfe[0m[m [1ma‐[0m[m
+   [1mture_test_macros[0m(7)):[m
+[m
+       [1mlog10f[0m(), [1mlog10l[0m():[m
+           _ISOC99_SOURCE || _POSIX_C_SOURCE >= 200112L[m
+               || /* Since glibc 2.19: */ _DEFAULT_SOURCE[m
+               || /* Glibc versions <= 2.19: */ _BSD_SOURCE ||[m
+[7m Manual page log10(3) line 1 (press h for help or q to quit)[27m[K[H[2J[H[H[2J[HLOG10(3)            Linux Programmer's Manual            LOG10[m (3)[m
+[m
+[1mNAME[0m[m
+       log10, log10f, log10l -  base-10 logarithmic function[m
+[m
+[1mSYNOPSIS[0m[m
+       [1m#include[0m [1m<math.h>[0m[m
+[m
+       [1mdouble[0m [1mlog10(double[0m [4mx[24m[1m);[0m[m
+       [1mfloat[0m [1mlog10f(float[0m [4mx[24m[1m);[0m[m
+       [1mlong[0m [1mdouble[0m [1mlog10l(long[0m [1mdouble[0m [4mx[24m[1m);[0m[m
+[m
+       Link with [4m-lm[24m.[m
+[m
+   Feature   Test   Macro   Requirements   for  glibc  (see  [1mf[0m[m [1mea‐[0m[m
+   [1mture_test_macros[0m(7)):[m
+[m
+       [1mlog10f[0m(), [1mlog10l[0m():[m
+           _ISOC99_SOURCE || _POSIX_C_SOURCE >= 200112L[m
+               || /* Since glibc 2.19: */ _DEFAULT_SOURCE[m
+               || /* Glibc versions <= 2.19: */ _BSD_SOURCE ||[m
+[7m Manual page log10(3) line 1 (press h for help or q to quit)[27m[K[H[2J[H[H[2J[HLOG10(3)            Linux Programmer's Manual            L[m OG10(3)[m
+[m
+[1mNAME[0m[m
+       log10, log10f, log10l -  base-10 logarithmic functi[m on[m
+[m
+[1mSYNOPSIS[0m[m
+       [1m#include[0m [1m<math.h>[0m[m
+[m
+       [1mdouble[0m [1mlog10(double[0m [4mx[24m[1m);[0m[m
+       [1mfloat[0m [1mlog10f(float[0m [4mx[24m[1m);[0m[m
+       [1mlong[0m [1mdouble[0m [1mlog10l(long[0m [1mdouble[0m [4mx[24m[1m);[0m[m
+[m
+       Link with [4m-lm[24m.[m
+[m
+   Feature   Test   Macro   Requirements   for  glibc  (se[m e  [1mfea‐[0m[m
+   [1mture_test_macros[0m(7)):[m
+[m
+       [1mlog10f[0m(), [1mlog10l[0m():[m
+           _ISOC99_SOURCE || _POSIX_C_SOURCE >= 200112L[m
+               || /* Since glibc 2.19: */ _DEFAULT_SOURCE[m
+[7mual page log10(3) line 1 (press h for help or q to quit)[27m[K...skipping...
+LOG10(3)            Linux Programmer's Manual            L[m OG10(3)[m
+[m
+[1mNAME[0m[m
+       log10, log10f, log10l -  base-10 logarithmic functi[m on[m
+[m
+[1mSYNOPSIS[0m[m
+       [1m#include[0m [1m<math.h>[0m[m
+[m
+       [1mdouble[0m [1mlog10(double[0m [4mx[24m[1m);[0m[m
+       [1mfloat[0m [1mlog10f(float[0m [4mx[24m[1m);[0m[m
+       [1mlong[0m [1mdouble[0m [1mlog10l(long[0m [1mdouble[0m [4mx[24m[1m);[0m[m
+[m
+       Link with [4m-lm[24m.[m
+[m
+   Feature   Test   Macro   Requirements   for  glibc  (se[m e  [1mfea‐[0m[m
+   [1mture_test_macros[0m(7)):[m
+[m
+       [1mlog10f[0m(), [1mlog10l[0m():[m
+           _ISOC99_SOURCE || _POSIX_C_SOURCE >= 200112L[m
+               || /* Since glibc 2.19: */ _DEFAULT_SOURCE[m
+               || /* Glibc versions <= 2.19: */ _BSD_SOURC[m [7mual page log10(3) line 1 (press h for help or q to quit)[27m[K...skipping...
+LOG10(3)            Linux Programmer's Manual            L[m OG10(3)[m
+[m
+[1mNAME[0m[m
+       log10, log10f, log10l -  base-10 logarithmic functi[m on[m
+[m
+[1mSYNOPSIS[0m[m
+       [1m#include[0m [1m<math.h>[0m[m
+[m
+       [1mdouble[0m [1mlog10(double[0m [4mx[24m[1m);[0m[m
+       [1mfloat[0m [1mlog10f(float[0m [4mx[24m[1m);[0m[m
+       [1mlong[0m [1mdouble[0m [1mlog10l(long[0m [1mdouble[0m [4mx[24m[1m);[0m[m
+[m
+       Link with [4m-lm[24m.[m
+[m
+   Feature   Test   Macro   Requirements   for  glibc  (se[m e  [1mfea‐[0m[m
+   [1mture_test_macros[0m(7)):[m
+[m
+       [1mlog10f[0m(), [1mlog10l[0m():[m
+           _ISOC99_SOURCE || _POSIX_C_SOURCE >= 200112L[m
+               || /* Since glibc 2.19: */ _DEFAULT_SOURCE[m
+               || /* Glibc versions <= 2.19: */ _BSD_SOURC[m E ||[m
+[7mual page log10(3) line 1 (press h for help or q to quit)[27m[K...skipping...
+LOG10(3)            Linux Programmer's Manual            L[m OG10(3)[m
+[m
+[1mNAME[0m[m
+       log10, log10f, log10l -  base-10 logarithmic functi[m on[m
+[m
+[1mSYNOPSIS[0m[m
+       [1m#include[0m [1m<math.h>[0m[m
+[m
+       [1mdouble[0m [1mlog10(double[0m [4mx[24m[1m);[0m[m
+       [1mfloat[0m [1mlog10f(float[0m [4mx[24m[1m);[0m[m
+       [1mlong[0m [1mdouble[0m [1mlog10l(long[0m [1mdouble[0m [4mx[24m[1m);[0m[m
+[m
+       Link with [4m-lm[24m.[m
+[m
+   Feature   Test   Macro   Requirements   for  glibc  (se[m e  [1mfea‐[0m[m
+   [1mture_test_macros[0m(7)):[m
+[m
+       [1mlog10f[0m(), [1mlog10l[0m():[m
+           _ISOC99_SOURCE || _POSIX_C_SOURCE >= 200112L[m
+               || /* Since glibc 2.19: */ _DEFAULT_SOURCE[m
+               || /* Glibc versions <= 2.19: */ _BSD_SOURC[m E ||[m
+           _SVID_SOURCE[m
+[7mual page log10(3) line 1 (press h for help or q to quit)[27m[K...skipping...
+LOG10(3)            Linux Programmer's Manual            L[m OG10(3)[m
+[m
+[1mNAME[0m[m
+       log10, log10f, log10l -  base-10 logarithmic functi[m on[m
+[m
+[1mSYNOPSIS[0m[m
+       [1m#include[0m [1m<math.h>[0m[m
+[m
+       [1mdouble[0m [1mlog10(double[0m [4mx[24m[1m);[0m[m
+       [1mfloat[0m [1mlog10f(float[0m [4mx[24m[1m);[0m[m
+       [1mlong[0m [1mdouble[0m [1mlog10l(long[0m [1mdouble[0m [4mx[24m[1m);[0m[m
+[m
+       Link with [4m-lm[24m.[m
+[m
+   Feature   Test   Macro   Requirements   for  glibc  (se[m e  [1mfea‐[0m[m
+   [1mture_test_macros[0m(7)):[m
+[m
+       [1mlog10f[0m(), [1mlog10l[0m():[m
+           _ISOC99_SOURCE || _POSIX_C_SOURCE >= 200112L[m
+               || /* Since glibc 2.19: */ _DEFAULT_SOURCE[m
+               || /* Glibc versions <= 2.19: */ _BSD_SOURC[m E ||[m
+           _SVID_SOURCE[m
+[m
+[7mual page log10(3) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0ttrecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ gedit *
+
+(gedit:6828): Gtk-[1;33mWARNING[0m **: [34m16:48:13.534[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ make
+cc   log10.o  -lm -o log10
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ echo 10 1000 2 | ./log10.
+bash: ./log10.: No such file or directory
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ echo 10 1000 2 | ./log10.[K
+log10(10) = 1
+log10(1000) = 3
+log10(2) = 0.30103
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ ls -l /usr/lib/x86_64-linux-gnu/libm.*
+-rw-r--r-- 1 root root 132 May  1 13:24 /usr/lib/x86_64-linux-gnu/libm.a
+-rw-r--r-- 1 root root 186 May  1 13:24 /usr/lib/x86_64-linux-gnu/libm.so
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ nm /usr/lib/x86_64/linux-gnu/LIBM_VERSION >libm.nm 2>/dev/null[C[1P[1@-[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P 2>/dev/null[1P2>/dev/null[1P>/dev/null[1P/dev/null[1Pdev/null[1Pev/null[1Pv/null[1P/null[1Pnull[1Pull[1Pll[C[K[K/libm-2.28.a > [Klibm.nm 2 [K>[1P[C[C[C[C[C[C[C[C[C[C[C/dev/null
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ ls
+libm.nm  log10	log10.c  log10.o  Makefile
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ gedit
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ gedit *
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ man nm
+[?1049h[22;0;0t[?1h=NM(1)             GNU Development Tools            NM(1)[m
+[m
+[1mNAME[0m[m
+       nm - list symbols from object files[m
+[m
+[1mSYNOPSIS[0m[m
+       nm [[1m-A[0m|[1m-o[0m|[1m--print-file-name[0m] [[1m-a[0m|[1m--debug-syms[0m][m
+          [[1m-B[0m|[1m--format=bsd[0m] [[1m-C[0m|[1m--demangle[0m[=[4mstyle[24m]][m
+          [[1m-D[0m|[1m--dynamic[0m] [[1m-f[0m[4mformat[24m|[1m--format=[0m[4mformat[24m][m
+          [[1m-g[0m|[1m--extern-only[0m] [[1m-h[0m|[1m--help[0m][m
+          [[1m-l[0m|[1m--line-numbers[0m] [[1m--inlines[0m][m
+          [[1m-n[0m|[1m-v[0m|[1m--numeric-sort[0m][m
+          [[1m-P[0m|[1m--portability[0m] [[1m-p[0m|[1m--no-sort[0m][m
+          [[1m-r[0m|[1m--reverse-sort[0m] [[1m-S[0m|[1m--print-size[0m][m
+          [[1m-s[0m|[1m--print-armap[0m] [[1m-t[0m [4mradix[24m|[1m--radix=[0m[4mradix[24m][m
+          [[1m-u[0m|[1m--undefined-only[0m] [[1m-V[0m|[1m--version[0m][m
+          [[1m-X[0m [1m32_64[0m] [[1m--defined-only[0m] [[1m--no-demangle[0m][m
+          [[1m--plugin[0m [4mname[24m] [[1m--size-sort[0m] [[1m--special-syms[0m][m
+          [[1m--synthetic[0m] [[1m--with-symbol-versions[0m][m
+       [[1m--target=[0m[4mbfdname[24m][m
+          [[4mobjfile[24m...][m
+[m
+[1mDESCRIPTION[0m[m
+       GNU [1mnm[0m lists the symbols from object files[m
+       [4mobjfile[24m....  If no object files are listed as[m
+       arguments, [1mnm[0m assumes the file [4ma.out[24m.[m
+[m
+[7mManual page nm(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0ttrecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ 
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ ls
+libm.nm  log10	log10.c  log10.o  Makefile
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ nm libm. o
+nm: 'libm.o': No such file
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ nm libm.o[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cman nm
+[?1049h[22;0;0t[?1h=NM(1)             GNU Development Tools            NM(1)[m
+[m
+[1mNAME[0m[m
+       nm - list symbols from object files[m
+[m
+[1mSYNOPSIS[0m[m
+       nm [[1m-A[0m|[1m-o[0m|[1m--print-file-name[0m] [[1m-a[0m|[1m--debug-syms[0m][m
+          [[1m-B[0m|[1m--format=bsd[0m] [[1m-C[0m|[1m--demangle[0m[=[4mstyle[24m]][m
+          [[1m-D[0m|[1m--dynamic[0m] [[1m-f[0m[4mformat[24m|[1m--format=[0m[4mformat[24m][m
+          [[1m-g[0m|[1m--extern-only[0m] [[1m-h[0m|[1m--help[0m][m
+          [[1m-l[0m|[1m--line-numbers[0m] [[1m--inlines[0m][m
+          [[1m-n[0m|[1m-v[0m|[1m--numeric-sort[0m][m
+          [[1m-P[0m|[1m--portability[0m] [[1m-p[0m|[1m--no-sort[0m][m
+          [[1m-r[0m|[1m--reverse-sort[0m] [[1m-S[0m|[1m--print-size[0m][m
+          [[1m-s[0m|[1m--print-armap[0m] [[1m-t[0m [4mradix[24m|[1m--radix=[0m[4mradix[24m][m
+          [[1m-u[0m|[1m--undefined-only[0m] [[1m-V[0m|[1m--version[0m][m
+          [[1m-X[0m [1m32_64[0m] [[1m--defined-only[0m] [[1m--no-demangle[0m][m
+          [[1m--plugin[0m [4mname[24m] [[1m--size-sort[0m] [[1m--special-syms[0m][m
+          [[1m--synthetic[0m] [[1m--with-symbol-versions[0m][m
+       [[1m--target=[0m[4mbfdname[24m][m
+          [[4mobjfile[24m...][m
+[m
+[1mDESCRIPTION[0m[m
+       GNU [1mnm[0m lists the symbols from object files[m
+       [4mobjfile[24m....  If no object files are listed as[m
+       arguments, [1mnm[0m assumes the file [4ma.out[24m.[m
+[m
+[7mManual page nm(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0ttrecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ nm --def ines-lonly[K[K[K[K[Konly
+nm: unrecognized option '--defines-only'
+Usage: nm [option(s)] [file(s)]
+ List symbols in [file(s)] (a.out by default).
+ The options are:
+  -a, --debug-syms       Display debugger-only symbols
+  -A, --print-file-name  Print name of the input file before every symbol
+  -B                     Same as --format=bsd
+  -C, --demangle[=STYLE] Decode low-level symbol names into user-level names
+                          The STYLE, if specified, can be `auto' (the default),
+                          `gnu', `lucid', `arm', `hp', `edg', `gnu-v3', `java'
+                          or `gnat'
+      --no-demangle      Do not demangle low-level symbol names
+  -D, --dynamic          Display dynamic symbols instead of normal symbols
+      --defined-only     Display only defined symbols
+  -e                     (ignored)
+  -f, --format=FORMAT    Use the output format FORMAT.  FORMAT can be `bsd',
+                           `sysv' or `posix'.  The default is `bsd'
+  -g, --extern-only      Display only external symbols
+  -l, --line-numbers     Use debugging information to find a filename and
+                           line number for each symbol
+  -n, --numeric-sort     Sort symbols numerically by address
+  -o                     Same as -A
+  -p, --no-sort          Do not sort the symbols
+  -P, --portability      Same as --format=posix
+  -r, --reverse-sort     Reverse the sense of the sort
+      --plugin NAME      Load the specified plugin
+  -S, --print-size       Print size of defined symbols
+  -s, --print-armap      Include index for symbols from archive members
+      --size-sort        Sort symbols by size
+      --special-syms     Include special symbols in the output
+      --synthetic        Display synthetic symbols as well
+  -t, --radix=RADIX      Use RADIX for printing symbol values
+      --target=BFDNAME   Specify the target object format as BFDNAME
+  -u, --undefined-only   Display only undefined symbols
+      --with-symbol-versions  Display version strings after symbol names
+  -X 32_64               (ignored)
+  @FILE                  Read options from FILE
+  -h, --help             Display this information
+  -V, --version          Display this program's version number
+
+nm: supported targets: elf64-x86-64 elf32-i386 elf32-iamcu elf32-x86-64 pei-i386 pei-x86-64 elf64-l1om elf64-k1om elf64-little elf64-big elf32-little elf32-big pe-x86-64 pe-bigobj-x86-64 pe-i386 plugin srec symbolsrec verilog tekhex binary ihex
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ nm --defines-only[K[K[K[K[K[K[K[K[K[K[K[K[KD
+nm: 'a.out': No such file
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ nm lof[Kg.10[K[K[K10 -D
+                 w __cxa_finalize
+                 w __gmon_start__
+                 U __isoc99_scanf
+                 w _ITM_deregisterTMCloneTable
+                 w _ITM_registerTMCloneTable
+                 U __libc_start_main
+                 U log10
+                 U printf
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ vim libm.nm 
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;28r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[28;1H"libm.nm" 12290L, 307057C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[2;1Hs_lib_version.o:
+
+s_matherr.o:
+
+s_signgam.o:
+0000000000000000 B __signgam
+0000000000000000 V signgam
+
+fclrexcpt.o:
+0000000000000000 T feclearexcept[12;18HU _GLOBAL_OFFSET_TABLE_[13;18HU __stack_chk_fail
+
+fgetexcptflg.o:
+0000000000000000 T fegetexceptflag[17;18HU _GLOBAL_OFFSET_TABLE_[18;18HU __stack_chk_fail
+
+fraiseexcpt.o:
+0000000000000000 T __feraiseexcept
+0000000000000000 W feraiseexcept[23;18HU _GLOBAL_OFFSET_TABLE_
+0000000000000000 r .LC1[25;18HU __stack_chk_fail
+
+fsetexcptflg.o:[28;41H1,0-1[9CTop]2;libm.nm (~/git-repos/i220b/work/lab7/log10) - VIM]1;libm.nm[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?1000l[?1006h[?1002h[?1006l[?1002l[?1006h[?1002h[27m[23m[29m[m[H[2J[?25l[2;1Hs_lib_version.o:
+
+s_matherr.o:
+
+s_signgam.o:
+0000000000000000 B __signgam
+0000000000000000 V signgam
+
+fclrexcpt.o:
+0000000000000000 T feclearexcept[12;18HU _GLOBAL_OFFSET_TABLE_[13;18HU __stack_chk_fail
+
+fgetexcptflg.o:
+0000000000000000 T fegetexceptflag[17;18HU _GLOBAL_OFFSET_TABLE_[18;18HU __stack_chk_fail
+
+fraiseexcpt.o:
+0000000000000000 T __feraiseexcept
+0000000000000000 W feraiseexcept[23;18HU _GLOBAL_OFFSET_TABLE_
+0000000000000000 r .LC1[25;18HU __stack_chk_fail
+
+fsetexcptflg.o:[28;41H1,0-1[9CTop"libm.nm" 12290L, 307057C[1;1H[?25h[?25l[28;31H/[1;1H[28;1H[K[28;1H/[?2004h[?25hw[?25l[27m[23m[29m[m[H[2J[1;18HU __stack_chk_fail
+
+fetestexceptflag.o:
+0000000000000000 T fetestexceptflag
+
+fegetmode.o:
+0000000000000000 T fegetmode
+
+fesetmode.o:
+0000000000000000 T fesetmode[11;18HU _GLOBAL_OFFSET_TABLE_[12;18HU __stack_chk_fail
+
+po[7mw[ml_helper.o:[15;18HU __frexpl[16;18HU _GLOBAL_OFFSET_TABLE_[17;18HU __ieee754_expl[18;18HU __ieee754_logl
+0000000000000000 r .LC1
+0000000000000010 r .LC10
+0000000000000018 r .LC11
+0000000000000000 r .LC12
+0000000000000020 r .LC13
+000000000000001c r .LC14
+0000000000000030 r .LC15
+0000000000000004 r .LC2
+0000000000000000 r .LC3[28;41H108,3[10C0%/w[28;41H[K[28;3H[?25h[?25l[27m[23m[29m[m[H[2J[2;1Hs_lib_version.o:
+
+s_matherr.o:
+
+s_signgam.o:
+0000000000000000 B __signgam
+0000000000000000 V signgam
+
+fclrexcpt.o:
+0000000000000000 T feclearexcept[12;18HU _GLOBAL_OFFSET_TABLE_[13;18HU __stack_chk_fail
+
+fgetexcptflg.o:
+0000000000000000 T fegetexceptflag[17;18HU _GLOBAL_OFFSET_TABLE_[18;18HU __stack_chk_fail
+
+fraiseexcpt.o:
+0000000000000000 T __feraiseexcept
+0000000000000000 W feraiseexcept[23;18HU _GLOBAL_OFFSET_TABLE_
+0000000000000000 r .LC1[25;18HU __stack_chk_fail
+
+fsetexcptflg.o:[28;41H1,0-1[9CTop/w[28;41H[K[28;4H[?25h[?25l[27m[23m[29m[m[H[2J[1;18HU __stack_chk_fail
+
+fetestexceptflag.o:
+0000000000000000 T fetestexceptflag
+
+fegetmode.o:
+0000000000000000 T fegetmode
+
+fesetmode.o:
+0000000000000000 T fesetmode[11;18HU _GLOBAL_OFFSET_TABLE_[12;18HU __stack_chk_fail
+
+po[7mw[ml_helper.o:[15;18HU __frexpl[16;18HU _GLOBAL_OFFSET_TABLE_[17;18HU __ieee754_expl[18;18HU __ieee754_logl
+0000000000000000 r .LC1
+0000000000000010 r .LC10
+0000000000000018 r .LC11
+0000000000000000 r .LC12
+0000000000000020 r .LC13
+000000000000001c r .LC14
+0000000000000030 r .LC15
+0000000000000004 r .LC2
+0000000000000000 r .LC3[28;41H108,3[10C0%/w[28;41H[K[28;3H[?25h[?25l[28;2H[K[27m[23m[29m[m[H[2J[2;1Hs_lib_version.o:
+
+s_matherr.o:
+
+s_signgam.o:
+0000000000000000 B __signgam
+0000000000000000 V signgam
+
+fclrexcpt.o:
+0000000000000000 T feclearexcept[12;18HU _GLOBAL_OFFSET_TABLE_[13;18HU __stack_chk_fail
+
+fgetexcptflg.o:
+0000000000000000 T fegetexceptflag[17;18HU _GLOBAL_OFFSET_TABLE_[18;18HU __stack_chk_fail
+
+fraiseexcpt.o:
+0000000000000000 T __feraiseexcept
+0000000000000000 W feraiseexcept[23;18HU _GLOBAL_OFFSET_TABLE_
+0000000000000000 r .LC1[25;18HU __stack_chk_fail
+
+fsetexcptflg.o:[28;41H1,0-1[9CTop/[28;41H[K[28;2H[?25hl[?25l[2;3H[7ml[m[28;41H2,3[11CTop[28;41H[K[28;3H[?25ho[?25l[27m[23m[29m[m[H[2J[2;1Hfegetmode.o:
+0000000000000000 T fegetmode
+
+fesetmode.o:
+0000000000000000 T fesetmode[7;18HU _GLOBAL_OFFSET_TABLE_[8;18HU __stack_chk_fail
+
+powl_helper.o:[11;18HU __frexpl[12;18HU _GLOBAL_OFFSET_TABLE_[13;18HU __ieee754_expl[14;18HU __ieee754_[7mlo[mgl
+0000000000000000 r .LC1
+0000000000000010 r .LC10
+0000000000000018 r .LC11
+0000000000000000 r .LC12
+0000000000000020 r .LC13
+000000000000001c r .LC14
+0000000000000030 r .LC15
+0000000000000004 r .LC2
+0000000000000000 r .LC3
+0000000000000008 r .LC4
+000000000000000c r .LC5
+0000000000000010 r .LC6
+0000000000000014 r .LC9[28;41H112,30[9C0%/lo[28;41H[K[28;4H[?25hg[?25l[14;32H[7mg[m[28;41H112,30[9C0%[28;41H[K[28;5H[?25h1[?25l[27m[23m[29m[m[H[2J[2;1Hw_fmodl_compat.o:
+
+w_hypotl_compat.o:
+
+w_j0l_compat.o:
+
+w_j1l_compat.o:
+
+w_jnl_compat.o:
+
+w_log2l_compat.o:
+
+w_[7mlog1[m0l_compat.o:
+
+w_logl_compat.o:
+
+w_powl_compat.o:
+
+w_remainderl_compat.o:
+
+w_scalbl_compat.o:[23;18HU errno[24;18HU _GLOBAL_OFFSET_TABLE_[25;18HU __ieee754_scalbl
+0000000000000000 r .LC0
+0000000000000000 T __scalbl[28;41H159,3[10C1%/log1[28;41H[K[28;6H[?25h0[?25l[14;7H[7m0[m[28;41H159,3[10C1%[28;41H[K[28;7H[?25h[?25l[14;3Hlog10[28;41H159,3[10C1%[14;3H[?25h[?25l[28;31Hn[14;3H[28;31H[K[28;1H[14;3H[27m[23m[29m[m[H[2J[2;1Hw_fmod_compat.o:
+
+w_hypot_compat.o:
+
+w_j0_compat.o:
+
+w_j1_compat.o:
+
+w_jn_compat.o:
+
+w_log2_compat.o:
+
+w_log10_compat.o:
+
+w_log_compat.o:
+
+w_pow_compat.o:
+
+w_remainder_compat.o:
+
+w_scalb_compat.o:[23;18HU errno[24;18HU _GLOBAL_OFFSET_TABLE_[25;18HU __ieee754_scalb
+0000000000000000 r .LC0
+0000000000000000 r .LC1[28;41H219,3[10C1%[14;3H[?25h[?25l[28;31Hn[14;3H[28;1H/log10[28;31H[K[28;1H[14;3H[27m[23m[29m[m[H[2J[2;1Hw_fmodf_compat.o:
+
+w_hypotf_compat.o:
+
+w_j0f_compat.o:
+
+w_j1f_compat.o:
+
+w_jnf_compat.o:
+
+w_log2f_compat.o:
+
+w_log10f_compat.o:
+
+w_logf_compat.o:
+
+w_powf_compat.o:
+
+w_remainderf_compat.o:
+
+w_scalbf_compat.o:[23;18HU errno[24;18HU _GLOBAL_OFFSET_TABLE_[25;18HU __ieee754_scalbf
+0000000000000000 r .LC0
+0000000000000000 r .LC1[28;41H281,3[10C2%[14;3H[?25h[?25l[28;31Hn[14;3H[28;1H/log10[28;31H[K[28;1H[14;3H[27m[23m[29m[m[H[2J[1;1H000000000000002c r .LC77
+0000000000000014 r .LC8
+0000000000000018 r .LC9
+0000000000000000 T __lgammal_r_finite[5;18HU __lgamma_negl[6;18HU __sinl
+
+e_logl.o:
+0000000000000000 T __ieee754_logl
+0000000000000008 r limit
+0000000000000060 T __logl_finite
+0000000000000000 r one
+
+e_log10l.o:
+0000000000000000 T __ieee754_log10l
+0000000000000008 r limit
+0000000000000050 T __log10l_finite
+0000000000000000 r one
+
+e_powl.o:
+0000000000000000 T __ieee754_powl
+0000000000000000 r infinity
+0000000000000000 r inf_zero
+0000000000000020 r ldbl_min
+0000000000000010 r minfinity
+0000000000000010 r minf_mzero
+0000000000000018 r mzero[28;41H807,3[10C6%[14;3H[?25h[?25l[28;31Hn[14;3H[28;1H/log10[28;31H[K[28;1H[15;30H[28;41H808,30[9C6%[15;30H[?25h[?25l[28;31Hn[15;30H[28;31H[K[28;1H[17;22H[28;41H810,22[9C6%[17;22H[?25h[?25l[28;31Hn[17;22H[28;31H[K[28;1H[14;4H[27m[23m[29m[m[H[2J[1;1H000000000000000c r .LC8
+0000000000000030 r .LC9[3;18HU __scalbnl
+
+s_cpowl.o:[6;18HU __cexpl[7;18HU __clogl
+0000000000000000 W cpowf64x
+0000000000000000 T __cpowl
+0000000000000000 W cpowl[11;18HU _GLOBAL_OFFSET_TABLE_[12;18HU __mulxc3
+
+s_clog10l.o:
+0000000000000000 W clog10f64x
+0000000000000000 T __clog10l
+0000000000000000 W clog10l[18;18HU _GLOBAL_OFFSET_TABLE_[19;18HU __ieee754_atan2l[20;18HU __ieee754_hypotl[21;18HU __ieee754_log10l
+0000000000000000 r .LC0
+0000000000000050 r .LC10
+0000000000000008 r .LC11
+000000000000000c r .LC12
+0000000000000010 r .LC13
+0000000000000014 r .LC14[28;41H1778,4[8C14%[14;4H[?25h[?25l[28;31Hn[14;4H[28;1H/log10[28;31H[K[28;1H[15;21H[28;41H1779,21[7C14%[15;21H[?25h[?25l[28;31Hn[15;21H[28;31H[K[28;1H[16;23H[28;41H1780,23[7C14%[16;23H[?25h[?25l[28;31Hn[16;23H[28;31H[K[28;1H[17;21H[28;41H1781,21[7C14%[17;21H[?25h[?25l[28;31Hn[17;21H[28;31H[K[28;1H[21;30H[28;41H1785,30[7C14%[21;30H[?25h[?25l[28;31Hn[21;30H[28;31H[K[28;1H[14;3H[27m[23m[29m[m[H[2J[1;1H0000000000000000 W jnl
+0000000000000010 W ynf64x
+0000000000000010 T __ynl
+0000000000000010 W ynl
+
+w_logl.o:[7;18HU errno[8;18HU _GLOBAL_OFFSET_TABLE_[9;18HU __ieee754_logl
+0000000000000000 W logf64x
+0000000000000000 T __logl
+0000000000000000 W logl
+
+w_log10l.o:[15;18HU errno[16;18HU _GLOBAL_OFFSET_TABLE_[17;18HU __ieee754_log10l
+0000000000000000 W log10f64x
+0000000000000000 T __log10l
+0000000000000000 W log10l
+
+w_log2l.o:[23;18HU errno[24;18HU _GLOBAL_OFFSET_TABLE_[25;18HU __ieee754_log2l
+0000000000000000 W log2f64x
+0000000000000000 T __log2l[28;41H2027,3[8C16%[14;3H[?25h[?25l[28;31Hn[14;3H[28;1H/log10[28;31H[K[28;1H[17;30H[28;41H2030,30[7C16%[17;30H[?25h[?25l[28;31Hn[17;30H[28;31H[K[28;1H[18;20H[28;41H2031,20[7C16%[18;20H[?25h[?25l[28;31Hn[18;20H[28;31H[K[28;1H[19;22H[28;41H2032,22[7C16%[19;22H[?25h[?25l[28;31Hn[19;22H[28;31H[K[28;1H[20;20H[28;41H2033,20[7C16%[20;20H[?25h[?25l[28;31Hn[20;20H[28;31H[K[28;1H[14;3H[27m[23m[29m[m[H[2J[1;1H0000000000000000 r .LC3
+0000000000000018 r .LC4
+0000000000000020 r .LC5
+0000000000002220 r ln2a.11396
+0000000000000000 r ln2b.11397
+0000000000000430 i __log_finite
+00000000000016c0 r Lu.11378
+0000000000000020 r Lv.11379
+00000000000033c0 r sqrt_2.11391[10;18HU __stack_chk_fail
+00000000000033d0 r two54.11398
+00000000000033c8 r u03.11399
+
+e_log10.o:[15;18HU _GLOBAL_OFFSET_TABLE_[16;18HU __ieee754_log
+0000000000000000 T __ieee754_log10
+0000000000000000 r .LC0
+0000000000000000 r .LC1
+0000000000000008 r .LC2
+0000000000000010 r .LC3
+0000000000000018 r .LC4
+0000000000000020 r .LC5
+0000000000000000 T __log10_finite
+
+e_pow.o:
+0000000000009eb8 r bigu[28;41H2800,3[8C22%[14;3H[?25h[?25l[28;31Hn[14;3H[28;1H/log10[28;31H[K[28;1H[17;30H[28;41H2803,30[7C22%[17;30H[?25h[?25l[28;31Hn[17;30H[28;31H[K[28;1H[22;22H[1;27r[1;1H[2M[1;28r[26;1H0000000000009eb0 r bigv
+0000000000000000 t checkint[28;1H[K[28;41H2810,22[7C22%[22;22H[?25h[?25l[28;31Hn[22;22H[28;1H/log10[28;31H[K[28;1H[14;4H[27m[23m[29m[m[H[2J[1;1H0000000000000028 r .LC9[2;18HU __scalbn
+
+s_cpow.o:[5;18HU __cexp[6;18HU __clog
+0000000000000000 T __cpow
+0000000000000000 W cpow
+0000000000000000 W cpowf32x
+0000000000000000 W cpowf64[11;18HU _GLOBAL_OFFSET_TABLE_[12;18HU __muldc3
+
+s_clog10.o:
+0000000000000000 T __clog10
+0000000000000000 W clog10
+0000000000000000 W clog10f32x
+0000000000000000 W clog10f64[19;18HU _GLOBAL_OFFSET_TABLE_[20;18HU __ieee754_atan2[21;18HU __ieee754_hypot[22;18HU __ieee754_log10
+0000000000000000 r .LC0
+0000000000000038 r .LC10
+0000000000000040 r .LC11
+0000000000000048 r .LC12
+0000000000000050 r .LC13[28;41H4231,4[8C34%[14;4H[?25h[?25l[28;31Hn[14;4H[28;1H/log10[28;31H[K[28;1H[15;23H[28;41H4232,23[7C34%[15;23H[?25h[?25l[28;31H/[15;23H[28;1H[K[28;1H/[?2004h[?25hl[?25l[16;21H[7ml[m[28;41H4233,21[7C34%[28;41H[K[28;3H[?25ho[?25l[16;22H[7mo[m[28;41H4233,21[7C34%[28;41H[K[28;4H[?25hg[?25l[16;23H[7mg[m[28;41H4233,21[7C34%[28;41H[K[28;5H[?25h1[?25l[16;24H[7m1[m[28;41H4233,21[7C34%[28;41H[K[28;6H[?25h0[?25l[16;25H[7m0[m[28;41H4233,21[7C34%[28;41H[K[28;7H[?25h.[?25l[16;21Hlog10[17;21H[7mlog10f[m[28;41H4234,21[7C34%[28;41H[K[28;8H[?25ho[?25l[27m[23m[29m[m[H[2J[1;1H0000000000000010 W yn
+0000000000000010 W ynf32x
+0000000000000010 W ynf64
+
+w_log.o:[6;18HU errno[7;18HU _GLOBAL_OFFSET_TABLE_[8;18HU __ieee754_log
+0000000000000000 T __log
+0000000000000000 W log
+0000000000000000 W logf32x
+0000000000000000 W logf64
+
+w_[7mlog10.o[m:[15;18HU errno[16;18HU _GLOBAL_OFFSET_TABLE_[17;18HU __ieee754_log10
+0000000000000000 T __log10
+0000000000000000 W log10
+0000000000000000 W log10f32x
+0000000000000000 W log10f64
+
+w_log2.o:[24;18HU errno[25;18HU _GLOBAL_OFFSET_TABLE_[26;18HU __ieee754_log2
+0000000000000000 T __log2[28;41H4542,3[8C36%/log10.o[28;41H[K[28;9H[?25h[?25l[28;1H[K[15;23H[27m[23m[29m[m[H[2J[1;1H0000000000000028 r .LC9[2;18HU __scalbn
+
+s_cpow.o:[5;18HU __cexp[6;18HU __clog
+0000000000000000 T __cpow
+0000000000000000 W cpow
+0000000000000000 W cpowf32x
+0000000000000000 W cpowf64[11;18HU _GLOBAL_OFFSET_TABLE_[12;18HU __muldc3
+
+s_clog10.o:
+0000000000000000 T __clog10
+0000000000000000 W clog10
+0000000000000000 W clog10f32x
+0000000000000000 W clog10f64[19;18HU _GLOBAL_OFFSET_TABLE_[20;18HU __ieee754_atan2[21;18HU __ieee754_hypot[22;18HU __ieee754_log10
+0000000000000000 r .LC0
+0000000000000038 r .LC10
+0000000000000040 r .LC11
+0000000000000048 r .LC12
+0000000000000050 r .LC13[28;41H4232,23[7C34%[15;23H[?25h[?25l[28;1HType  :qa!  a... and exit Vim[28;41H[K[28;41H4232,23[7C34%[15;23H[?25h[?25l[28;31HZ[15;23H[?25h[?25l[28;32HZ[15;23H[28;1H[?1006l[?1002l[?2004l]2;Terminal - ]1;Terminal - [23;2t[23;1t[22;2t[22;1t[23;2t[23;1t[28;1H[K[28;1H[?2004l[?1l>[?25h[?1049l[23;0;0ttrecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ vim libm.nm [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnm log10 [1P-D[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3P-D
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-defines-only[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Pman nm
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[?1h=NM(1)             GNU Development Tools            NM(1)[m
+[m
+[1mNAME[0m[m
+       nm - list symbols from object files[m
+[m
+[1mSYNOPSIS[0m[m
+       nm [[1m-A[0m|[1m-o[0m|[1m--print-file-name[0m] [[1m-a[0m|[1m--debug-syms[0m][m
+          [[1m-B[0m|[1m--format=bsd[0m] [[1m-C[0m|[1m--demangle[0m[=[4mstyle[24m]][m
+          [[1m-D[0m|[1m--dynamic[0m] [[1m-f[0m[4mformat[24m|[1m--format=[0m[4mformat[24m][m
+          [[1m-g[0m|[1m--extern-only[0m] [[1m-h[0m|[1m--help[0m][m
+          [[1m-l[0m|[1m--line-numbers[0m] [[1m--inlines[0m][m
+          [[1m-n[0m|[1m-v[0m|[1m--numeric-sort[0m][m
+          [[1m-P[0m|[1m--portability[0m] [[1m-p[0m|[1m--no-sort[0m][m
+          [[1m-r[0m|[1m--reverse-sort[0m] [[1m-S[0m|[1m--print-size[0m][m
+          [[1m-s[0m|[1m--print-armap[0m] [[1m-t[0m [4mradix[24m|[1m--radix=[0m[4mradix[24m][m
+          [[1m-u[0m|[1m--undefined-only[0m] [[1m-V[0m|[1m--version[0m][m
+          [[1m-X[0m [1m32_64[0m] [[1m--defined-only[0m] [[1m--no-demangle[0m][m
+          [[1m--plugin[0m [4mname[24m] [[1m--size-sort[0m] [[1m--special-syms[0m][m
+          [[1m--synthetic[0m] [[1m--with-symbol-versions[0m][m
+       [[1m--target=[0m[4mbfdname[24m][m
+          [[4mobjfile[24m...][m
+[m
+[1mDESCRIPTION[0m[m
+       GNU [1mnm[0m lists the symbols from object files[m
+       [4mobjfile[24m....  If no object files are listed as[m
+       arguments, [1mnm[0m assumes the file [4ma.out[24m.[m
+[m
+[7mManual page nm(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       For each symbol, [1mnm[0m shows:[m
+[7mManual page nm(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7mManual page nm(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       •   The symbol value, in the radix selected by[m
+[7mManual page nm(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           options (see below), or hexadecimal by[m
+[7mManual page nm(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           default.[m
+[7mManual page nm(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7mManual page nm(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       •   The symbol type.  At least the following[m
+[7mManual page nm(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           types are used; others are, as well,[m
+[7mManual page nm(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           depending on the object file format.  If[m
+[7manual page nm(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           lowercase, the symbol is usually local; if[m
+[7manual page nm(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           uppercase, the symbol is global (external).[m
+[7manual page nm(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           There are however a few lowercase symbols[m
+[7manual page nm(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           that are shown for special global symbols[m
+[7manual page nm(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           ("u", "v" and "w").[m
+[7manual page nm(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7manual page nm(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           "A" The symbol's value is absolute, and will[m
+[7manual page nm(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               not be changed by further linking.[m
+[7manual page nm(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM          [[1m-X[0m [1m32_64[0m] [[1m--defined-only[0m] [[1m--no-demangle[0m][m
+[28;1H[K[7manual page nm(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM          [[1m-u[0m|[1m--undefined-only[0m] [[1m-V[0m|[1m--version[0m][m
+[28;1H[K[7manual page nm(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM          [[1m-s[0m|[1m--print-armap[0m] [[1m-t[0m [4mradix[24m|[1m--radix=[0m[4mradix[24m][m
+[28;1H[K[7manual page nm(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM          [[1m-r[0m|[1m--reverse-sort[0m] [[1m-S[0m|[1m--print-size[0m][m
+[28;1H[K[7manual page nm(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM          [[1m-P[0m|[1m--portability[0m] [[1m-p[0m|[1m--no-sort[0m][m
+[28;1H[K[7manual page nm(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM          [[1m-n[0m|[1m-v[0m|[1m--numeric-sort[0m][m
+[28;1H[K[7manual page nm(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM          [[1m-l[0m|[1m--line-numbers[0m] [[1m--inlines[0m][m
+[28;1H[K[7manual page nm(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM          [[1m-g[0m|[1m--extern-only[0m] [[1m-h[0m|[1m--help[0m][m
+[28;1H[K[7manual page nm(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM          [[1m-D[0m|[1m--dynamic[0m] [[1m-f[0m[4mformat[24m|[1m--format=[0m[4mformat[24m][m
+[28;1H[K[7mManual page nm(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM          [[1m-B[0m|[1m--format=bsd[0m] [[1m-C[0m|[1m--demangle[0m[=[4mstyle[24m]][m
+[28;1H[K[7mManual page nm(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       nm [[1m-A[0m|[1m-o[0m|[1m--print-file-name[0m] [[1m-a[0m|[1m--debug-syms[0m][m
+[28;1H[K[7mManual page nm(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mSYNOPSIS[0m[m
+[28;1H[K[7mManual page nm(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[28;1H[K[7mManual page nm(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       nm - list symbols from object files[m
+[28;1H[K[7mManual page nm(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mNAME[0m[m
+[28;1H[K[7mManual page nm(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[28;1H[K[7mManual page nm(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HMNM(1)             GNU Development Tools            NM(1)[m
+[28;1H[K[7mManual page nm(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7mManual page nm(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       For each symbol, [1mnm[0m shows:[m
+[7mManual page nm(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7mManual page nm(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       •   The symbol value, in the radix selected by[m
+[7mManual page nm(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           options (see below), or hexadecimal by[m
+[7mManual page nm(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           default.[m
+[7mManual page nm(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7mManual page nm(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       •   The symbol type.  At least the following[m
+[7mManual page nm(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           types are used; others are, as well,[m
+[7mManual page nm(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           depending on the object file format.  If[m
+[7manual page nm(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           lowercase, the symbol is usually local; if[m
+[7manual page nm(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           uppercase, the symbol is global (external).[m
+[7manual page nm(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           There are however a few lowercase symbols[m
+[7manual page nm(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           that are shown for special global symbols[m
+[7manual page nm(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           ("u", "v" and "w").[m
+[7manual page nm(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7manual page nm(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           "A" The symbol's value is absolute, and will[m
+[7manual page nm(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               not be changed by further linking.[m
+[7manual page nm(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7manual page nm(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           "B"[m
+[7manual page nm(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           "b" The symbol is in the BSS data section.[m
+[7manual page nm(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               This section typically contains zero-[m
+[7manual page nm(1) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               initialized or uninitialized data,[m
+[7manual page nm(1) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               although the exact behavior is system[m
+[7manual page nm(1) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               dependent.[m
+[7manual page nm(1) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7manual page nm(1) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           "C" The symbol is common.  Common symbols are[m
+[7manual page nm(1) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               uninitialized data.  When linking,[m
+[7manual page nm(1) line 28 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               multiple common symbols may appear with[m
+[7manual page nm(1) line 29 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               the same name.  If the symbol is defined[m
+[7manual page nm(1) line 30 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               anywhere, the common symbols are treated[m
+[7manual page nm(1) line 31 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               as undefined references.[m
+[7manual page nm(1) line 32 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7manual page nm(1) line 33 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           "D"[m
+[7manual page nm(1) line 34 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           "d" The symbol is in the initialized data[m
+[7manual page nm(1) line 35 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               section.[m
+[7manual page nm(1) line 36 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7manual page nm(1) line 37 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           "G"[m
+[7manual page nm(1) line 38 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           "g" The symbol is in an initialized data[m
+[7manual page nm(1) line 39 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               section for small objects.  Some object[m
+[7manual page nm(1) line 40 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               file formats permit more efficient access[m
+[7manual page nm(1) line 41 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               to small data objects, such as a global[m
+[7manual page nm(1) line 42 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               int variable as opposed to a large global[m
+[7manual page nm(1) line 43 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               array.[m
+[7manual page nm(1) line 44 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7manual page nm(1) line 45 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           "i" For PE format files this indicates that[m
+[7manual page nm(1) line 46 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               the symbol is in a section specific to[m
+[7manual page nm(1) line 47 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               the implementation of DLLs.  For ELF[m
+[7manual page nm(1) line 48 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               format files this indicates that the[m
+[7manual page nm(1) line 49 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               symbol is an indirect function.  This is[m
+[7manual page nm(1) line 50 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               a GNU extension to the standard set of[m
+[7manual page nm(1) line 51 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               ELF symbol types.  It indicates a symbol[m
+[7manual page nm(1) line 52 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               which if referenced by a relocation does[m
+[7manual page nm(1) line 53 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               not evaluate to its address, but instead[m
+[7manual page nm(1) line 54 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               must be invoked at runtime.  The runtime[m
+[7manual page nm(1) line 55 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               execution will then return the value to[m
+[7manual page nm(1) line 56 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               be used in the relocation.[m
+[7manual page nm(1) line 57 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7manual page nm(1) line 58 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           "I" The symbol is an indirect reference to[m
+[7manual page nm(1) line 59 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               another symbol.[m
+[7manual page nm(1) line 60 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7manual page nm(1) line 61 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           "N" The symbol is a debugging symbol.[m
+[7manual page nm(1) line 62 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7manual page nm(1) line 63 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           "p" The symbols is in a stack unwind section.[m
+[7manual page nm(1) line 64 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7manual page nm(1) line 65 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           "R"[m
+[7manual page nm(1) line 66 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           "r" The symbol is in a read only data[m
+[7manual page nm(1) line 67 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               section.[m
+[7manual page nm(1) line 68 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7manual page nm(1) line 69 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           "S"[m
+[7manual page nm(1) line 70 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           "s" The symbol is in an uninitialized or[m
+[7manual page nm(1) line 71 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               zero-initialized data section for small[m
+[7manual page nm(1) line 72 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               objects.[m
+[7manual page nm(1) line 73 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7manual page nm(1) line 74 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           "T"[m
+[7manual page nm(1) line 75 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           "t" The symbol is in the text (code) section.[m
+[7manual page nm(1) line 76 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7manual page nm(1) line 77 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           "U" The symbol is undefined.[m
+[7manual page nm(1) line 78 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7manual page nm(1) line 79 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           "u" The symbol is a unique global symbol.[m
+[7manual page nm(1) line 80 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               This is a GNU extension to the standard[m
+[7manual page nm(1) line 81 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               set of ELF symbol bindings.  For such a[m
+[7manual page nm(1) line 82 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               symbol the dynamic linker will make sure[m
+[7manual page nm(1) line 83 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               that in the entire process there is just[m
+[7manual page nm(1) line 84 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               one symbol with this name and type in[m
+[7manual page nm(1) line 85 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[28;1H[K[7manual page nm(1) line 84 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM               be used in the relocation.[m
+[28;1H[K[7manual page nm(1) line 83 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM               execution will then return the value to[m
+[28;1H[K[7manual page nm(1) line 82 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM               must be invoked at runtime.  The runtime[m
+[28;1H[K[7manual page nm(1) line 81 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM               not evaluate to its address, but instead[m
+[28;1H[K[7manual page nm(1) line 80 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM               which if referenced by a relocation does[m
+[28;1H[K[7manual page nm(1) line 79 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM               ELF symbol types.  It indicates a symbol[m
+[28;1H[K[7manual page nm(1) line 78 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM               a GNU extension to the standard set of[m
+[28;1H[K[7manual page nm(1) line 77 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM               symbol is an indirect function.  This is[m
+[28;1H[K[7manual page nm(1) line 76 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM               format files this indicates that the[m
+[28;1H[K[7manual page nm(1) line 75 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM               the implementation of DLLs.  For ELF[m
+[28;1H[K[7manual page nm(1) line 74 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM               the symbol is in a section specific to[m
+[28;1H[K[7manual page nm(1) line 73 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           "i" For PE format files this indicates that[m
+[28;1H[K[7manual page nm(1) line 72 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[28;1H[K[7manual page nm(1) line 71 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM               array.[m
+[28;1H[K[7manual page nm(1) line 70 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM               int variable as opposed to a large global[m
+[28;1H[K[7manual page nm(1) line 69 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM               to small data objects, such as a global[m
+[28;1H[K[7manual page nm(1) line 68 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM               file formats permit more efficient access[m
+[28;1H[K[7manual page nm(1) line 67 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM               section for small objects.  Some object[m
+[28;1H[K[7manual page nm(1) line 66 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           "g" The symbol is in an initialized data[m
+[28;1H[K[7manual page nm(1) line 65 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           "G"[m
+[28;1H[K[7manual page nm(1) line 64 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[28;1H[K[7manual page nm(1) line 63 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM               section.[m
+[28;1H[K[7manual page nm(1) line 62 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           "d" The symbol is in the initialized data[m
+[28;1H[K[7manual page nm(1) line 61 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           "D"[m
+[28;1H[K[7manual page nm(1) line 60 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[28;1H[K[7manual page nm(1) line 59 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM               as undefined references.[m
+[28;1H[K[7manual page nm(1) line 58 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM               anywhere, the common symbols are treated[m
+[28;1H[K[7manual page nm(1) line 57 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM               the same name.  If the symbol is defined[m
+[28;1H[K[7manual page nm(1) line 56 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM               multiple common symbols may appear with[m
+[28;1H[K[7manual page nm(1) line 55 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM               uninitialized data.  When linking,[m
+[28;1H[K[7manual page nm(1) line 54 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           "C" The symbol is common.  Common symbols are[m
+[28;1H[K[7manual page nm(1) line 53 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[28;1H[K[7manual page nm(1) line 52 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM               dependent.[m
+[28;1H[K[7manual page nm(1) line 51 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM               although the exact behavior is system[m
+[28;1H[K[7manual page nm(1) line 50 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM               initialized or uninitialized data,[m
+[28;1H[K[7manual page nm(1) line 49 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0ttrecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ gedit *
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/log10$ cd ..
+trecupe1@g7-04:~/git-repos/i220b/work/lab7$ ls
+lab7.log	 libgeom  log10		 multiple-symbols
+lab7_output.txt  libvec   multiple-defs  static-dynamic
+trecupe1@g7-04:~/git-repos/i220b/work/lab7$ e[Kgedit lab7_output.txt 
+
+(gedit:9772): Gtk-[1;33mWARNING[0m **: [34m17:07:36.435[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+trecupe1@g7-04:~/git-repos/i220b/work/lab7$ ls
+lab7.log	 libgeom  log10		 multiple-symbols
+lab7_output.txt  libvec   multiple-defs  static-dynamic
+trecupe1@g7-04:~/git-repos/i220b/work/lab7$ cd multiple-sy mbols/
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/multiple-symbols$ ls
+def1.c	def2.c	main.c	Makefile
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/multiple-symbols$ ed[K[Kgedit *
+
+(gedit:10163): Gtk-[1;33mWARNING[0m **: [34m17:10:16.769[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/multiple-symbols$ make
+cc -g -Wall -std=c11   -c -o def1.o def1.c
+cc -g -Wall -std=c11   -c -o def2.o def2.c
+cc -g -Wall -std=c11   -c -o main.o main.c
+cc def1.o def2.o main.o  -o multiple-symbols
+/usr/bin/ld: def2.o:/home/trecupe1/git-repos/i220b/work/lab7/multiple-symbols/def2.c:1: multiple definition of `sym'; def1.o:/home/trecupe1/git-repos/i220b/work/lab7/multiple-symbols/def1.c:1: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:4: multiple-symbols] Error 1
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/multiple-symbols$ makegedit *
+
+(gedit:10253): Gtk-[1;33mWARNING[0m **: [34m17:10:31.280[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/multiple-symbols$ ls
+def1.c	def1.o	def2.c	def2.o	main.c	main.o	Makefile
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/multiple-symbols$ make [K
+cc -g -Wall -std=c11   -c -o def1.o def1.c
+cc def1.o def2.o main.o  -o multiple-symbols
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/multiple-symbols$ ls
+def1.c	def2.c	main.c	Makefile
+def1.o	def2.o	main.o	multiple-symbols
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/multiple-symbols$ cd ..
+trecupe1@g7-04:~/git-repos/i220b/work/lab7$ ls
+lab7.log	 libgeom  log10		 multiple-symbols
+lab7_output.txt  libvec   multiple-defs  static-dynamic
+trecupe1@g7-04:~/git-repos/i220b/work/lab7$ lscd ..[3Plsmake[2Plsgedit *[3Pmakegedit *ls[Kcd multiple-symbols/[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit lab7_output.txt [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit lab7_output.txt 
+
+(gedit:10526): Gtk-[1;33mWARNING[0m **: [34m17:12:19.616[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+trecupe1@g7-04:~/git-repos/i220b/work/lab7$ ls
+lab7.log	 libgeom  log10		 multiple-symbols
+lab7_output.txt  libvec   multiple-defs  static-dynamic
+trecupe1@g7-04:~/git-repos/i220b/work/lab7$ cd static-dynamic/
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/static-dynamic$ ls
+log10.c  Makefile
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/static-dynamic$ make
+cc -g -Wall  -std=c11   -c -o log10.o log10.c
+cc -static log10.o -lm -o log10-static
+cc log10.o -lm -o log10-dynamic
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/static-dynamic$ ls -l
+total 940
+-rw-r--r-- 1 trecupe1 trecupe1    185 Oct  3 16:37 log10.c
+-rwxr-xr-x 1 trecupe1 trecupe1  19248 Oct  3 17:13 log10-dynamic
+-rw-r--r-- 1 trecupe1 trecupe1   6048 Oct  3 17:13 log10.o
+-rwxr-xr-x 1 trecupe1 trecupe1 924880 Oct  3 17:13 log10-static
+-rw-r--r-- 1 trecupe1 trecupe1    250 Oct  3 16:37 Makefile
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/static-dynamic$ ls
+log10.c  log10-dynamic	log10.o  log10-static  Makefile
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/static-dynamic$ nm log10-static >log10-static.nm
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/static-dynamic$ nm log10-dynamic >log10-dynamic.nm
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/static-dynamic$ ls
+log10.c		  log10.o	   Makefile
+log10-dynamic	  log10-static
+log10-dynamic.nm  log10-static.nm
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/static-dynamic$ gedit [K *
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/static-dynamic$ gedit *
+^C
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/static-dynamic$ cd ..
+trecupe1@g7-04:~/git-repos/i220b/work/lab7$ ls
+lab7.log	 libgeom  log10		 multiple-symbols
+lab7_output.txt  libvec   multiple-defs  static-dynamic
+trecupe1@g7-04:~/git-repos/i220b/work/lab7$ cd lab7_output.txt 
+bash: cd: lab7_output.txt: Not a directory
+trecupe1@g7-04:~/git-repos/i220b/work/lab7$ gedit lab7_output.txt 
+trecupe1@g7-04:~/git-repos/i220b/work/lab7$ ls
+lab7.log	 libgeom  log10		 multiple-symbols
+lab7_output.txt  libvec   multiple-defs  static-dynamic
+trecupe1@g7-04:~/git-repos/i220b/work/lab7$ cd static-dynamic/
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/static-dynamic$ ls
+log10.c		  log10.o	   Makefile
+log10-dynamic	  log10-static
+log10-dynamic.nm  log10-static.nm
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/static-dynamic$ e[Kge[Kedit *
+^C
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/static-dynamic$ gedit *[Cls[Kcd static-dynamic/[Cls[Kgedit lab7_output.txt [C[3Pcd[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kcd ..[Cgedit *[C[2Pcd ..
+trecupe1@g7-04:~/git-repos/i220b/work/lab7$ cd ..gedit *ls[Kcd static-dynamic/[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit lab7_output.txt [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd lab7_output.[3P[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd ..gedit *ls[Knm log10-dynamic >log10-dynamic.nm[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatic[2P >log10-static.nm[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -l[Knm log10-static >log10-static.nm[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdynamic >log10-dynamic.nm[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit *[2Pcd ..[3Plscd lab7_output.txt [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit lab7_outp[3@ut.[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit lab7_output.txt 
+trecupe1@g7-04:~/git-repos/i220b/work/lab7$ ls [K[K[Kls
+lab7.log	 libgeom  log10		 multiple-symbols
+lab7_output.txt  libvec   multiple-defs  static-dynamic
+trecupe1@g7-04:~/git-repos/i220b/work/lab7$ cd multiple-
+bash: cd: multiple-: No such file or directory
+trecupe1@g7-04:~/git-repos/i220b/work/lab7$ cd multiple-de fs/
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/multiple-defs$  ls
+f.c  main.c  Makefile
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/multiple-defs$  maek[K[Kke
+cc -g -Wall -std=c11   -c -o main.o main.c
+cc -g -Wall -std=c11   -c -o f.o f.c
+cc main.o f.o  -o multiple-defs
+/usr/bin/ld: warning: alignment 4 of symbol `x' in main.o is smaller than 8 in f.o
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/multiple-defs$  ./[K[Kls
+f.c  f.o  main.c  main.o  Makefile  multiple-defs
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/multiple-defs$  ./main
+bash: ./main: No such file or directory
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/multiple-defs$  ./main[K[K[K[K[K/f
+bash: ./f: No such file or directory
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/multiple-defs$  ./multiple-defs 
+x = 0x0, y = 0x80000000
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/multiple-defs$  gedit *
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/multiple-defs$  ls
+f.c  f.o  main.c  main.o  Makefile  multiple-defs
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/multiple-defs$  cd ..
+trecupe1@g7-04:~/git-repos/i220b/work/lab7$ ls
+lab7.log	 libgeom  log10		 multiple-symbols
+lab7_output.txt  libvec   multiple-defs  static-dynamic
+trecupe1@g7-04:~/git-repos/i220b/work/lab7$ ls
+lab7.log	 libgeom  log10		 multiple-symbols
+lab7_output.txt  libvec   multiple-defs  static-dynamic
+trecupe1@g7-04:~/git-repos/i220b/work/lab7$ cd lic[Kv[Kbvec/
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ ls
+addvec.c  Makefile  multvec.c  testvec.c  vectors.h
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ gedit * [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K*
+^C
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ make
+cc -g -Wall -fPIC -std=c11   -c -o addvec.o addvec.c
+cc -g -Wall -fPIC -std=c11   -c -o multvec.o multvec.c
+cc -shared addvec.o multvec.o -o libvec.so
+ar rcs libvec.a addvec.o multvec.o
+cc -g -Wall -fPIC -std=c11   -c -o testvec.o testvec.c
+cc  -static testvec.o -L. -lvec -o testvec-static
+cc testvec.o -L. -lvec -o testvec-dynamic
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ ls -l
+total 828
+-rw-r--r-- 1 trecupe1 trecupe1    111 Oct  3 16:37 addvec.c
+-rw-r--r-- 1 trecupe1 trecupe1   2896 Oct  3 17:38 addvec.o
+-rw-r--r-- 1 trecupe1 trecupe1   6016 Oct  3 17:38 libvec.a
+-rwxr-xr-x 1 trecupe1 trecupe1  17352 Oct  3 17:38 libvec.so
+-rw-r--r-- 1 trecupe1 trecupe1    401 Oct  3 16:37 Makefile
+-rw-r--r-- 1 trecupe1 trecupe1    112 Oct  3 16:37 multvec.c
+-rw-r--r-- 1 trecupe1 trecupe1   2904 Oct  3 17:38 multvec.o
+-rw-r--r-- 1 trecupe1 trecupe1    644 Oct  3 16:37 testvec.c
+-rwxr-xr-x 1 trecupe1 trecupe1  19976 Oct  3 17:38 testvec-dynamic
+-rw-r--r-- 1 trecupe1 trecupe1   8024 Oct  3 17:38 testvec.o
+-rwxr-xr-x 1 trecupe1 trecupe1 759936 Oct  3 17:38 testvec-static
+-rw-r--r-- 1 trecupe1 trecupe1    163 Oct  3 16:37 vectors.h
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ ./testv ex[Kc-static 1 2 3
+sum = 2 4 6 
+product = 1 4 9 
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ ./testvec-static 1 2 3[C[1P[1P[1P[1P[1P[1P[1@d[1@y[1@n[1@a[1@m[1@i[1@c
+./testvec-dynamic: error while loading shared libraries: libvec.so: cannot open shared object file: No such file or directory
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ l[KLD_LIBR ARY_PATH[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[KLD_LIBRARY_PATH=. ./testvec-dynamic 1 2 3
+sum = 2 4 6 
+product = 1 4 9 
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ ldd
+ldd: missing file arguments
+Try `ldd --help' for more information.
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ ldd tes tvex[Kc-dynamic
+	linux-vdso.so.1 (0x00007fff2312e000)
+	libvec.so => not found
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f212c9a9000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f212cba8000)
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ ldd testvec-dynamic [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CLD_LIBRARY_PATH=. ./testvec-dynamic 1 2 3[C[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl./testvec-dynamicd./testvec-dynamic[Cd./testvec-dynamic[C[C ./testvec-dynamic[C[C[C
+	linux-vdso.so.1 (0x00007ffd521f5000)
+	libvec.so => ./libvec.so (0x00007f7553d9f000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f7553ba7000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f7553dab000)
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ nm testvec-static >testvec-static.nm
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ [Ktrecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ gdb
+GNU gdb (Debian 8.2.1-2) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+(gdb) p &main, p &addvec and [K[K[K[K[K, p &multvec
+No symbol table is loaded.  Use the "file" command.
+(gdb) p &main, p &addvec, p &multvec[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+No symbol table is loaded.  Use the "file" command.
+(gdb) Quit
+(gdb) Quit
+(gdb) 
+No symbol table is loaded.  Use the "file" command.
+(gdb) Quit
+(gdb) q
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ ls
+addvec.c   Makefile   testvec-dynamic	 vectors.h
+addvec.o   multvec.c  testvec.o
+libvec.a   multvec.o  testvec-static
+libvec.so  testvec.c  testvec-static.nm
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ gdb test vecq[K-static
+GNU gdb (Debian 8.2.1-2) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from testvec-static...done.
+(gdb) p &main
+$1 = (int (*)(int, const char **)) 0x401bf6 <main>
+(gdb) p &addvec
+$2 = (void (*)(int *, int *, int *, 
+    int)) 0x401f1f <addvec>
+(gdb) p &multvec
+$3 = (void (*)(int *, int *, int *, 
+    int)) 0x401f8e <multvec>
+(gdb) q
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ gdb testvec-static
+GNU gdb (Debian 8.2.1-2) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from testvec-static...done.
+(gdb) q
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ ~[Kls
+addvec.c   Makefile   testvec-dynamic	 vectors.h
+addvec.o   multvec.c  testvec.o
+libvec.a   multvec.o  testvec-static
+libvec.so  testvec.c  testvec-static.nm
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ gd[K[Klsgdb testvec-static[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgdbnm testvec-static >testvec-static.nm[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CLD_LIBRARY_PATH=. ldd ./testvec-dynamic[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnm testve[3Pc-static >testvec-static.nm[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CLD_LIBRARY_PATH=. ldd ./testvec-dynamic[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnm testve[3Pc-static >testvec-static.nm[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5Pgdb
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Plsgdbnm testvec-static >testvec-static.nm[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5Pgdb
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Plsgdb testvec-static[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Knm testvec-dynamic >testvec-dynamic.nm
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ gdb test vec-dynamic
+GNU gdb (Debian 8.2.1-2) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from testvec-dynamic...done.
+(gdb) p &main
+$1 = (int (*)(int, const char **)) 0x11ee <main>
+(gdb) p & [Kvect[K[K[K[Kaddvec
+$2 = (<text variable, no debug info> *) 0x1060 <addvec@plt>
+(gdb) p &multvec
+$3 = (<text variable, no debug info> *) 0x1050 <multvec@plt>
+(gdb) LD_LIBRARY_PATH using set env LD_LIBRARY_PATH .
+Undefined command: "LD_LIBRARY_PATH".  Try "help".
+(gdb) Quit
+(gdb) q
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ LD_LIBRARY_PATH using set env LD_LIBRARY_PATH .
+bash: LD_LIBRARY_PATH: command not found
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ LD_LIBRARY_PATH using set env LD_LIBRARY_PATH .[A[C[C[C[C[C[C[C[C[C[C[C[Cgdb testvec-dynamic[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnm testvec-dynamic >testvec-dynamic.nm[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgdb testv[19Pec-dynamic
+GNU gdb (Debian 8.2.1-2) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from testvec-dynamic...done.
+(gdb) LD_LIBRARY_PATH using set env LD_LIBRARY_PATH .
+Undefined command: "LD_LIBRARY_PATH".  Try "help".
+(gdb) LD_LIBRARY_PATH using set env LD_LIBRARY_PATH .[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P
+(gdb) b main
+Breakpoint 1 at 0x1207: file testvec.c, line 15.
+(gdb) r 1 2 3 [K
+Starting program: /import/linux/home1/trecupe1/git-repos/i220b/work/lab7/libvec/testvec-dynamic 1 2 3
+
+Breakpoint 1, main (argc=4, argv=0x7fffffffe738)
+    at testvec.c:15
+15	{
+(gdb) &p[K[Kp & [Kmain
+$1 = (int (*)(int, const char **)) 0x5555555551ee <main>
+(gdb) &p[K[Kp &addvec
+$2 = (void (*)(int *, int *, int *, 
+    int)) 0x7ffff7fca0f5 <addvec>
+(gdb) p &multvec
+$3 = (void (*)(int *, int *, int *, 
+    int)) 0x7ffff7fca164 <multvec>
+(gdb) q
+A debugging session is active.
+
+	Inferior 1 [process 16597] will be killed.
+
+Quit anyway? (y or n) y
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ ls
+addvec.c   multvec.c	       testvec.o
+addvec.o   multvec.o	       testvec-static
+libvec.a   testvec.c	       testvec-static.nm
+libvec.so  testvec-dynamic     vectors.h
+Makefile   testvec-dynamic.nm
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libvec$ cd libvec.[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[Kbge [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[Kcd ..
+trecupe1@g7-04:~/git-repos/i220b/work/lab7$ ls
+lab7.log	 libgeom  log10		 multiple-symbols
+lab7_output.txt  libvec   multiple-defs  static-dynamic
+trecupe1@g7-04:~/git-repos/i220b/work/lab7$ cd libgeom/
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libgeom$ ls
+circ.c	geom.h	rect.c	testgeom.c
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libgeom$ ls
+circ.c	geom.h	rect.c	testgeom.c
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libgeom$ gedit * [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K*
+
+(gedit:18101): Gtk-[1;33mWARNING[0m **: [34m18:03:43.526[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libgeom$ ls
+circ.c	geom.h	Makefile  rect.c  testgeom.c
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libgeom$ make
+cc -g -Wall -fPIC -std=c11   -c -o circ.o circ.c
+cc -g -Wall -fPIC -std=c11   -c -o rect.o rect.c
+cc -shared circ.o rect.o -o libgeom.so
+ar rcs libgeom.a circ.o rect.o
+cc -g -Wall -fPIC -std=c11   -c -o testgeom.o testgeom.c
+cc  -static testgeom.o -L. -lgeom -o testgeom-static
+cc testgeom.o -L. -lgeom -o testgeom-dynamic
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libgeom$ make cl ean
+rm -f *.o *.so *.a testgeom-*
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libgeom$ make
+cc -g -Wall -fPIC -std=c11   -c -o circ.o circ.c
+cc -g -Wall -fPIC -std=c11   -c -o rect.o rect.c
+cc -shared circ.o rect.o -o libgeom.so
+ar rcs libgeom.a circ.o rect.o
+cc -g -Wall -fPIC -std=c11   -c -o testgeom.o testgeom.c
+cc  -static testgeom.o -L. -lgeom -o testgeom-static
+cc testgeom.o -L. -lgeom -o testgeom-dynamic
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libgeom$ ls
+circ.c	libgeom.a   rect.c	testgeom-dynamic
+circ.o	libgeom.so  rect.o	testgeom.o
+geom.h	Makefile    testgeom.c	testgeom-static
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libgeom$ ./testgeom-static
+^C
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libgeom$ ./testgeom-static[K[K[K[K[K[Kdynamic
+./testgeom-dynamic: error while loading shared libraries: libgeom.so: cannot open shared object file: No such file or directory
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libgeom$ ls
+circ.c	libgeom.a   rect.c	testgeom-dynamic
+circ.o	libgeom.so  rect.o	testgeom.o
+geom.h	Makefile    testgeom.c	testgeom-static
+trecupe1@g7-04:~/git-repos/i220b/work/lab7/libgeom$ ls./testgeom-dynamic[C[C[C[C[1Pstatic[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake clean[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Plsgedit * [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd libgeom/[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd ..[3Plsgdb testvec-dynamic[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CLD_LIBRARY_PATH using set env LD_LIBRARY_PATH .[A[C[C[C[C[C[C[C[C[C[C[C[Cgdb testvec-dynamic[K
+GNU gdb (Debian 8.2.1-2) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by la

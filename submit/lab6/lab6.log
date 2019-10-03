@@ -1499,4 +1499,99 @@ examine the history and state (see also: git help revisions)
    grep       Print lines matching a pattern
    log        Show commit logs
    show       Show various types of objects
-   status   
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout    Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+trecupe1@g7-12:~/git-repos/i220b/work$ gi t[K[Kt mcm[K[Kv submit [K[K[K[K[K[K[Kwork/submit work
+fatal: bad source, source=work/work/submit, destination=work/work
+trecupe1@g7-12:~/git-repos/i220b/work$ git mv work/submit work[1P[1P[1P[1P[1P
+fatal: bad source, source=work/submit, destination=work/work
+trecupe1@g7-12:~/git-repos/i220b/work$ git mv submit work[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kls
+lab6  prj2-sol
+trecupe1@g7-12:~/git-repos/i220b/work$ git add .
+trecupe1@g7-12:~/git-repos/i220b/work$ git commit -m ''f'i'x'e'd' 'g'i't'h'u'b' 'p'r'o'n'l'[1P'[1P'b'l'e'm' [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[master 0514a6c] fixed github problem
+ 13 files changed, 191 insertions(+), 1 deletion(-)
+ rename work/{submit => lab6}/brk/.gitignore (100%)
+ rename work/{submit => lab6}/brk/Makefile (100%)
+ rename work/{submit => lab6}/brk/README (100%)
+ rename work/{submit => lab6}/brk/brk.c (100%)
+ rename work/{submit => lab6}/bug-program/.gitignore (100%)
+ rename work/{submit => lab6}/bug-program/Makefile (100%)
+ rename work/{submit => lab6}/bug-program/bug-program.c (100%)
+ rename work/{submit => lab6}/bug-program/bug-program.valgrind (100%)
+ rename work/{submit => lab6}/lab6.log (78%)
+ rename work/{submit => lab6}/lab6_output.txt (100%)
+ rename work/{submit => lab6}/process-memory/.gitignore (100%)
+ rename work/{submit => lab6}/process-memory/Makefile (100%)
+ rename work/{submit => lab6}/process-memory/process-memory.c (100%)
+trecupe1@g7-12:~/git-repos/i220b/work$ git push
+Username for 'https://github.com': travisrecupero
+Password for 'https://travisrecupero@github.com': 
+Enumerating objects: 7, done.
+Counting objects:  14% (1/7)   Counting objects:  28% (2/7)   Counting objects:  42% (3/7)   Counting objects:  57% (4/7)   Counting objects:  71% (5/7)   Counting objects:  85% (6/7)   Counting objects: 100% (7/7)   Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects:  20% (1/5)   Compressing objects:  40% (2/5)   Compressing objects:  60% (3/5)   Compressing objects:  80% (4/5)   Compressing objects: 100% (5/5)   Compressing objects: 100% (5/5), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 7.96 KiB | 1.99 MiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/travisrecupero/i220b.git
+   9b59671..0514a6c  master -> master
+trecupe1@g7-12:~/git-repos/i220b/work$ ls
+lab6  prj2-sol
+trecupe1@g7-12:~/git-repos/i220b/work$ ls
+lab6  prj2-sol
+trecupe1@g7-12:~/git-repos/i220b/work$ cd ..
+trecupe1@g7-12:~/git-repos/i220b$ git mv worl[Kk/lab6 submit
+trecupe1@g7-12:~/git-repos/i220b$ git commit - [Km ''l'a'b'6' 's'u'b'm'i's's'i'o'n' '[1P',' 'f'i'x'e'w'd' '[1P'[1P'[1P'd' 'g'i' [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C '[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C' [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ct' 'i's's'u'e'[1P'[1P'[1P'[1P'[1P'p'r'o'b'l'e'm'
+[master daaefb2] lab6 submission, fixed git problem
+ 13 files changed, 0 insertions(+), 0 deletions(-)
+ rename {work => submit}/lab6/brk/.gitignore (100%)
+ rename {work => submit}/lab6/brk/Makefile (100%)
+ rename {work => submit}/lab6/brk/README (100%)
+ rename {work => submit}/lab6/brk/brk.c (100%)
+ rename {work => submit}/lab6/bug-program/.gitignore (100%)
+ rename {work => submit}/lab6/bug-program/Makefile (100%)
+ rename {work => submit}/lab6/bug-program/bug-program.c (100%)
+ rename {work => submit}/lab6/bug-program/bug-program.valgrind (100%)
+ rename {work => submit}/lab6/lab6.log (100%)
+ rename {work => submit}/lab6/lab6_output.txt (100%)
+ rename {work => submit}/lab6/process-memory/.gitignore (100%)
+ rename {work => submit}/lab6/process-memory/Makefile (100%)
+ rename {work => submit}/lab6/process-memory/process-memory.c (100%)
+trecupe1@g7-12:~/git-repos/i220b$ git po[Kush
+Username for 'https://github.com': travisrecupero
+Password for 'https://travisrecupero@github.com': 
+Enumerating objects: 7, done.
+Counting objects:  14% (1/7)   Counting objects:  28% (2/7)   Counting objects:  42% (3/7)   Counting objects:  57% (4/7)   Counting objects:  71% (5/7)   Counting objects:  85% (6/7)   Counting objects: 100% (7/7)   Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  25% (1/4)   Writing objects:  50% (2/4)   Writing objects:  75% (3/4)   Writing objects: 100% (4/4)   Writing objects: 100% (4/4), 463 bytes | 463.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/travisrecupero/i220b.git
+   0514a6c..daaefb2  master -> master
+trecupe1@g7-12:~/git-repos/i220b$ ls
+README.md  submit  work
+trecupe1@g7-12:~/git-repos/i220b$ cd submit/
+trecupe1@g7-12:~/git-repos/i220b/submit$ ls
+lab2  lab3  lab4  lab5	lab6  prj1-sol
+trecupe1@g7-12:~/git-repos/i220b/submit$ exit
+
+Script done on 2019-09-26 18:28:11-04:00 [COMMAND_EXIT_CODE="0"]
