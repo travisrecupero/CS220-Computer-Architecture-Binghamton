@@ -15,7 +15,8 @@ struct BigBits {
   size_t size;
   size_t index;
   char hexChar;
-  const void **unit;
+  int hexet;
+  char *hexString;
 };
 
 
@@ -33,8 +34,10 @@ newBigBits(const char *hex)
 {
   assert(CHAR_BIT == 8);
   //@TODO
-  BigBits *bigBits = calloc(1, sizeof(BigBits));
-  if(bigBits != NULL) bigBits->unit = NULL;
+  BigBits *bigBits = calloc(sizeof(hex), sizeof(BigBits));
+  if(bigBits != NULL){
+    bigBits->hexString = NULL;
+  }
   return bigBits;
 }
 
@@ -45,7 +48,7 @@ void
 freeBigBits(BigBits *bigBits)
 {
   //@TODO
-  free(bigBits->units);
+  free(bigBits->hexString);
   free(bigBits);
 }
 
@@ -59,17 +62,32 @@ const char *
 stringBigBits(const BigBits *bigBits)
 {
   //@TODO
-  if(bigBits->index >= bigBits->size){
-    bigBits->size = bigBits->size + 1;
-    bigBits->unit = realloc(bigBits->units, bigBits->size*sizeof(void *));
-    if(!stack->unit) return NULL;
+  char * c = malloc(sizeof(char) * sizeof(bigBits));
+  int size_c = sizeof(char) * sizeof(bigBits);
+
+  int counter = 0;
+  for(size_t  i = 0; i < size_c; i++){
+    while(counter < sizeof(bigBits->hexString)){
+      c[i] = bigBits->hexString[counter];
+    }
   }
-  assert(bigBits->index < bigBits->size);
-  stack->unit[bigBits->index++] = hexChar;
 
-
-  return NULL;
+  return c;
 }
+/*
+            stringBigBits compared to stack adt attempt
+if(bigBits->index >= bigBits->size){
+  bigBits->size = bigBits->size + 1;
+  bigBits->unit = realloc(bigBits->unit, bigBits->size*sizeof(void *));
+  if(!bigBits->unit) return NULL;
+}
+assert(bigBits->index < bigBits->size);
+bigBits->unit[bigBits->index++] = hexChar;
+
+for(int i = 0; i < bigBits->size - 1; i++){
+  bigBits->
+}
+*/
 
 
 /** Return a new BigBits which is the bitwise-& of bigBits1 and bigBits2.
@@ -79,6 +97,7 @@ const BigBits *
 andBigBits(const BigBits *bigBits1, const BigBits *bigBits2)
 {
   //@TODO
+
   return NULL;
 }
 
@@ -89,7 +108,14 @@ const BigBits *
 orBigBits(const BigBits *bigBits1, const BigBits *bigBits2)
 {
   //@TODO
-  return NULL;
+  
+  BigBits *bigBits3 = (BigBits*)malloc(sizeof(bigBits3));
+
+  for(size_t i = 0; i < sizeof(bigBits1); i++){
+    bigBits3->hexString[i] = (bigBits1->hexString[i] & bigBits2->hexString[i]);
+  }
+
+  return bigBits3;
 }
 
 /** Return a new BigBits which is the bitwise-^ of bigBits1 and bigBits2.
