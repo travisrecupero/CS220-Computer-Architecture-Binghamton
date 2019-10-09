@@ -6,18 +6,21 @@
 #include <limits.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdio.h>
 
 /** Provide concrete definition for struct BigBits to flesh out
  *  abstract BigBits data type.
  */
 struct BigBits {
   //@TODO
-  size_t size;
-  size_t index;
-  char hexChar;
-  int hexet;
   char *hexString;
 };
+/*
+size_t size;
+size_t index;
+char hexChar;
+int hexet;
+*////////////////////////////////////////////////////////////
 
 
 /** Return a pointer to a representation of a big integer with value
@@ -35,25 +38,36 @@ newBigBits(const char *hex)
   assert(CHAR_BIT == 8);
   //@TODO
   /*
-    create a bigBits, the number of elements is the size of the string(*hex)
-    the size of each element is the size of our bigBits structure
+    - create a bigBits that is the size of the structure
+    - initialize pointer within bigBits using string.h
   */
-  BigBits *bigBits = calloc(sizeof(hex), sizeof(BigBits));
-
-  /*
-    set the *hex parameter to the bigBits *hexString
-  */
-  for(size_t i = 0; i < sizeof(hex); i++){
-    bigBits->hexString[i] = hex[i];
-  }
+  BigBits *bigBits = calloc(1, sizeof(BigBits));
+  bigBits->hexString = (char *)malloc(strlen(hex) + 1); //use + 1 for terminating null char
+  strcpy(bigBits->hexString, hex);
   //free(hex);
-  /*
-  if(bigBits != NULL){
-    bigBits->hexString = NULL;
+
+  //int x = atoi(bigBits->hexString);
+  //printf("test x %d\n", x );
+  for(size_t i = 0; i < strlen(hex) + 1; i++){
+    printf("%d \n", hex[i]);
   }
-  */
+
   return bigBits;
 }
+
+/*
+set the *hex parameter to the bigBits *hexString
+for(size_t i = 0; i < sizeof(hex); i++){
+  bigBits->hexString[i] = hex[i];
+}
+*/
+//free(hex);
+/*
+if(bigBits != NULL){
+  bigBits->hexString = NULL;
+}
+*///////////////////////////////////////////////////////////////////
+
 
 /** Frees all resources used by currently valid bigBits.  bigBits
  *  is not valid after this function returns.
@@ -79,33 +93,33 @@ const char *
 stringBigBits(const BigBits *bigBits)
 {
   //@TODO
+  char *c = malloc(strlen(bigBits->hexString) + 1);
+  strcpy(c, bigBits->hexString);
 
-/*
-  want to create dynamically allocated array (char *)
-  *******FIGURE OUT SIZE**********
-  size = (NUMBER_OF_ELEMENTS * size()
-*/
-  char *c = malloc(sizeof(char) * sizeof(bigBits));
-  int size_c = sizeof(char) * sizeof(bigBits);
 
-/*
-  if the size of *c > bigBits->size (hexString size) then we allocate more
-  memory to big bits
-*/
-  if(size_c > bigBits->size){
-    bigBits = realloc(bigBits, sizeof(c) * sizeof(bigBits));
-  }
-
-/*
-  loop through and set our bigBits string equal to the returned string
-*/
-  for(size_t i = 0; i < size_c; i++){
-    c[i] = bigBits->hexString[i];
-  }
-  //freeBigBits(bigBits);
 
   return c;
 }
+/*
+want to create dynamically allocated array (char *)
+*******FIGURE OUT SIZE**********
+size = (NUMBER_OF_ELEMENTS * size()
+char *c = malloc(sizeof(char) * sizeof(bigBits));
+int size_c = sizeof(char) * sizeof(bigBits);
+
+if the size of *c > bigBits->size (hexString size) then we allocate more
+memory to big bits
+if(size_c > bigBits->size){
+  bigBits = realloc(bigBits, sizeof(c) * sizeof(bigBits));
+}
+
+loop through and set our bigBits string equal to the returned string
+for(size_t i = 0; i < size_c; i++){
+  c[i] = bigBits->hexString[i];
+}
+*/
+//freeBigBits(bigBits);
+///////////////////////////////////////////////////////////////////////
 /*
             stringBigBits compared to stack adt attempt
 if(bigBits->index >= bigBits->size){
@@ -129,6 +143,7 @@ const BigBits *
 andBigBits(const BigBits *bigBits1, const BigBits *bigBits2)
 {
   //@TODO
+
 
   return NULL;
 }
