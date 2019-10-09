@@ -34,10 +34,24 @@ newBigBits(const char *hex)
 {
   assert(CHAR_BIT == 8);
   //@TODO
+  /*
+    create a bigBits, the number of elements is the size of the string(*hex)
+    the size of each element is the size of our bigBits structure
+  */
   BigBits *bigBits = calloc(sizeof(hex), sizeof(BigBits));
+
+  /*
+    set the *hex parameter to the bigBits *hexString
+  */
+  for(size_t i = 0; i < sizeof(hex); i++){
+    bigBits->hexString[i] = hex[i];
+  }
+  //free(hex);
+  /*
   if(bigBits != NULL){
     bigBits->hexString = NULL;
   }
+  */
   return bigBits;
 }
 
@@ -48,6 +62,9 @@ void
 freeBigBits(BigBits *bigBits)
 {
   //@TODO
+  /*
+    free pointer, free struct itself
+  */
   free(bigBits->hexString);
   free(bigBits);
 }
@@ -62,15 +79,30 @@ const char *
 stringBigBits(const BigBits *bigBits)
 {
   //@TODO
-  char * c = malloc(sizeof(char) * sizeof(bigBits));
+
+/*
+  want to create dynamically allocated array (char *)
+  *******FIGURE OUT SIZE**********
+  size = (NUMBER_OF_ELEMENTS * size()
+*/
+  char *c = malloc(sizeof(char) * sizeof(bigBits));
   int size_c = sizeof(char) * sizeof(bigBits);
 
-  int counter = 0;
-  for(size_t  i = 0; i < size_c; i++){
-    while(counter < sizeof(bigBits->hexString)){
-      c[i] = bigBits->hexString[counter];
-    }
+/*
+  if the size of *c > bigBits->size (hexString size) then we allocate more
+  memory to big bits
+*/
+  if(size_c > bigBits->size){
+    bigBits = realloc(bigBits, sizeof(c) * sizeof(bigBits));
   }
+
+/*
+  loop through and set our bigBits string equal to the returned string
+*/
+  for(size_t i = 0; i < size_c; i++){
+    c[i] = bigBits->hexString[i];
+  }
+  //freeBigBits(bigBits);
 
   return c;
 }
@@ -108,14 +140,15 @@ const BigBits *
 orBigBits(const BigBits *bigBits1, const BigBits *bigBits2)
 {
   //@TODO
-  
+  /*
   BigBits *bigBits3 = (BigBits*)malloc(sizeof(bigBits3));
 
   for(size_t i = 0; i < sizeof(bigBits1); i++){
     bigBits3->hexString[i] = (bigBits1->hexString[i] & bigBits2->hexString[i]);
   }
-
   return bigBits3;
+  */
+  return NULL;
 }
 
 /** Return a new BigBits which is the bitwise-^ of bigBits1 and bigBits2.
