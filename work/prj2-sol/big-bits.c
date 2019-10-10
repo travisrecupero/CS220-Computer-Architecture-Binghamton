@@ -14,6 +14,7 @@
 struct BigBits {
   //@TODO
   char *hexString;
+  unsigned long long size_hex_str;
 };
 /*
 size_t size;
@@ -45,13 +46,14 @@ newBigBits(const char *hex)
   bigBits->hexString = (char *)malloc(strlen(hex) + 1); //use + 1 for terminating null char
   strcpy(bigBits->hexString, hex);
   //free(hex);
-
+  bigBits->size_hex_str = (unsigned long long)strlen(bigBits->hexString);
   //int x = atoi(bigBits->hexString);
   //printf("test x %d\n", x );
+  /*
   for(size_t i = 0; i < strlen(hex) + 1; i++){
     printf("%d \n", hex[i]);
   }
-
+  */
   return bigBits;
 }
 
@@ -93,10 +95,8 @@ const char *
 stringBigBits(const BigBits *bigBits)
 {
   //@TODO
-  char *c = malloc(strlen(bigBits->hexString) + 1);
+  char *c = (char *)malloc(strlen(bigBits->hexString) + 1);
   strcpy(c, bigBits->hexString);
-
-
 
   return c;
 }
@@ -143,9 +143,30 @@ const BigBits *
 andBigBits(const BigBits *bigBits1, const BigBits *bigBits2)
 {
   //@TODO
+  BigBits *tempBigBits = (BigBits *)malloc(sizeof(BigBits));
+  tempBigBits->hexString = (char*)calloc(bigBits1->size_hex_str, sizeof(char));
+  int temp = 0;
+  size_t offset1 = bigBits1->size_hex_str - bigBits2->size_hex_str;
+  size_t offset2 = bigBits2->size_hex_str - bigBits1->size_hex_str;
 
-
-  return NULL;
+  if(bigBits1->size_hex_str >= bigBits2->size_hex_str){
+    for(size_t i = 0; i < bigBits1->size_hex_str; i++){
+      unsigned int val1 = charToHexet(bigBits1->hexString[i]);
+      unsigned int val2 = charToHexet(bigBits2->hexString[i-offset1]);
+      val2 = (i < offset1) ? 0 : val2;
+      temp = (val1 & val2);
+      tempBigBits->hexString[i] = hexetToChar(temp);
+    }
+  } else{
+    for(size_t i = 0; i < bigBits2->size_hex_str; i++){
+      unsigned int val1 = charToHexet(bigBits2->hexString[i]);
+      unsigned int val2 = charToHexet(bigBits1->hexString[i-offset2]);
+      val2 = (i < offset2) ? 0 : val2;
+      temp = (val1 & val2);
+      tempBigBits->hexString[i] = hexetToChar(temp);
+    }
+  }
+  return tempBigBits;
 }
 
 /** Return a new BigBits which is the bitwise-| of bigBits1 and bigBits2.
@@ -154,17 +175,38 @@ andBigBits(const BigBits *bigBits1, const BigBits *bigBits2)
 const BigBits *
 orBigBits(const BigBits *bigBits1, const BigBits *bigBits2)
 {
-  //@TODO
-  /*
-  BigBits *bigBits3 = (BigBits*)malloc(sizeof(bigBits3));
+  BigBits *tempBigBits = (BigBits *)malloc(sizeof(BigBits));
+  tempBigBits->hexString = (char*)calloc(bigBits1->size_hex_str, sizeof(char));
+  int temp = 0;
+  size_t offset1 = bigBits1->size_hex_str - bigBits2->size_hex_str;
+  size_t offset2 = bigBits2->size_hex_str - bigBits1->size_hex_str;
 
-  for(size_t i = 0; i < sizeof(bigBits1); i++){
-    bigBits3->hexString[i] = (bigBits1->hexString[i] & bigBits2->hexString[i]);
+  if(bigBits1->size_hex_str >= bigBits2->size_hex_str){
+    for(size_t i = 0; i < bigBits1->size_hex_str; i++){
+      unsigned int val1 = charToHexet(bigBits1->hexString[i]);
+      unsigned int val2 = charToHexet(bigBits2->hexString[i-offset1]);
+      val2 = (i < offset1) ? 0 : val2;
+      temp = (val1 | val2);
+      tempBigBits->hexString[i] = hexetToChar(temp);
+    }
+  } else{
+    for(size_t i = 0; i < bigBits2->size_hex_str; i++){
+      unsigned int val1 = charToHexet(bigBits2->hexString[i]);
+      unsigned int val2 = charToHexet(bigBits1->hexString[i-offset2]);
+      val2 = (i < offset2) ? 0 : val2;
+      temp = (val1 | val2);
+      tempBigBits->hexString[i] = hexetToChar(temp);
+    }
   }
-  return bigBits3;
-  */
-  return NULL;
+  return tempBigBits;
 }
+/*
+BigBits *bigBits3 = (BigBits*)malloc(sizeof(bigBits3));
+for(size_t i = 0; i < sizeof(bigBits1); i++){
+  bigBits3->hexString[i] = (bigBits1->hexString[i] & bigBits2->hexString[i]);
+}
+return bigBits3;
+*/
 
 /** Return a new BigBits which is the bitwise-^ of bigBits1 and bigBits2.
  *  Returns NULL on error with errno set "appropriately".
@@ -172,6 +214,28 @@ orBigBits(const BigBits *bigBits1, const BigBits *bigBits2)
 const BigBits *
 xorBigBits(const BigBits *bigBits1, const BigBits *bigBits2)
 {
-  //@TODO
-  return NULL;
+  BigBits *tempBigBits = (BigBits *)malloc(sizeof(BigBits));
+  tempBigBits->hexString = (char*)calloc(bigBits1->size_hex_str, sizeof(char));
+  int temp = 0;
+  size_t offset1 = bigBits1->size_hex_str - bigBits2->size_hex_str;
+  size_t offset2 = bigBits2->size_hex_str - bigBits1->size_hex_str;
+
+  if(bigBits1->size_hex_str >= bigBits2->size_hex_str){
+    for(size_t i = 0; i < bigBits1->size_hex_str; i++){
+      unsigned int val1 = charToHexet(bigBits1->hexString[i]);
+      unsigned int val2 = charToHexet(bigBits2->hexString[i-offset1]);
+      val2 = (i < offset1) ? 0 : val2;
+      temp = (val1 ^ val2);
+      tempBigBits->hexString[i] = hexetToChar(temp);
+    }
+  } else{
+    for(size_t i = 0; i < bigBits2->size_hex_str; i++){
+      unsigned int val1 = charToHexet(bigBits2->hexString[i]);
+      unsigned int val2 = charToHexet(bigBits1->hexString[i-offset2]);
+      val2 = (i < offset2) ? 0 : val2;
+      temp = (val1 ^ val2);
+      tempBigBits->hexString[i] = hexetToChar(temp);
+    }
+  }
+  return tempBigBits;
 }
