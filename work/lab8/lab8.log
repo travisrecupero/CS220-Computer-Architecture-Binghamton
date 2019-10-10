@@ -1,0 +1,401 @@
+Script started on 2019-10-10 16:41:31-04:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="80" LINES="24"]
+trecupe1@g7-11:/import/linux/home1/trecupe1/git-repos/i220b/work/lab8$ ls
+lab8.log  lab8_output.txt
+trecupe1@g7-11:/import/linux/home1/trecupe1/git-repos/i220b/work/lab8$ cd [Ktrecupe1@g7-11:/import/linux/home1/trecupe1/git-repos/i220b/work/lab8$ cd [Ktrecupe1@g7-11:/import/linux/home1/trecupe1/git-repos/i220b/work/lab8$ cd [Ktrecupe1@g7-11:/import/linux/home1/trecupe1/git-repos/i220b/work/lab8$ cd [Ktrecupe1@g7-11:/import/linux/home1/trecupe1/git-repos/i220b/work/lab8$ cd [Ktrecupe1@g7-11:/import/linux/home1/trecupe1/git-repos/i220b/work/lab8$ cd  [K[Atrecupe1@g7-11:/import/linux/home1/trecupe1/git-repos/i220b/work/lab8$ cd [K[Atrecupe1@g7-11:/import/linux/home1/trecupe1/git-repos/i220b/work/lab8$ c
+d [K[Atrecupe1@g7-11:/import/linux/home1/trecupe1/git-repos/i220b/work/lab8$ cd [K[Atrecupe1@g7-11:/import/linux/home1/trecupe1/git-repos/i220b/work/lab8$ cd [K[Atrecupe1@g7-11:/import/linux/home1/trecupe1/git-repos/i220b/work/lab8$ cd  [K[Atrecupe1@g7-11:/import/linux/home1/trecupe1/git-repos/i220b/work/lab8$ cd [Ktrecupe1@g7-11:/import/linux/home1/trecupe1/git-repos/i220b/work/lab8$ cd [Ktrecupe1@g7-11:/import/linux/home1/trecupe1/git-repos/i220b/work/lab8$ cd [Ktrecupe1@g7-11:/import/linux/home1/trecupe1/git-repos/i220b/work/lab8$ cd [K[K[Kcd ~/ git-repos
+trecupe1@g7-11:~/git-repos$ ls
+cs220  i220b
+trecupe1@g7-11:~/git-repos$ mkdir lab8.git
+trecupe1@g7-11:~/git-repos$ cd lab8.git/
+trecupe1@g7-11:~/git-repos/lab8.git$ git init --bare
+Initialized empty Git repository in /import/linux/home1/trecupe1/git-repos/lab8.git/
+trecupe1@g7-11:~/git-repos/lab8.git$ mkdir -p ![K~temp[K[K[K[K/tmp
+trecupe1@g7-11:~/git-repos/lab8.git$ cd ~/tmp
+trecupe1@g7-11:~/tmp$ git clone \
+>   ssh://LOGIN@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[C[1P/git-repos/lab8.git[1P/git-repos/lab8.git[1P/git-repos/lab8.git[1P/git-repos/lab8.git[1P/git-repos/lab8.gitt/git-repos/lab8.gitr/git-repos/lab8.gite/git-repos/lab8.gitc/git-repos/lab8.gitu/git-repos/lab8.gitp/git-repos/lab8.gite/git-repos/lab8.git1/git-repos/lab8.git[C[1P@remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P@remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[1P@remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[1P@remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[1P@remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[Ct@remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[Cr@remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[Ce@remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[Cc@remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[Cu@remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cp@remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce@remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C1@remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Cloning into 'lab8'...
+trecupe1@remote.cs.binghamton.edu's password: 
+warning: You appear to have cloned an empty repository.
+trecupe1@g7-11:~/tmp$ ls
+lab8
+trecupe1@g7-11:~/tmp$ cd lab8
+trecupe1@g7-11:~/tmp/lab8$ git rempt [K[K[K[Kmote -v
+origin	ssh://trecupe1@remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git (fetch)
+origin	ssh://trecupe1@remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git (push)
+trecupe1@g7-11:~/tmp/lab8$ ls -a
+.  ..  .git
+trecupe1@g7-11:~/tmp/lab8$ mkfir[K[K[Kdir - [Kp work.[K/lab8
+trecupe1@g7-11:~/tmp/lab8$ cd work/lab8
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ cp ~/cs220/labs/lab8/files/README.md .
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ ls
+README.md
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ git stst[K[Katus
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m../[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ git add README.md
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ git stys[K[Katis[K[Kus --short
+[32mA[m  README.md
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ git commit -m ' [Kas[Kdded READN=N[K[K[KNE[K[KME'
+[master (root-commit) cf35407] added README
+ 1 file changed, 4 insertions(+)
+ create mode 100644 work/lab8/README.md
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ git brt[K[Kranch -l
+[?1h=* [32mmaster[m[m
+[K[?1l>trecupe1@g7-11:~/tmp/lab8/work/lab8$ git push --set-upstream origin master
+trecupe1@remote.cs.binghamton.edu's password: 
+Enumerating objects: 5, done.
+Counting objects:  20% (1/5)   Counting objects:  40% (2/5)   Counting objects:  60% (3/5)   Counting objects:  80% (4/5)   Counting objects: 100% (5/5)   Counting objects: 100% (5/5), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 339 bytes | 169.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ git status -s
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ cp ~/cs220/labs/lab8/files/Makefile .
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ cp ~/cs220/labs/lab8/files/hello-one.c hello.c
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ make
+cc -g -Wall -std=c11    hello.c   -o hello
+[01m[Khello.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Khello.c:5:5:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kprintf[m[K’ [[01;35m[K-Wimplicit-function-declaration[m[K]
+     [01;35m[Kprintf[m[K("usage: %s NAME\n", argv[0]);
+     [01;35m[K^~~~~~[m[K
+[01m[Khello.c:5:5:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kprintf[m[K’
+[01m[Khello.c:5:5:[m[K [01;36m[Knote: [m[Kinclude ‘[01m[K<stdio.h>[m[K’ or provide a declaration of ‘[01m[Kprintf[m[K’
+[01m[Khello.c:1:1:[m[K
++[32m[K#include <stdio.h>[m[K
+ int
+[01m[Khello.c:5:5:[m[K
+     [01;36m[Kprintf[m[K("usage: %s NAME\n", argv[0]);
+     [01;36m[K^~~~~~[m[K
+[01m[Khello.c:6:5:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kexit[m[K’ [[01;35m[K-Wimplicit-function-declaration[m[K]
+     [01;35m[Kexit[m[K(1);
+     [01;35m[K^~~~[m[K
+[01m[Khello.c:6:5:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kexit[m[K’
+[01m[Khello.c:6:5:[m[K [01;36m[Knote: [m[Kinclude ‘[01m[K<stdlib.h>[m[K’ or provide a declaration of ‘[01m[Kexit[m[K’
+[01m[Khello.c:1:1:[m[K
++[32m[K#include <stdlib.h>[m[K
+ int
+[01m[Khello.c:6:5:[m[K
+     [01;36m[Kexit[m[K(1);
+     [01;36m[K^~~~[m[K
+[01m[Khello.c:8:3:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kprintf[m[K’
+   [01;35m[Kprintf[m[K("hello %s\n", argv[1]);
+   [01;35m[K^~~~~~[m[K
+[01m[Khello.c:8:3:[m[K [01;36m[Knote: [m[Kinclude ‘[01m[K<stdio.h>[m[K’ or provide a declaration of ‘[01m[Kprintf[m[K’
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ ./hello
+usage: ./hello NAME
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ ./hello john
+hello john
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ [Ktrecupe1@g7-11:~/tmp/lab8/work/lab8$ [Ktrecupe1@g7-11:~/tmp/lab8/work/lab8$ [Ktrecupe1@g7-11:~/tmp/lab8/work/lab8$ [Ktrecupe1@g7-11:~/tmp/lab8/work/lab8$ [Ktrecupe1@g7-11:~/tmp/lab8/work/lab8$ [Ktrecupe1@g7-11:~/tmp/lab8/work/lab8$ [Ktrecupe1@g7-11:~/tmp/lab8/work/lab8$ [Ktrecupe1@g7-11:~/tmp/lab8/work/lab8$ [Ktrecupe1@g7-11:~/tmp/lab8/work/lab8$ [Ktrecupe1@g7-11:~/tmp/lab8/work/lab8$ [Ktrecupe1@g7-11:~/tmp/lab8/work/lab8$ [Ktrecupe1@g7-11:~/tmp/lab8/work/lab8$ [Ktrecupe1@g7-11:~/tmp/lab8/work/lab8$ [Ktrecupe1@g7-11:~/tmp/lab8/work/lab8$ [Ktrecupe1@g7-11:~/tmp/lab8/work/lab8$ [Ktrecupe1@g7-11:~/tmp/lab8/work/lab8$ [Ktrecupe1@g7-11:~/tmp/lab8/work/lab8$ [Ktrecupe1@g7-11:~/tmp/lab8/work/lab8$ [Ktrecupe1@g7-11:~/tmp/lab8/work/lab8$ [Ktrecupe1@g7-11:~/tmp/lab8/work/lab8$ [Ktrecupe1@g7-11:~/tmp/lab8/work/lab8$ [Ktrecupe1@g7-11:~/tmp/lab8/work/lab8$ [Ktrecupe1@g7-11:~/tmp/lab8/work/lab8$ [Ktrecupe1@g7-11:~/tmp/lab8/work/lab8$ [Ktrecupe1@g7-11:~/tmp/lab8/work/lab8$ [Ktrecupe1@g7-11:~/tmp/lab8/work/lab8$ [Ktrecupe1@g7-11:~/tmp/lab8/work/lab8$ ^C
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ ^C
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ ^C
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ git stst[K[Katus -s
+[31m??[m Makefile
+[31m??[m hello
+[31m??[m hello.c
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ cp ~/cs220/labs/lab8/files/.gitignore . [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K.
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ cp ~/cs220/labs/lab8/files/.gitignore . [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[26Pgit status -s
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[31m??[m .gitignore
+[31m??[m Makefile
+[31m??[m hello.c
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ git add .
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ git add .status -s
+[32mA[m  .gitignore
+[32mA[m  Makefile
+[32mA[m  hello.c
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ git commit -m ''w'o'r'k'i'n'g' 'w'i't'h' 'w'a'r'n'i'n'g' '[1P's'
+[master a1e7e58] working with warnings
+ 3 files changed, 22 insertions(+)
+ create mode 100644 work/lab8/.gitignore
+ create mode 100644 work/lab8/Makefile
+ create mode 100644 work/lab8/hello.c
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ git commit -m 'working with warnings'status -s[K
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ git status -scommit -m 'working with warnings'status -s[K[4Padd .status -s[K[K[K[K[K[K[K[K[Kpush
+Warning: Permanently added the ECDSA host key for IP address '128.226.114.206' to the list of known hosts.
+trecupe1@remote.cs.binghamton.edu's password: 
+Enumerating objects: 10, done.
+Counting objects:  10% (1/10)   Counting objects:  20% (2/10)   Counting objects:  30% (3/10)   Counting objects:  40% (4/10)   Counting objects:  50% (5/10)   Counting objects:  60% (6/10)   Counting objects:  70% (7/10)   Counting objects:  80% (8/10)   Counting objects:  90% (9/10)   Counting objects: 100% (10/10)   Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects:  25% (1/4)   Compressing objects:  50% (2/4)   Compressing objects:  75% (3/4)   Compressing objects: 100% (4/4)   Compressing objects: 100% (4/4), done.
+Writing objects:  14% (1/7)   Writing objects:  28% (2/7)   Writing objects:  42% (3/7)   Writing objects:  57% (4/7)   Writing objects:  71% (5/7)   Writing objects:  85% (6/7)   Writing objects: 100% (7/7)   Writing objects: 100% (7/7), 671 bytes | 335.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git
+   cf35407..a1e7e58  master -> master
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ git lof[Kg
+[?1h=[33mcommit a1e7e5851446309f7d526bb9b8539b45861c3623[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/mast[m [33m[m[33m[m[1;36m[m[1;32m[m[33m[m[1;31mer[m[33m)[m[m
+Author: Travis Recupero <trecupe1@binghamton.edu>[m
+Date:   Thu Oct 10 17:03:36 2019 -0400[m
+[m
+    working with warnings[m
+[m
+[33mcommit cf35407f8e75526529482109cc5b8c16056041d9[m[m
+Author: Travis Recupero <trecupe1@binghamton.edu>[m
+Date:   Thu Oct 10 16:47:55 2019 -0400[m
+[m
+    added README[m
+[K[?1l>trecupe1@g7-11:~/tmp/lab8/work/lab8$ ^C
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ make
+make: Nothing to be done for 'all'.
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ ./hello sue
+hello sue
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ git status -s
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ git status -s M hello.c[K[K[K[K[K[K[K[K[K[K
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ git sts[Katus
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ ls
+hello  hello.c	Makefile  README.md
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ gedit *
+
+(gedit:10286): Gtk-[1;33mWARNING[0m **: [34m17:09:02.124[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ make
+cc -g -Wall -std=c11    hello.c   -o hello
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ makegedit *ls[Kgit status -s[2P./hello sue
+hello sue
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ ./hello sue[7Pmakegedit *ls[Kgit status -s
+ [31mM[m hello.c
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ git commit -a -m ''w'o'r'k'i'n' '[1P'g' '[1P':' 'c'l'e'a'n' 'c'o'm'i'l' [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce'[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C' [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P'
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P'[1P'm'p'i' [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl'e'
+[master a029b44] working: clean compile
+ 1 file changed, 3 insertions(+)
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ git push [K
+trecupe1@remote.cs.binghamton.edu's password: 
+Enumerating objects: 9, done.
+Counting objects:  11% (1/9)   Counting objects:  22% (2/9)   Counting objects:  33% (3/9)   Counting objects:  44% (4/9)   Counting objects:  55% (5/9)   Counting objects:  66% (6/9)   Counting objects:  77% (7/9)   Counting objects:  88% (8/9)   Counting objects: 100% (9/9)   Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 403 bytes | 403.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git
+   a1e7e58..a029b44  master -> master
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ git log hello.c
+[?1h=[33mcommit a029b44dce0eb2d95066b34088dd4b6c7c4e7d62[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/mast[m [33m[m[33m[m[1;36m[m[1;32m[m[33m[m[1;31mer[m[33m)[m[m
+Author: Travis Recupero <trecupe1@binghamton.edu>[m
+Date:   Thu Oct 10 17:10:18 2019 -0400[m
+[m
+    working: clean compile[m
+[m
+[33mcommit a1e7e5851446309f7d526bb9b8539b45861c3623[m[m
+Author: Travis Recupero <trecupe1@binghamton.edu>[m
+Date:   Thu Oct 10 17:03:36 2019 -0400[m
+[m
+    working with warnings[m
+[K[?1l>trecupe1@g7-11:~/tmp/lab8/work/lab8$ git log [K[K[K[K[K[K[K[Kgit log -1 hello.c
+[?1h=[33mcommit a029b44dce0eb2d95066b34088dd4b6c7c4e7d62[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/mast[m [33m[m[33m[m[1;36m[m[1;32m[m[33m[m[1;31mer[m[33m)[m[m
+Author: Travis Recupero <trecupe1@binghamton.edu>[m
+Date:   Thu Oct 10 17:10:18 2019 -0400[m
+[m
+    working: clean compile[m
+[K[?1l>trecupe1@g7-11:~/tmp/lab8/work/lab8$ gedit *
+
+(gedit:10730): Gtk-[1;33mWARNING[0m **: [34m17:13:04.567[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ make
+cc -g -Wall -std=c11    hello.c   -o hello
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ ./hello >dev[C/dev[C[C[C/NU[K[Knull
+usage: ./hello NAME
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ git diff
+[?1h=[1mdiff --git a/work/lab8/hello.c b/work/lab8/hello.c[m[m
+[1mindex 14e4e73..707ef29 100644[m[m
+[1m--- a/work/lab8/hello.c[m[m
+[1m+++ b/work/lab8/hello.c[m[m
+[36m@@ -5,7 +5,7 @@[m [mint[m[m
+ main(int argc, const char *argv[])[m[m
+ {[m[m
+   if (argc != 2) {[m[m
+[31m-    printf("usage: %s NAME\n", argv[0]);[m[m
+[32m+[m[32m    fprintf(stderr, "usage: %s NAME\n", argv[0]);[m[m
+     exit(1);[m[m
+   }[m[m
+   printf("hello %s\n", argv[1]);[m[m
+[K[?1l>trecupe1@g7-11:~/tmp/lab8/work/lab8$ git commit -a -a[Km ''s'e'n'd' 'u's'a'g'e' 'm'e's's'a'g'e' 't' [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Co' 's't'd'e'r'r'
+[master 0b1533e] send usage message to stderr
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ git push
+trecupe1@remote.cs.binghamton.edu's password: 
+Enumerating objects: 9, done.
+Counting objects:  11% (1/9)   Counting objects:  22% (2/9)   Counting objects:  33% (3/9)   Counting objects:  44% (4/9)   Counting objects:  55% (5/9)   Counting objects:  66% (6/9)   Counting objects:  77% (7/9)   Counting objects:  88% (8/9)   Counting objects: 100% (9/9)   Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 397 bytes | 397.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git
+   a029b44..0b1533e  master -> master
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ git shortlof[Kg
+[?1h=Travis Recupero (4):[m
+      added README[m
+      working with warnings[m
+      working: clean compile[m
+      send usage message to stderr[m
+[m
+[K[?1l>trecupe1@g7-11:~/tmp/lab8/work/lab8$ ^C
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ git checkout -v[Kb hello-multi
+Switched to a new branch 'hello-multi'
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ ls
+hello  hello.c	Makefile  README.md
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ git branch -l
+[?1h=* [32mhello-multi[m[m
+  master[m[m
+[K[?1l>trecupe1@g7-11:~/tmp/lab8/work/lab8$ cp ~/cs220/labs/lab8/files/hello-multi.c hello.c
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ make
+cc -g -Wall -std=c11    hello.c   -o hello
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ ,/hello
+bash: ,/hello: No such file or directory
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ ./hello
+usage: ./hello NAME...
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ ./hello john sur[Ke
+hello john
+hello sue
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ git commit -a -m ''a'l'l'o'w' 'g'r'e'e't'i'n'g' 'm'u'l't'i' [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cp'l'e' 'n'a'm'e's'
+[hello-multi 854e74d] allow greeting multiple names
+ 1 file changed, 5 insertions(+), 3 deletions(-)
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ git push -u origin hello-multi
+Warning: Permanently added the ECDSA host key for IP address '128.226.114.201' to the list of known hosts.
+trecupe1@remote.cs.binghamton.edu's password: 
+Enumerating objects: 9, done.
+Counting objects:  11% (1/9)   Counting objects:  22% (2/9)   Counting objects:  33% (3/9)   Counting objects:  44% (4/9)   Counting objects:  55% (5/9)   Counting objects:  66% (6/9)   Counting objects:  77% (7/9)   Counting objects:  88% (8/9)   Counting objects: 100% (9/9)   Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 460 bytes | 230.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git
+ * [new branch]      hello-multi -> hello-multi
+Branch 'hello-multi' set up to track remote branch 'hello-multi' from 'origin'.
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ git chce[K[K[K[Kcheckotu[K[Kut master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ make
+cc -g -Wall -std=c11    hello.c   -o hello
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ ./hello john sur[Ke
+usage: ./hello NAME
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ gedit[K[K[Kdit *
+
+(gedit:12599): Gtk-[1;33mWARNING[0m **: [34m17:28:57.672[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ make
+cc -g -Wall -std=c11    hello.c   -o hello
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ ./ [Khello sue
+hello sue
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ git commi [Kt -a m[K-jm[K[Km ''a's's'[1P'[1P'd'd'e'd' 'a' 'r'e't'u'r'n' 'a' '[1P't' 't'h' [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P'
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P'e'n' [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cd' 'o'f' 'm'a'i'n'(')'
+[master 2b1050f] added a return at end of main()
+ 1 file changed, 1 insertion(+)
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ git push
+trecupe1@remote.cs.binghamton.edu's password: 
+Enumerating objects: 9, done.
+Counting objects:  11% (1/9)   Counting objects:  22% (2/9)   Counting objects:  33% (3/9)   Counting objects:  44% (4/9)   Counting objects:  55% (5/9)   Counting objects:  66% (6/9)   Counting objects:  77% (7/9)   Counting objects:  88% (8/9)   Counting objects: 100% (9/9)   Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 393 bytes | 393.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git
+   0b1533e..2b1050f  master -> master
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ ^C
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ ls
+hello  hello.c	Makefile  README.md
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ git checkout hello [K-multi
+Switched to branch 'hello-multi'
+Your branch is up to date with 'origin/hello-multi'.
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ git merge master
+Auto-merging work/lab8/hello.c
+CONFLICT (content): Merge conflict in work/lab8/hello.c
+Automatic merge failed; fix conflicts and then commit the result.
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ git gedit *
+git: 'gedit' is not a git command. See 'git --help'.
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ gedit *
+
+(gedit:13325): Gtk-[1;33mWARNING[0m **: [34m17:36:07.967[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ make[K[K[K[Ktail -5 hell.c
+tail: cannot open 'hell.c' for reading: No such file or directory
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ tail -5 hell.c[Co.c
+  for (int i = 1; i < argc; i++) {
+    printf("hello %s\n", argv[i]);
+  }
+  return 0;
+}
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ ls
+hello  hello.c	Makefile  README.md
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ ./hllo[K[K[Kello john sur[Ke
+usage: ./hello NAME
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ make
+cc -g -Wall -std=c11    hello.c   -o hello
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ make./hello john sue
+hello john
+hello sue
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ git commit -a -a[Km ''m'e'r'g'e'd' 'm'a's't'e'r'
+[hello-multi f45f4e3] merged master
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ git push
+trecupe1@remote.cs.binghamton.edu's password: 
+Enumerating objects: 13, done.
+Counting objects:   7% (1/13)   Counting objects:  15% (2/13)   Counting objects:  23% (3/13)   Counting objects:  30% (4/13)   Counting objects:  38% (5/13)   Counting objects:  46% (6/13)   Counting objects:  53% (7/13)   Counting objects:  61% (8/13)   Counting objects:  69% (9/13)   Counting objects:  76% (10/13)   Counting objects:  84% (11/13)   Counting objects:  92% (12/13)   Counting objects: 100% (13/13)   Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 411 bytes | 411.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git
+   854e74d..f45f4e3  hello-multi -> hello-multi
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ git merge hello-mlti[K[K[Kulti
+Updating 2b1050f..f45f4e3
+Fast-forward
+ work/lab8/hello.c | 8 [32m+++++[m[31m---[m
+ 1 file changed, 5 insertions(+), 3 deletions(-)
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ make
+cc -g -Wall -std=c11    hello.c   -o hello
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ ../hello john sue
+bash: ../hello: No such file or directory
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ ../hello john sue[1P
+hello john
+hello sue
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ git branch -l [K
+[?1h=  hello-multi[m[m
+* [32mmaster[m[m
+[K[?1l>trecupe1@g7-11:~/tmp/lab8/work/lab8$ git shortlog hello.c
+[?1h=Travis Recupero (6):[m
+      working with warnings[m
+      working: clean compile[m
+      send usage message to stderr[m
+      allow greeting multiple names[m
+      added a return at end of main()[m
+      merged master[m
+[m
+[K[?1l>trecupe1@g7-11:~/tmp/lab8/work/lab8$ git commit -a -m ''m'e'r'g'e'd' 'h'e'l'l'o'-'m'u'l't'i'
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ git push
+trecupe1@remote.cs.binghamton.edu's password: 
+Total 0 (delta 0), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git
+   2b1050f..f45f4e3  master -> master
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ ls
+hello  hello.c	Makefile  README.md
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ cd ~/i220b
+trecupe1@g7-11:~/i220b$ ls
+README.md  submit  work
+trecupe1@g7-11:~/i220b$ git remote add lab8 \
+>   ssh://LOGIN@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[C[1P/git-repos/lab8.git[1P/git-repos/lab8.git[1P/git-repos/lab8.git[1P/git-repos/lab8.git[1P/git-repos/lab8.gitt/git-repos/lab8.gitr/git-repos/lab8.gite/git-repos/lab8.gitc/git-repos/lab8.gitu/git-repos/lab8.gitp/git-repos/lab8.gite/git-repos/lab8.git1/git-repos/lab8.git[C[1P@remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P@remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[1P@remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[1P@remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[1P@remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[Ct@remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[Cr@remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[Ce@remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[Cc@remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[Cu@remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cp@remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce@remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C1@remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+trecupe1@g7-11:~/i220b$ ls
+README.md  submit  work
+trecupe1@g7-11:~/i220b$ git pull --allow-unrelated-histories lab8 master
+trecupe1@remote.cs.binghamton.edu's password: 
+warning: no common commits
+remote: Enumerating objects: 37, done.[K
+remote: Counting objects:   2% (1/37)   [Kremote: Counting objects:   5% (2/37)   [
