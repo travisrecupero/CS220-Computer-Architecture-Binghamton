@@ -385,11 +385,53 @@ To ssh://remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git
    2b1050f..f45f4e3  master -> master
 
 
-Input:
+
+
+
+
+
+
+
+
+
+EX7
+
+Input: git remote add lab8 \
+>   ssh://trecupe1@remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git
+Output: 
+
+Input: git pull --allow-unrelated-histories lab8 master
 Output:
 
-Input:
-Output:
+Input: git log hello.c
+Output:commit f45f4e3ffc713a43878c6501cbcfefca69c30274 (lab8/master)
+Merge: 854e74d 2b1050f
+Author: Travis Recupero <trecupe1@binghamton.edu>
+Date:   Thu Oct 10 17:38:30 2019 -0400
+    merged master
 
-Input:
-Output:
+commit 2b1050ff39f12d3ce39a8f35753b76f551e52d4f
+Author: Travis Recupero <trecupe1@binghamton.edu>
+Date:   Thu Oct 10 17:30:16 2019 -0400
+    added a return at end of main()
+
+commit 854e74dbb17e26e32d61fab017d30f5346ce6949
+Author: Travis Recupero <trecupe1@binghamton.edu>
+Date:   Thu Oct 10 17:23:07 2019 -0400
+    allow greeting multiple names
+
+commit 0b1533ed46208a0a9bfa002e39080325987c0bce
+Author: Travis Recupero <trecupe1@binghamton.edu>
+Date:   Thu Oct 10 17:16:23 2019 -0400
+    send usage message to stderr
+
+commit a029b44dce0eb2d95066b34088dd4b6c7c4e7d62
+Author: Travis Recupero <trecupe1@binghamton.edu>
+Date:   Thu Oct 10 17:10:18 2019 -0400
+    working: clean compile
+
+commit a1e7e5851446309f7d526bb9b8539b45861c3623
+Author: Travis Recupero <trecupe1@binghamton.edu>
+Date:   Thu Oct 10 17:03:36 2019 -0400
+    working with warnings
+

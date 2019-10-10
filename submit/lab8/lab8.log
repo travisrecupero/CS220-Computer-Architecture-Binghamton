@@ -398,4 +398,88 @@ trecupe1@g7-11:~/i220b$ git pull --allow-unrelated-histories lab8 master
 trecupe1@remote.cs.binghamton.edu's password: 
 warning: no common commits
 remote: Enumerating objects: 37, done.[K
-remote: Counting objects:   2% (1/37)   [Kremote: Counting objects:   5% (2/37)   [
+remote: Counting objects:   2% (1/37)   [Kremote: Counting objects:   5% (2/37)   [Kremote: Counting objects:   8% (3/37)   [Kremote: Counting objects:  10% (4/37)   [Kremote: Counting objects:  13% (5/37)   [Kremote: Counting objects:  16% (6/37)   [Kremote: Counting objects:  18% (7/37)   [Kremote: Counting objects:  21% (8/37)   [Kremote: Counting objects:  24% (9/37)   [Kremote: Counting objects:  27% (10/37)   [Kremote: Counting objects:  29% (11/37)   [Kremote: Counting objects:  32% (12/37)   [Kremote: Counting objects:  35% (13/37)   [Kremote: Counting objects:  37% (14/37)   [Kremote: Counting objects:  40% (15/37)   [Kremote: Counting objects:  43% (16/37)   [Kremote: Counting objects:  45% (17/37)   [Kremote: Counting objects:  48% (18/37)   [Kremote: Counting objects:  51% (19/37)   [Kremote: Counting objects:  54% (20/37)   [Kremote: Counting objects:  56% (21/37)   [Kremote: Counting objects:  59% (22/37)   [Kremote: Counting objects:  62% (23/37)   [Kremote: Counting objects:  64% (24/37)   [Kremote: Counting objects:  67% (25/37)   [Kremote: Counting objects:  70% (26/37)   [Kremote: Counting objects:  72% (27/37)   [Kremote: Counting objects:  75% (28/37)   [Kremote: Counting objects:  78% (29/37)   [Kremote: Counting objects:  81% (30/37)   [Kremote: Counting objects:  83% (31/37)   [Kremote: Counting objects:  86% (32/37)   [Kremote: Counting objects:  89% (33/37)   [Kremote: Counting objects:  91% (34/37)   [Kremote: Counting objects:  94% (35/37)   [Kremote: Counting objects:  97% (36/37)   [Kremote: Counting objects: 100% (37/37)   [Kremote: Counting objects: 100% (37/37), done.[K
+remote: Compressing objects:   5% (1/20)   [Kremote: Compressing objects:  10% (2/20)   [Kremote: Compressing objects:  15% (3/20)   [Kremote: Compressing objects:  20% (4/20)   [Kremote: Compressing objects:  25% (5/20)   [Kremote: Compressing objects:  30% (6/20)   [Kremote: Compressing objects:  35% (7/20)   [Kremote: Compressing objects:  40% (8/20)   [Kremote: Compressing objects:  45% (9/20)   [Kremote: Compressing objects:  50% (10/20)   [Kremote: Compressing objects:  55% (11/20)   [Kremote: Compressing objects:  60% (12/20)   [Kremote: Compressing objects:  65% (13/20)   [Kremote: Compressing objects:  70% (14/20)   [Kremote: Compressing objects:  75% (15/20)   [Kremote: Compressing objects:  80% (16/20)   [Kremote: Compressing objects:  85% (17/20)   [Kremote: Compressing objects:  90% (18/20)   [Kremote: Compressing objects:  95% (19/20)   [Kremote: Compressing objects: 100% (20/20)   [Kremote: Compressing objects: 100% (20/20), done.[K
+remote: Total 37 (delta 11), reused 0 (delta 0)[K
+Unpacking objects:   2% (1/37)   Unpacking objects:   5% (2/37)   Unpacking objects:   8% (3/37)   Unpacking objects:  10% (4/37)   Unpacking objects:  13% (5/37)   Unpacking objects:  16% (6/37)   Unpacking objects:  18% (7/37)   Unpacking objects:  21% (8/37)   Unpacking objects:  24% (9/37)   Unpacking objects:  27% (10/37)   Unpacking objects:  29% (11/37)   Unpacking objects:  32% (12/37)   Unpacking objects:  35% (13/37)   Unpacking objects:  37% (14/37)   Unpacking objects:  40% (15/37)   Unpacking objects:  43% (16/37)   Unpacking objects:  45% (17/37)   Unpacking objects:  48% (18/37)   Unpacking objects:  51% (19/37)   Unpacking objects:  54% (20/37)   Unpacking objects:  56% (21/37)   Unpacking objects:  59% (22/37)   Unpacking objects:  62% (23/37)   Unpacking objects:  64% (24/37)   Unpacking objects:  67% (25/37)   Unpacking objects:  70% (26/37)   Unpacking objects:  72% (27/37)   Unpacking objects:  75% (28/37)   Unpacking objects:  78% (29/37)   Unpacking objects:  81% (30/37)   Unpacking objects:  83% (31/37)   Unpacking objects:  86% (32/37)   Unpacking objects:  89% (33/37)   Unpacking objects:  91% (34/37)   Unpacking objects:  94% (35/37)   Unpacking objects:  97% (36/37)   Unpacking objects: 100% (37/37)   Unpacking objects: 100% (37/37), done.
+From ssh://remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> lab8/master
+hint: Waiting for your editor to close the file... [?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;52r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[52;1H[97m[41mE325: ATTENTION[m
+Found a swap file by the name "~/git-repos/i220b/.git/.MERGE_MSG.swp"
+[10Cowned by: trecupe1   dated: Thu Sep 12 17:57:49 2019
+[9Cfile name: ~trecupe1/git-repos/i220b/.git/MERGE_MSG
+[10Cmodified: YES
+[9Cuser name: trecupe1   host name: g7-11
+[8Cprocess ID: 14674
+While opening file "/import/linux/home1/trecupe1/git-repos/i220b/.git/MERGE
+[51;76H_[52;1HMSG"
+[13Cdated: Thu Oct 10 17:45:44 2019
+      NEWER than swap file!
+
+(1) Another program may be editing the same file.  If this is the case,
+    be careful not to end up with two different instances of the same
+    file when making changes.  Quit, or continue with caution.
+(2) An edit session for this file crashed.
+    If this is the case, use ":recover" or "vim -r /import/linux/home1/trec
+[51;76Hu[52;1Hpe1/git-repos/i220b/.git/MERGE_MSG"
+    to recover the changes (see ":help recovery").
+    If you did this already, delete the swap file "/import/linux/home1/trec
+[51;76Hu[52;1Hpe1/git-repos/i220b/.git/.MERGE_MSG.swp"
+    to avoid this message.
+[?1000l
+[32mSwap file "~/git-repos/i220b/.git/.MERGE_MSG.swp" already exists![m
+[32m[O]pen Read-Only, (E)dit anyway, (R)ecover, (D)elete it, (Q)uit, (A)bort: [?25h[?1000h[m[52;1H[K[52;1H[?1000l[?2004l[23;2t[23;1t[22;2t[22;1t[23;2t[23;1t
+[?2004l[?1l>[?1049l[23;0;0terror: There was a problem with the editor 'editor'.
+Not committing merge; use 'git commit' to complete the merge.
+trecupe1@g7-11:~/i220b$ cd work [K/lab8
+trecupe1@g7-11:~/i220b/work/lab8$ ls
+hello.c  lab8.log  lab8_output.txt  Makefile  README.md
+trecupe1@g7-11:~/i220b/work/lab8$ git lof [K[Kg hello.c
+[?1h=[K[?1l>trecupe1@g7-11:~/i220b/work/lab8$ ll[K[Kgit log hello.cls[Kcd work/lab8ls[Kgit log hello.c[Kcd ..
+trecupe1@g7-11:~/i220b/work$ cd ..git log hello.cls[Kcd work/lab8git pull --allow-unrelated-histories lab8 master
+error: You have not concluded your merge (MERGE_HEAD exists).
+[33mhint: Please, commit your changes before merging.[m
+fatal: Exiting because of unfinished merge.
+trecupe1@g7-11:~/i220b/work$ git stst[K[Katus
+On branch master
+Your branch is up to date with 'origin/master'.
+
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+
+	[32mnew file:   lab8/.gitignore[m
+	[32mnew file:   lab8/Makefile[m
+	[32mnew file:   lab8/README.md[m
+	[32mnew file:   lab8/hello.c[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mlab8/lab8.log[m
+	[31mlab8/lab8_output.txt[m
+
+trecupe1@g7-11:~/i220b/work$ git add .[Klab8.log lab8_pu[K[Kouytp[K[K[Ktpus[Kt.txt
+fatal: pathspec 'lab8.log' did not match any files
+trecupe1@g7-11:~/i220b/work$ git add lab8.log lab8_output.txt[C[1@l[1@s[1@b[1P[1P[1@a[1@b[1@8[1@/[C[C[C[C[C[C[C[C[C[Clab8_output.txtalab8_output.txtblab8_output.txt8lab8_output.txt/lab8_output.txt
+trecupe1@g7-11:~/i220b/work$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+
+	[32mnew file:   lab8/.gitignore[m
+	[32mnew file:   lab8/Makefile[m
+	[32mnew file:   lab8/README.md[m
+	[32mnew file:   lab8/hello.c[m
+	[32mnew file:   lab8/lab8.log[m
+	[32mnew file:   lab8/lab8_output.txt[m
+
+trecupe1@g7-11:~/i220b/work$ git commit -a -m ''m'e'g'e'r'[1P'[1P'r'[1P'[1P'r'g'e'd'
+[master e4dfaaa] merged
+trecupe1@g7-11:~/i220b/work$ git op[K[Kpush[K[K[K[K[K[K[K[K
