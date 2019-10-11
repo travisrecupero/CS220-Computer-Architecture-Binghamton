@@ -1,0 +1,436 @@
+EX1
+Input: git init --bare
+Output: Initialized empty Git repository in /import/linux/home1/trecupe1/git-repos/lab8.git/
+
+
+Input: trecupe1@g7-11:~/tmp$ git clone \
+>   ssh://trecupe1@remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git
+Output: Cloning into 'lab8'...
+trecupe1@remote.cs.binghamton.edu's password: 
+warning: You appear to have cloned an empty repository.
+
+
+Input: git remote -v
+Output: origin	ssh://trecupe1@remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git (fetch)
+origin	ssh://trecupe1@remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git (push)
+
+
+Input: ls -a
+Output: .  ..  .git
+
+
+Input: git status
+Output: On branch master
+No commits yet
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+Input: git add README.md, git status --short
+Output: A  README.md
+
+
+Input: git commit -m 'added README'
+Output: [master (root-commit) cf35407] added README
+ 1 file changed, 4 insertions(+)
+ create mode 100644 work/lab8/README.md
+
+
+Input: git branch -l
+Output: * master
+
+
+Input: git push --set-upstream origin master
+Output: trecupe1@remote.cs.binghamton.edu's password: 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 339 bytes | 169.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+
+
+
+
+
+
+
+
+
+
+
+
+EX2
+
+Input: git status -s
+Output: ?? Makefile
+?? hello
+?? hello.c
+
+
+Input:trecupe1@g7-11:~/tmp/lab8/work/lab8$ cp ~/cs220/labs/lab8/files/.gitignore .
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ git status -s
+Output: ?? .gitignore
+?? Makefile
+?? hello.c
+
+
+Input: trecupe1@g7-11:~/tmp/lab8/work/lab8$ git add .
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ git status -s
+Output:A  .gitignore
+A  Makefile
+A  hello.c
+
+
+Input: git commit -m 'working with warnings'
+Output:[master a1e7e58] working with warnings
+ 3 files changed, 22 insertions(+)
+ create mode 100644 work/lab8/.gitignore
+ create mode 100644 work/lab8/Makefile
+ create mode 100644 work/lab8/hello.c
+
+
+Input:trecupe1@g7-11:~/tmp/lab8/work/lab8$ git status -s
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ git push
+Output:Warning: Permanently added the ECDSA host key for IP address '128.226.114.206' to the list of known hosts.
+trecupe1@remote.cs.binghamton.edu's password: 
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (7/7), 671 bytes | 335.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git
+   cf35407..a1e7e58  master -> master
+
+
+Input: git log
+Output:commit a1e7e5851446309f7d526bb9b8539b45861c3623 (HEAD -> master, origin/master)
+Author: Travis Recupero <trecupe1@binghamton.edu>
+Date:   Thu Oct 10 17:03:36 2019 -0400
+    working with warnings
+commit cf35407f8e75526529482109cc5b8c16056041d9
+Author: Travis Recupero <trecupe1@binghamton.edu>
+Date:   Thu Oct 10 16:47:55 2019 -0400
+    added README
+
+
+Input: git status -s
+Output: M hello.c
+
+
+Input: git commit -a -m 'working: clean compile'
+Output: [master a029b44] working: clean compile
+ 1 file changed, 3 insertions(+)
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ git push
+trecupe1@remote.cs.binghamton.edu's password: 
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 403 bytes | 403.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git
+   a1e7e58..a029b44  master -> master
+
+
+Input: git log hello.c
+Output: commit a029b44dce0eb2d95066b34088dd4b6c7c4e7d62 (HEAD -> master, origin/master)
+Author: Travis Recupero <trecupe1@binghamton.edu>
+Date:   Thu Oct 10 17:10:18 2019 -0400
+    working: clean compile
+commit a1e7e5851446309f7d526bb9b8539b45861c3623
+Author: Travis Recupero <trecupe1@binghamton.edu>
+Date:   Thu Oct 10 17:03:36 2019 -0400
+    working with warnings
+
+
+Input: git log -1 hello.c
+Output: commit a029b44dce0eb2d95066b34088dd4b6c7c4e7d62 (HEAD -> master, origin/master)
+Author: Travis Recupero <trecupe1@binghamton.edu>
+Date:   Thu Oct 10 17:10:18 2019 -0400
+    working: clean compile
+
+
+Input: git diff
+Output: diff --git a/work/lab8/hello.c b/work/lab8/hello.c
+index 14e4e73..707ef29 100644
+--- a/work/lab8/hello.c
++++ b/work/lab8/hello.c
+@@ -5,7 +5,7 @@ int
+ main(int argc, const char *argv[])
+ {
+   if (argc != 2) {
+-    printf("usage: %s NAME\n", argv[0]);
++    fprintf(stderr, "usage: %s NAME\n", argv[0]);
+     exit(1);
+   }
+   printf("hello %s\n", argv[1]);
+
+
+Input: git commit -a -m 'send usage message to stderr'
+Output: [master 0b1533e] send usage message to stderr
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+trecupe1@g7-11:~/tmp/lab8/work/lab8$ git push
+trecupe1@remote.cs.binghamton.edu's password: 
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 397 bytes | 397.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git
+   a029b44..0b1533e  master -> master
+
+
+Input: git shortlog
+Output: Travis Recupero (4):
+      added README
+      working with warnings
+      working: clean compile
+      send usage message to stderr
+
+
+
+
+
+
+
+
+
+
+
+
+EX3
+
+Input: git checkout -b hello-multi
+Output: Switched to a new branch 'hello-multi'
+
+
+Input: git branch -l
+Output: * hello-multi
+  master
+
+
+Input: git commit -a -m 'allow greeting multiple names'
+Output: [hello-multi 854e74d] allow greeting multiple names
+ 1 file changed, 5 insertions(+), 3 deletions(-)
+
+
+Input: git push -u origin hello-multi
+Output: Warning: Permanently added the ECDSA host key for IP address '128.226.114.201' to the list of known hosts.
+trecupe1@remote.cs.binghamton.edu's password: 
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 460 bytes | 230.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git
+ * [new branch]      hello-multi -> hello-multi
+Branch 'hello-multi' set up to track remote branch 'hello-multi' from 'origin'.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EX4
+
+Input: git checkout master
+Output: Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+
+Input: git commit -a -m 'added a return at end of main()'
+Output: [master 2b1050f] added a return at end of main()
+ 1 file changed, 1 insertion(+)
+
+
+Input: git push
+Output: trecupe1@remote.cs.binghamton.edu's password: 
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 393 bytes | 393.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git
+   0b1533e..2b1050f  master -> master
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EX5
+
+Input:git checkout hello-multi
+Output:Switched to branch 'hello-multi'
+Your branch is up to date with 'origin/hello-multi'.
+
+
+Input: git merge master
+Output: Auto-merging work/lab8/hello.c
+CONFLICT (content): Merge conflict in work/lab8/hello.c
+Automatic merge failed; fix conflicts and then commit the result.
+
+
+Input: git commit -a -m 'merged master'
+Output: [hello-multi f45f4e3] merged master
+
+
+Input: git push
+Output: trecupe1@remote.cs.binghamton.edu's password: 
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 411 bytes | 411.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git
+   854e74d..f45f4e3  hello-multi -> hello-multi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EX6
+
+Input: git commit -a -m 'merged master'
+Output: [hello-multi f45f4e3] merged master
+
+
+Input: git push
+Output: trecupe1@remote.cs.binghamton.edu's password: 
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 411 bytes | 411.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git
+   854e74d..f45f4e3  hello-multi -> hello-multi
+
+
+Input: git checkout master
+Output: Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+
+Input: git merge hello-multi
+Output: Updating 2b1050f..f45f4e3
+Fast-forward
+ work/lab8/hello.c | 8 +++++---
+ 1 file changed, 5 insertions(+), 3 deletions(-)
+
+
+Input: git branch -l
+Output:   hello-multi
+* master
+
+
+Input:git shortlog hello.c
+Output:Travis Recupero (6):
+      working with warnings
+      working: clean compile
+      send usage message to stderr
+      allow greeting multiple names
+      added a return at end of main()
+      merged master
+
+
+Input: git commit -a -m 'merged hello-multi'
+Output:On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+
+
+Input: git push
+Output: trecupe1@remote.cs.binghamton.edu's password: 
+Total 0 (delta 0), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git
+   2b1050f..f45f4e3  master -> master
+
+
+
+
+
+
+
+
+
+
+
+EX7
+
+Input: git remote add lab8 \
+>   ssh://trecupe1@remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git
+Input: git pull --allow-unrelated-histories lab8 master
+Output: Lost both of these outputs (TA was helping, said it was okay**********)
+				(Still have out put of merge changes below)
+
+Input: git log hello.c
+Output:commit f45f4e3ffc713a43878c6501cbcfefca69c30274 (lab8/master)
+Merge: 854e74d 2b1050f
+Author: Travis Recupero <trecupe1@binghamton.edu>
+Date:   Thu Oct 10 17:38:30 2019 -0400
+    merged master
+
+commit 2b1050ff39f12d3ce39a8f35753b76f551e52d4f
+Author: Travis Recupero <trecupe1@binghamton.edu>
+Date:   Thu Oct 10 17:30:16 2019 -0400
+    added a return at end of main()
+
+commit 854e74dbb17e26e32d61fab017d30f5346ce6949
+Author: Travis Recupero <trecupe1@binghamton.edu>
+Date:   Thu Oct 10 17:23:07 2019 -0400
+    allow greeting multiple names
+
+commit 0b1533ed46208a0a9bfa002e39080325987c0bce
+Author: Travis Recupero <trecupe1@binghamton.edu>
+Date:   Thu Oct 10 17:16:23 2019 -0400
+    send usage message to stderr
+
+commit a029b44dce0eb2d95066b34088dd4b6c7c4e7d62
+Author: Travis Recupero <trecupe1@binghamton.edu>
+Date:   Thu Oct 10 17:10:18 2019 -0400
+    working: clean compile
+
+commit a1e7e5851446309f7d526bb9b8539b45861c3623
+Author: Travis Recupero <trecupe1@binghamton.edu>
+Date:   Thu Oct 10 17:03:36 2019 -0400
+    working with warnings
+
