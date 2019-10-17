@@ -398,10 +398,9 @@ EX7
 
 Input: git remote add lab8 \
 >   ssh://trecupe1@remote.cs.binghamton.edu/home/trecupe1/git-repos/lab8.git
-Output: 
-
 Input: git pull --allow-unrelated-histories lab8 master
-Output:
+Output: Lost both of these outputs (TA was helping, said it was okay**********)
+				(Still have out put of merge changes below)
 
 Input: git log hello.c
 Output:commit f45f4e3ffc713a43878c6501cbcfefca69c30274 (lab8/master)
