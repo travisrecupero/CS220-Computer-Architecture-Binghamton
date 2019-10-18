@@ -2,7 +2,7 @@
 
 EX2
 
-The mystery function takes in an argument and give a different number. 
+The mystery function takes in an argument and gives a different number. 
 When we run objdump on the mystery object file, we see that the assembly code
 makes use of an 'and'. In this example we see:
 		  
