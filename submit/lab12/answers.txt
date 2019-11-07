@@ -1,0 +1,46 @@
+EX1
+trecupe1@g7-04:/import/linux/home1/trecupe1/i220b/work/lab12/files/quote-files$ ls *'$'*
+'1$2'  'a$b'
+trecupe1@g7-04:/import/linux/home1/trecupe1/i220b/work/lab12/files/quote-files$ ls *"'"*
+"'12"  "a'b"
+trecupe1@g7-04:/import/linux/home1/trecupe1/i220b/work/lab12/files/quote-files$ ls *'\'*
+'\\ab'
+trecupe1@g7-04:/import/linux/home1/trecupe1/i220b/work/lab12/files/quote-files$ ls -l ??
+-rw-r--r-- 1 trecupe1 trecupe1 0 Nov  7 16:38 '**'
+trecupe1@g7-04:/import/linux/home1/trecupe1/i220b/work/lab12/files/quote-files$ ls --
+'**'  '1$2'  "'12"  '1"2'  'a$b'  '\\ab'  'a"b'  "a'b"	 -l
+
+
+
+
+EX2
+trecupe1@g7-04:/import/linux/home1/trecupe1/i220b/work/lab12/files/quote-files$ p=$PATH
+trecupe1@g7-04:/import/linux/home1/trecupe1/i220b/work/lab12/files/quote-files$ echo $p
+/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+trecupe1@g7-04:/import/linux/home1/trecupe1/i220b/work/lab12/files/quote-files$ env | grep "PATH"
+XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session5
+XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+GLADE_CATALOG_PATH=:
+GLADE_MODULE_PATH=:
+GLADE_PIXMAP_PATH=:
+PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+trecupe1@g7-04:/import/linux/home1/trecupe1/i220b/work/lab12/files/quote-files$ export PATH=""
+trecupe1@g7-04:/import/linux/home1/trecupe1/i220b/work/lab12/files/quote-files$ echo $PATH
+trecupe1@g7-04:/import/linux/home1/trecupe1/i220b/work/lab12/files/quote-files$ export PATH=$p
+trecupe1@g7-04:/import/linux/home1/trecupe1/i220b/work/lab12/files/quote-files$ echo $PATH
+/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+
+
+
+
+
+
+
+EX6
+trecupe1@g7-04:~$ sleep 5 && echo 123
+123
+
+
+
+
+
