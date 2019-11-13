@@ -31,30 +31,46 @@ typedef struct FnsData{
  *  FnInfo's for functions which are callable directly or indirectly
  *  from the function whose address is rootFn.
  */
-const FnsData *
-new_fns_data(void *rootFn)
-{
-  //verify assumption used when decoding call address
-  assert(sizeof(int) == 4);
-  //@TODO
 
-  FnsData *fns_data = (FnsData *)calloc(1, sizeof(FnsData));
+  /*  Class notes
+      - declare pointer as char* and keep adding length to it
+      - byte pointed to by char* is opcode
+      - every 4bytes after call are treated as an integer and
+  */
+  /*  Hints
+    Using the x86-64_lde module, have the new_fns_data() function
+    print out the length of each instruction in the root function being traced.
+    Your code should be setup to terminate when any RET opcode is seen.
+  */
+  const FnsData *
+  new_fns_data(void *rootFn)
+  {
+    //verify assumption used when decoding call address
+    assert(sizeof(int) == 4);
+    //@TODO
+    FnsData *fns_data = (FnsData *)calloc(1, sizeof(FnsData));
 
-  //declare pointer as char* and keep adding length to it
-  //byte pointed to by char* is opcode
-  //every 4bytes after call are treated as an integer and
+    char *op = (char *)(rootFn);
+    printf("%s\n", &op);
 
-  for(int i = 0; i < 128; i++){
-	   fns_data->info[i].address = &rootFn;
-	    fns_data->info[i].length = fns_data->info[i].get_op_length(fns_data->info[i].address);
-	if(is_call(CALL_OP)){
-		fns_data->info[i].nInCalls += fns_data->info[i].nInCalls;
-	}
-	if(is_ret(RET_NEAR_OP || RET_NEAR_WITH_POP_OP || RET_FAR_OP || RET_FAR_WITH_POP_OP)){
-		break;
-	}
-  }
+    int op_length = get_op_length(rootFn);
 
+    for(int i = 0; i < sizeof(rootFn); i++){
+      if(is_ret(rootFn)){
+        //printf("%d\n", get_op_length(rootFn));
+      }
+    }
+
+    for(int i = 0; i < 1; i++){
+	      fns_data->info[i].address = &rootFn;
+        fns_data->info[i].length = get_op_length(fns_data->info[i].address);
+	      if(is_call(CALL_OP)){
+		        fns_data->info[i].nInCalls += fns_data->info[i].nInCalls;
+	      }
+	      if(is_ret(RET_NEAR_OP || RET_NEAR_WITH_POP_OP || RET_FAR_OP || RET_FAR_WITH_POP_OP)){
+		        break;
+	      }
+   }
 
   return fns_data;
 }
