@@ -24,7 +24,7 @@ static inline bool is_ret(unsigned op) {
 }
 
 typedef struct FnsData{
-  FnInfo *info[128]; //each FnInfo is 24-bytes
+  FnInfo *info; //each FnInfo is 24-bytes
 } FnsData;
 
 /** Return pointer to opaque data structure containing collection of
@@ -37,20 +37,23 @@ new_fns_data(void *rootFn)
   //verify assumption used when decoding call address
   assert(sizeof(int) == 4);
   //@TODO
-  FnsData *fns_data = (FnsData *)calloc(1, sizeof(FnsData));  
-  //declar pointer as char* and keep adding length to it
-  // byte pointed to by char* is opcode
+
+  FnsData *fns_data = (FnsData *)calloc(1, sizeof(FnsData));
+
+  //declare pointer as char* and keep adding length to it
+  //byte pointed to by char* is opcode
   //every 4bytes after call are treated as an integer and
-for(int i = 0; i < 128; i++){
-	fns_data->info[i].address = &rootFn;
-	fns_data->info[i].length = fns_data->info[i].get_op_length(fns_data->info[i].address);
+
+  for(int i = 0; i < 128; i++){
+	   fns_data->info[i].address = &rootFn;
+	    fns_data->info[i].length = fns_data->info[i].get_op_length(fns_data->info[i].address);
 	if(is_call(CALL_OP)){
 		fns_data->info[i].nInCalls += fns_data->info[i].nInCalls;
 	}
 	if(is_ret(RET_NEAR_OP || RET_NEAR_WITH_POP_OP || RET_FAR_OP || RET_FAR_WITH_POP_OP)){
-		break;		
+		break;
 	}
-  }  
+  }
 
 
   return fns_data;
