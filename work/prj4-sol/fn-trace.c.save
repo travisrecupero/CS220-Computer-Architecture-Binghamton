@@ -1,4 +1,3 @@
-
 #include "fn-trace.h" include "x86-64_lde.h"
 
 #include "memalloc.h"
@@ -52,14 +51,12 @@ typedef struct FnsData{
 
     char *op = (char *)(rootFn);
     printf("%x\n", *op);
-    
-    int op_length = get_op_length(rootFn);
-	printf("op l %x\n",op_length);
+	
     for(int i = 0; i < sizeof(op_length); i++){
-	fns_data->info[i].address = op;
-	printf("fns test %d\n", fns_data->info[i].adress);
+	
     }
-
+   int op_length = get_op_length(rootFn);
+	printf("op l %x\n",op_length);
     for(int i = 0; i < sizeof(rootFn); i++){
       if(is_ret(rootFn)){
         //printf("%d\n", get_op_length(rootFn));
