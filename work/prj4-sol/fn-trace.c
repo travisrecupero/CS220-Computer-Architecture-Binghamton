@@ -38,7 +38,10 @@ new_fns_data(void *rootFn)
   assert(sizeof(int) == 4);
   //@TODO
   FnsData *fns_data = (FnsData *)calloc(1, sizeof(FnsData));  
-  for(int i = 0; i < 128; i++){
+  //declar pointer as char* and keep adding length to it
+  // byte pointed to by char* is opcode
+  //every 4bytes after call are treated as an integer and
+for(int i = 0; i < 128; i++){
 	fns_data->info[i].address = &rootFn;
 	fns_data->info[i].length = fns_data->info[i].get_op_length(fns_data->info[i].address);
 	if(is_call(CALL_OP)){
