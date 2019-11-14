@@ -75,32 +75,29 @@ typedef unsigned char Byte;
 
     //int i = 0;
     for(int i = 0; i < 15; i++){
+      //will use temp_op when function returns to get instruction after call
+      Byte *temp_op = p;
       while(!(is_ret(op))){
-          printf("p* %x\n", *p);
-          op_length = get_op_length(p);
-          printf("op_length %d\n", op_length);
-          p = p + op_length;
+          op_length = get_op_length(p); //get op_length
+          p = p + op_length; //get next instructions address
+
           //check if address is 0
           if(is_call(*p)){
-            printf("calle add %x\n", get_callee_address(p));
             if(fns_data->info[i].address == 0){
               fns_data->info[i].address = get_callee_address(p);
-              printf("calle address %x\n", fns_data->info[0].address);
-              fns_data->info[i].length = op_length;
+              fns_data->info[i].length = get_op_length((Byte *)p);
               fns_data->info[i].nInCalls++;
-              fns_data->info[i].nOutCalls++;
-
             } else {
               p = get_callee_address(p);
-              printf("test %x : \n", p);
             }
           }
-        //printf("xxx %d\n", op_length);
-        //printf("xx %p\n", p);
-        op = *p;
-        printf("op %x\n", op);
+
+        op = *p + 1;
+        printf("temp op: %x \n", temp_op);
       }
 
+      op = temp_op + 1;
+      fns_data->info[i].nOutCalls++;
     }
 
     for(int i = 0; i < 15; i++){
