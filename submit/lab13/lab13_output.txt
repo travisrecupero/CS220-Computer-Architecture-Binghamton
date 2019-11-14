@@ -1,0 +1,35 @@
+
+//////////////////////////////////////
+Standard Input Character Count:
+
+EOF = -1
+205
+
+12  32 205 stdin-char-count.c
+
+//////////////////////////////////////
+File Character Count:
+
+Needed to add fclose(in) at end
+
+
+//////////////////////////////////////
+Buffering:
+
+Contents of the buffer are written from the user space buffer to a 
+kernel space buffer. However, when we pass a '1' in the command line
+fgetc() is used which flows from the kernel buffer to the stdio buffer 
+(which is much faster).
+
+
+
+
+
+//////////////////////////////////////
+
+
+
+
+
+
+//////////////////////////////////////

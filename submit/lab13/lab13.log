@@ -1,0 +1,466 @@
+Script started on 2019-11-14 12:31:11-05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13$ touch lab13_output .txt
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13$ ls
+file-char-count  lab13.log	   no-buffer-copy  stdin-char-count
+file-copy	 lab13_output.txt  rec-io
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13$ g[Kgeany lab13_output .txt
+^C
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13$ cd stdin-char-count/
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/stdin-char-count$ ls
+Makefile  stdin-char-count.c
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/stdin-char-count$ ./stdin-char-count <stdin-char-count.c
+bash: ./stdin-char-count: No such file or directory
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/stdin-char-count$ ls
+Makefile  stdin-char-count.c
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/stdin-char-count$ make
+gcc -g -Wall -std=c11 -funsigned-char    stdin-char-count.c   -o stdin-char-count
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/stdin-char-count$ ./stdin-char-count <stdin-char-count.c
+EOF = -1
+^C
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/stdin-char-count$ gedit *
+
+(gedit:21138): Gtk-[1;33mWARNING[0m **: [34m12:39:56.473[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/stdin-char-count$ ls
+Makefile  stdin-char-count  stdin-char-count.c
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/stdin-char-count$ make
+gcc -g -Wall -std=c11 -funsigned-char    stdin-char-count.c   -o stdin-char-count
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/stdin-char-count$ make[2Plsgedit *./stdin-char-count <stdin-char-count.c
+EOF = -1
+205
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/stdin-char-count$ wc stdin-char-count.c.
+wc: stdin-char-count.c.: No such file or directory
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/stdin-char-count$ wc stdin-char-count.c.[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[Kls
+Makefile  stdin-char-count  stdin-char-count.c
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/stdin-char-count$ lswc stdin-char-count.c.[K
+ 12  32 205 stdin-char-count.c
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/stdin-char-count$ [Ktrecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/stdin-char-count$ ls
+Makefile  stdin-char-count  stdin-char-count.c
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/stdin-char-count$ cd ..
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13$ ls
+file-char-count  lab13.log	   no-buffer-copy  stdin-char-count
+file-copy	 lab13_output.txt  rec-io
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13$ cd file-char-count/
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-char-count$ ls
+file-char-count.c  Makefile
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-char-count$ make
+gcc -g -Wall -std=c11    file-char-count.c   -o file-char-count
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-char-count$ ./file-char-count file-char-count.c
+566
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-char-count$ wc file-char-count
+   16   172 19544 file-char-count
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-char-count$ wc file-char-count[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./file-char-count file-char-count.c[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ktest.c
+cannot read test.c: No such file or directory
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-char-count$ ./file-char-count test.c[K[K
+cannot read test: No such file or directory
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-char-count$ ./file-char-count test[K[K[K[Kxxx
+cannot read xxx: No such file or directory
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-char-count$ ./file-char-count xxx[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kvalgrind ./file-char-count file-char-count.c
+==22246== Memcheck, a memory error detector
+==22246== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==22246== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==22246== Command: ./file-char-count file-char-count.c
+==22246== 
+566
+==22246== 
+==22246== HEAP SUMMARY:
+==22246==     in use at exit: 552 bytes in 1 blocks
+==22246==   total heap usage: 3 allocs, 2 frees, 9,768 bytes allocated
+==22246== 
+==22246== LEAK SUMMARY:
+==22246==    definitely lost: 0 bytes in 0 blocks
+==22246==    indirectly lost: 0 bytes in 0 blocks
+==22246==      possibly lost: 0 bytes in 0 blocks
+==22246==    still reachable: 552 bytes in 1 blocks
+==22246==         suppressed: 0 bytes in 0 blocks
+==22246== Rerun with --leak-check=full to see details of leaked memory
+==22246== 
+==22246== For counts of detected and suppressed errors, rerun with: -v
+==22246== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-char-count$ valgrind ./file-char-count file-char-count.c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-./file-[1@c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-./file[1@-[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl./fil[1@e[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce./fi[1@l[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca./f[1@i[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ck./[1@f[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-.[1@/[1@c[1@h[1@e[1@c[1@k[1@=[1@f[1@u[1@l[1@l[1@ 
+==22321== Memcheck, a memory error detector
+==22321== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==22321== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==22321== Command: ./file-char-count file-char-count.c
+==22321== 
+566
+==22321== 
+==22321== HEAP SUMMARY:
+==22321==     in use at exit: 552 bytes in 1 blocks
+==22321==   total heap usage: 3 allocs, 2 frees, 9,768 bytes allocated
+==22321== 
+==22321== LEAK SUMMARY:
+==22321==    definitely lost: 0 bytes in 0 blocks
+==22321==    indirectly lost: 0 bytes in 0 blocks
+==22321==      possibly lost: 0 bytes in 0 blocks
+==22321==    still reachable: 552 bytes in 1 blocks
+==22321==         suppressed: 0 bytes in 0 blocks
+==22321== Reachable blocks (those to which a pointer was found) are not shown.
+==22321== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==22321== 
+==22321== For counts of detected and suppressed errors, rerun with: -v
+==22321== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-char-count$ valgrind --leak-check=full ./file-char-count file-char-count.c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./file-c[C[18P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./file-char-count xxx[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvalgrind ./file-char-count file-char-count.c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C--leak-c[C[18@eck=full ./file-ch[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@ [1@-[1@v
+==22352== Memcheck, a memory error detector
+==22352== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==22352== Using Valgrind-3.14.0-353a3587bb-20181007X and LibVEX; rerun with -h for copyright info
+==22352== Command: ./file-char-count file-char-count.c
+==22352== 
+--22352-- Valgrind options:
+--22352--    --leak-check=full
+--22352--    -v
+--22352-- Contents of /proc/version:
+--22352--   Linux version 4.19.0-5-amd64 (debian-kernel@lists.debian.org) (gcc version 8.3.0 (Debian 8.3.0-7)) #1 SMP Debian 4.19.37-5 (2019-06-19)
+--22352-- 
+--22352-- Arch and hwcaps: AMD64, LittleEndian, amd64-cx16-rdtscp-sse3-avx
+--22352-- Page sizes: currently 4096, max supported 4096
+--22352-- Valgrind library directory: /usr/lib/x86_64-linux-gnu/valgrind
+--22352-- Reading syms from /import/linux/home1/trecupe1/git-repos/i220b/work/lab13/file-char-count/file-char-count
+--22352-- Reading syms from /lib/x86_64-linux-gnu/ld-2.28.so
+--22352--   Considering /usr/lib/debug/.build-id/f2/5dfd7b95be4ba386fd71080accae8c0732b711.debug ..
+--22352--   .. build-id is valid
+--22352-- Reading syms from /usr/lib/x86_64-linux-gnu/valgrind/memcheck-amd64-linux
+--22352--   Considering /usr/lib/debug/.build-id/32/2e77af97f403c3d34ff09edf60b089e72ec889.debug ..
+--22352--   .. build-id is valid
+--22352--    object doesn't have a dynamic symbol table
+--22352-- Scheduler: using generic scheduler lock implementation.
+--22352-- Reading suppressions file: /usr/lib/x86_64-linux-gnu/valgrind/default.supp
+==22352== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-22352-by-trecupe1-on-???
+==22352== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-22352-by-trecupe1-on-???
+==22352== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-22352-by-trecupe1-on-???
+==22352== 
+==22352== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==22352== don't want to do, unless you know exactly what you're doing,
+==22352== or are doing some strange experiment):
+==22352==   /usr/lib/x86_64-linux-gnu/valgrind/../../bin/vgdb --pid=22352 ...command...
+==22352== 
+==22352== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==22352==   /path/to/gdb ./file-char-count
+==22352== and then give GDB the following command
+==22352==   target remote | /usr/lib/x86_64-linux-gnu/valgrind/../../bin/vgdb --pid=22352
+==22352== --pid is optional if only one valgrind process is running
+==22352== 
+--22352-- REDIR: 0x401e2f0 (ld-linux-x86-64.so.2:strlen) redirected to 0x580c9ce2 (vgPlain_amd64_linux_REDIR_FOR_strlen)
+--22352-- REDIR: 0x401e0d0 (ld-linux-x86-64.so.2:index) redirected to 0x580c9cfc (vgPlain_amd64_linux_REDIR_FOR_index)
+--22352-- Reading syms from /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_core-amd64-linux.so
+--22352--   Considering /usr/lib/debug/.build-id/34/fbc4cdfbfce1bfc3d2e522a01a050bf724c930.debug ..
+--22352--   .. build-id is valid
+--22352-- Reading syms from /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so
+--22352--   Considering /usr/lib/debug/.build-id/ca/bb7898ea982d936cbfadd70ae831c6eb63623f.debug ..
+--22352--   .. build-id is valid
+==22352== WARNING: new redirection conflicts with existing -- ignoring it
+--22352--     old: 0x0401e2f0 (strlen              ) R-> (0000.0) 0x580c9ce2 vgPlain_amd64_linux_REDIR_FOR_strlen
+--22352--     new: 0x0401e2f0 (strlen              ) R-> (2007.0) 0x04838d80 strlen
+--22352-- REDIR: 0x401ab10 (ld-linux-x86-64.so.2:strcmp) redirected to 0x4839e40 (strcmp)
+--22352-- REDIR: 0x401e830 (ld-linux-x86-64.so.2:mempcpy) redirected to 0x483d860 (mempcpy)
+--22352-- Reading syms from /lib/x86_64-linux-gnu/libc-2.28.so
+--22352--   Considering /usr/lib/debug/.build-id/18/b9a9a8c523e5cfe5b5d946d605d09242f09798.debug ..
+--22352--   .. build-id is valid
+--22352-- REDIR: 0x4903f70 (libc.so.6:memmove) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--22352-- REDIR: 0x4903160 (libc.so.6:strncpy) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--22352-- REDIR: 0x4904250 (libc.so.6:strcasecmp) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--22352-- REDIR: 0x4902b70 (libc.so.6:strcat) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--22352-- REDIR: 0x4903190 (libc.so.6:rindex) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--22352-- REDIR: 0x4905890 (libc.so.6:rawmemchr) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--22352-- REDIR: 0x491e230 (libc.so.6:wmemchr) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--22352-- REDIR: 0x491dcd0 (libc.so.6:wcscmp) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--22352-- REDIR: 0x49040e0 (libc.so.6:mempcpy) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--22352-- REDIR: 0x4903f10 (libc.so.6:bcmp) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--22352-- REDIR: 0x4903100 (libc.so.6:strncmp) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--22352-- REDIR: 0x4902be0 (libc.so.6:strcmp) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--22352-- REDIR: 0x4904040 (libc.so.6:memset) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--22352-- REDIR: 0x491dca0 (libc.so.6:wcschr) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--22352-- REDIR: 0x49030a0 (libc.so.6:strnlen) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--22352-- REDIR: 0x4902c70 (libc.so.6:strcspn) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--22352-- REDIR: 0x49042a0 (libc.so.6:strncasecmp) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--22352-- REDIR: 0x4902c40 (libc.so.6:strcpy) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--22352-- REDIR: 0x49043e0 (libc.so.6:memcpy@@GLIBC_2.14) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--22352-- REDIR: 0x491f4d0 (libc.so.6:wcsnlen) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--22352-- REDIR: 0x49031c0 (libc.so.6:strpbrk) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--22352-- REDIR: 0x4902ba0 (libc.so.6:index) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--22352-- REDIR: 0x4903070 (libc.so.6:strlen) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--22352-- REDIR: 0x490a280 (libc.so.6:memrchr) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--22352-- REDIR: 0x49042f0 (libc.so.6:strcasecmp_l) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--22352-- REDIR: 0x4903ee0 (libc.so.6:memchr) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--22352-- REDIR: 0x491ddb0 (libc.so.6:wcslen) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--22352-- REDIR: 0x4903460 (libc.so.6:strspn) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--22352-- REDIR: 0x4904220 (libc.so.6:stpncpy) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--22352-- REDIR: 0x49041f0 (libc.so.6:stpcpy) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--22352-- REDIR: 0x49058c0 (libc.so.6:strchrnul) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--22352-- REDIR: 0x4904340 (libc.so.6:strncasecmp_l) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--22352-- REDIR: 0x4912ef0 (libc.so.6:__strrchr_sse2) redirected to 0x48387d0 (__strrchr_sse2)
+--22352-- REDIR: 0x48ff350 (libc.so.6:malloc) redirected to 0x4835710 (malloc)
+--22352-- REDIR: 0x4903980 (libc.so.6:__GI_strstr) redirected to 0x483dac0 (__strstr_sse2)
+--22352-- REDIR: 0x4912ce0 (libc.so.6:__strchrnul_sse2) redirected to 0x483d390 (strchrnul)
+--22352-- REDIR: 0x491d000 (libc.so.6:__mempcpy_sse2_unaligned) redirected to 0x483d4a0 (mempcpy)
+566
+--22352-- REDIR: 0x48ff9a0 (libc.so.6:free) redirected to 0x4836940 (free)
+==22352== 
+==22352== HEAP SUMMARY:
+==22352==     in use at exit: 552 bytes in 1 blocks
+==22352==   total heap usage: 3 allocs, 2 frees, 9,768 bytes allocated
+==22352== 
+==22352== Searching for pointers to 1 not-freed blocks
+==22352== Checked 68,440 bytes
+==22352== 
+==22352== LEAK SUMMARY:
+==22352==    definitely lost: 0 bytes in 0 blocks
+==22352==    indirectly lost: 0 bytes in 0 blocks
+==22352==      possibly lost: 0 bytes in 0 blocks
+==22352==    still reachable: 552 bytes in 1 blocks
+==22352==         suppressed: 0 bytes in 0 blocks
+==22352== Reachable blocks (those to which a pointer was found) are not shown.
+==22352== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==22352== 
+==22352== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==22352== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-char-count$ valgrind --leak-check=full -v ./file-char-count file-char-count.c[C[C[C[C[C[C[C[C[C[C[C[3P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3@-v [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgedit *
+
+(gedit:22524): Gtk-[1;33mWARNING[0m **: [34m12:51:02.440[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-char-count$ ls
+file-char-count  file-char-count.c  Makefile
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-char-count$ make
+gcc -g -Wall -std=c11    file-char-count.c   -o file-char-count
+[01m[Kfile-char-count.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kfile-char-count.c:26:3:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kfclose[m[K’
+   [01;31m[Kfclose[m[K();
+   [01;31m[K^~~~~~[m[K
+In file included from [01m[Kfile-char-count.c:2[m[K:
+[01m[K/usr/include/stdio.h:213:12:[m[K [01;36m[Knote: [m[Kdeclared here
+ extern int [01;36m[Kfclose[m[K (FILE *__stream);
+            [01;36m[K^~~~~~[m[K
+make: *** [<builtin>: file-char-count] Error 1
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-char-count$ make[2Plsgedit *
+
+(gedit:22682): Gtk-[1;33mWARNING[0m **: [34m12:52:11.177[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-char-count$ ls
+file-char-count  file-char-count.c  Makefile
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-char-count$ make
+gcc -g -Wall -std=c11    file-char-count.c   -o file-char-count
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-char-count$ make[2Plsgedit *[3Pmake[2Plsgedit *valgrind --leak-check=full -v ./file-char-count file-char-count.c[C[C[C[C[C[C[C[C[C[C[C[3P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./file-c[C[18P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./file-char-count xxx[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvalgrind ./file-char-count file-char-count.c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C--leak-c[C[18@eck=full ./file-ch[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./file-c[C[18P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+==23385== Memcheck, a memory error detector
+==23385== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==23385== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==23385== Command: ./file-char-count file-char-count.c
+==23385== 
+580
+==23385== 
+==23385== HEAP SUMMARY:
+==23385==     in use at exit: 0 bytes in 0 blocks
+==23385==   total heap usage: 3 allocs, 3 frees, 9,768 bytes allocated
+==23385== 
+==23385== All heap blocks were freed -- no leaks are possible
+==23385== 
+==23385== For counts of detected and suppressed errors, rerun with: -v
+==23385== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-char-count$ ls
+file-char-count  file-char-count.c  Makefile
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-char-count$ cd ..
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13$ ls
+file-char-count  lab13.log	   no-buffer-copy  stdin-char-count
+file-copy	 lab13_output.txt  rec-io
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13$ file cop[K[K[K[K[K[K[K[Kc[Kcd file-copy/
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-copy$ ls
+file-copy.c  Makefile
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-copy$ gedit *
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-copy$ ./filw[Ke0[K-copy
+bash: ./file-copy: No such file or directory
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-copy$ make
+gcc -g -Wall -std=c11    file-copy.c   -o file-copy
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-copy$ make./file-copy
+usage: ./file-copy SRC_NAME DEST_NAME
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-copy$ ls -l file-copy.c t
+ls: cannot access 't': No such file or directory
+-rw-r--r-- 1 trecupe1 trecupe1 1195 Nov 14 12:30 file-copy.c
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-copy$ ./file-copy file-copy.c t
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-copy$ ls -l file-copy.c t
+-rw-r--r-- 1 trecupe1 trecupe1 1195 Nov 14 12:30 file-copy.c
+-rw-r--r-- 1 trecupe1 trecupe1 1195 Nov 14 13:00 t
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-copy$ cmp file-copy.c t 
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-copy$ ls
+file-copy  file-copy.c	Makefile  t
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-copy$ ./file-copy Makefile t [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kt
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-copy$ cmp Makefile t
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-copy$ chmod a-w t 
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-copy$ ./file-copy file-copy.c t
+cannot write t: Permission denied
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-copy$ cmp Makefile t 
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-copy$ gedit *
+^C
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-copy$ ^C
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-copy$ gedit *cmp Makefile t ./file-copy file-copy.c t[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7Pcmp Makefile t 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Pgedit *
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-copy$ man e[Kferror()
+bash: syntax error near unexpected token `('
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-copy$ man ferror
+[?1049h[22;0;0t[?1h=FERROR(3)                        Linux Programmer's Manual                        FERROR(3)[m
+[m
+[1mNAME[0m[m
+       clearerr, feof, ferror, fileno - check and reset stream status[m
+[m
+[1mSYNOPSIS[0m[m
+       [1m#include[0m [1m<stdio.h>[0m[m
+[m
+       [1mvoid[0m [1mclearerr(FILE[0m [1m*[0m[4mstream[24m[1m);[0m[m
+[m
+       [1mint[0m [1mfeof(FILE[0m [1m*[0m[4mstream[24m[1m);[0m[m
+[m
+       [1mint[0m [1mferror(FILE[0m [1m*[0m[4mstream[24m[1m);[0m[m
+[m
+       [1mint[0m [1mfileno(FILE[0m [1m*[0m[4mstream[24m[1m);[0m[m
+[m
+   Feature Test Macro Requirements for glibc (see [1mfeature_test_macros[0m(7)):[m
+[m
+       [1mfileno[0m(): _POSIX_C_SOURCE[m
+[m
+[1mDESCRIPTION[0m[m
+       The  function  [1mclearerr[0m() clears the end-of-file and error indicators for the stream[m
+       pointed to by [4mstream[24m.[m
+[m
+       The function [1mfeof[0m() tests the end-of-file indicator for the  stream  pointed  to  by[m
+       [4mstream[24m,  returning  nonzero  if it is set.  The end-of-file indicator can be cleared[m
+       only by the function [1mclearerr[0m().[m
+[m
+       The function [1mferror[0m() tests the error indicator for the stream pointed to by [4mstream[24m,[m
+       returning nonzero if it is set.  The error indicator can be reset only by the [1mclear‐[0m[m
+       [1merr[0m() function.[m
+[m
+       The function [1mfileno[0m() examines the argument [4mstream[24m and returns its integer file  de‐[m
+       scriptor.[m
+[m
+       For nonlocking counterparts, see [1munlocked_stdio[0m(3).[m
+[m
+[1mERRORS[0m[m
+       These  functions  should not fail and do not set the external variable [4merrno[24m.  (How‐[m
+       ever, in case [1mfileno[0m() detects that its argument is not a valid stream, it must  re‐[m
+       turn -1 and set [4merrno[24m to [1mEBADF[0m.)[m
+[m
+[1mATTRIBUTES[0m[m
+       For an explanation of the terms used in this section, see [1mattributes[0m(7).[m
+[m
+       ┌────────────────────┬───────────────┬─────────┐[m
+       │[1mInterface[0m           │ [1mAttribute[0m     │ [1mValue[0m   │[m
+       ├────────────────────┼───────────────┼─────────┤[m
+[7m Manual page ferror(3) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[K[[[K66[K~~[K       │[1mclearerr[0m(), [1mfeof[0m(), │ Thread safety │ MT-Safe │[m
+       │[1mferror[0m(), [1mfileno[0m()  │               │         │[m
+       └────────────────────┴───────────────┴─────────┘[m
+[1mCONFORMING[0m [1mTO[0m[m
+       The  functions  [1mclearerr[0m(),  [1mfeof[0m(), and [1mferror[0m() conform to C89, C99, POSIX.1-2001,[m
+       and POSIX.1-2008.[m
+[m
+       The function [1mfileno[0m() conforms to POSIX.1-2001 and POSIX.1-2008.[m
+[m
+[1mSEE[0m [1mALSO[0m[m
+       [1mopen[0m(2), [1mfdopen[0m(3), [1mstdio[0m(3), [1munlocked_stdio[0m(3)[m
+[m
+[1mCOLOPHON[0m[m
+       This page is part of release 4.16 of the Linux [4mman-pages[24m project.  A description  of[m
+       the  project, information about reporting bugs, and the latest version of this page,[m
+       can be found at https://www.kernel.org/doc/man-pages/.[m
+[m
+                                         2017-09-15                               FERROR(3)[m
+[7m Manual page ferror(3) line 19/66 (END) (press h for help or q to quit)[27m[K[K [KESCESC[K[[[K66[K~~[K[K[7m Manual page ferror(3) line 19/66 (END) (press h for help or q to quit)[27m[K[K [KESCESC[K[[[K55[K~~[K[HM[m
+[HM   Feature Test Macro Requirements for glibc (see [1mfeature_test_macros[0m(7)):[m
+[HM[m
+[HM       [1mint[0m [1mfileno(FILE[0m [1m*[0m[4mstream[24m[1m);[0m[m
+[HM[m
+[HM       [1mint[0m [1mferror(FILE[0m [1m*[0m[4mstream[24m[1m);[0m[m
+[HM[m
+[HM       [1mint[0m [1mfeof(FILE[0m [1m*[0m[4mstream[24m[1m);[0m[m
+[HM[m
+[HM       [1mvoid[0m [1mclearerr(FILE[0m [1m*[0m[4mstream[24m[1m);[0m[m
+[HM[m
+[HM       [1m#include[0m [1m<stdio.h>[0m[m
+[HM[1mSYNOPSIS[0m[m
+[HM[m
+[HM       clearerr, feof, ferror, fileno - check and reset stream status[m
+[HM[1mNAME[0m[m
+[HM[m
+[HMFERROR(3)                        Linux Programmer's Manual                        FERROR(3)[m
+[49;1H[K[7m Manual page ferror(3) line 1/66 69% (press h for help or q to quit)[27m[K[K [KESCESC[K[[[K55[K~~[K[K[7m Manual page ferror(3) line 1/66 69% (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0ttrecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-copy$ man ferror()[5Pgedit *
+
+(gedit:25889): Gtk-[1;33mWARNING[0m **: [34m13:13:03.447[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-copy$ make
+gcc -g -Wall -std=c11    file-copy.c   -o file-copy
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-copy$ makegedit *man ferror()[5Pgedit *cmp Makefile t ./file-copy file-copy.c t[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pchmod a-w t 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmp Makefile t./file-copy Makefile t [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./file-copy Makefile t [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kt
+cannot write t: Permission denied
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-copy$ ls
+file-copy  file-copy.c	Makefile  t
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-copy$ ls./file-copy Makefile t [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit *[3Pmake./file-copy Makefile t [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit *
+
+(gedit:26339): Gtk-[1;33mWARNING[0m **: [34m13:16:02.882[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-copy$ rm -f t
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-copy$ ./file-copy file-copy.c t
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-copy$ ./file-copy Makefile t [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kt
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-copy$ wc -l file-copy.c Makefile
+  50 file-copy.c
+  10 Makefile
+  60 total
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-copy$ wc -l t
+10 t
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-copy$ ls
+file-copy  file-copy.c	Makefile  t
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/file-copy$ cd ..
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13$ cd no-buffer-copy/
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/no-buffer-copy$ ls
+Makefile  no-buffer-copy.c
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/no-buffer-copy$ time ./no-buffer-copy `which gcc` /dev/null 1
+bash: ./no-buffer-copy: No such file or directory
+
+real	0m0.008s
+user	0m0.004s
+sys	0m0.000s
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/no-buffer-copy$ time ./no-buffer-copy `which gcc` /dev/null 0
+bash: ./no-buffer-copy: No such file or directory
+
+real	0m0.004s
+user	0m0.003s
+sys	0m0.001s
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/no-buffer-copy$ cd ..
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13$ ls
+file-char-count  lab13.log	   no-buffer-copy  stdin-char-count
+file-copy	 lab13_output.txt  rec-io
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13$ cd rec-io/
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/rec-io$ ;[Kls
+dyn-array.c  dyn-array.h  gen-rand-points.c  Makefile  point2.h  points.dat  stat-points.c
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/rec-io$ make gen-rand-points
+gcc -g -Wall -std=c11   -c -o gen-rand-points.o gen-rand-points.c
+gcc   gen-rand-points.o  -lm -o gen-rand-points
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/rec-io$ ./gen-rand-points 100 points.dat
+average magnitude = 752.156
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/rec-io$ ls
+dyn-array.c  gen-rand-points	gen-rand-points.o  point2.h    stat-points.c
+dyn-array.h  gen-rand-points.c	Makefile	   points.dat
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/rec-io$ make stat-points.c [K[K[K
+gcc -g -Wall -std=c11   -c -o stat-points.o stat-points.c
+gcc -g -Wall -std=c11   -c -o dyn-array.o dyn-array.c
+gcc   stat-points.o dyn-array.o  -lm -o stat-points
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/rec-io$ ./stat-points points .[K[K.c[Kdat
+min = 43.4166
+average = 752.156
+median = 773.59
+max = 1306.49
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/rec-io$ l[Ke[Kgedit *
+
+(gedit:28387): Gtk-[1;33mWARNING[0m **: [34m13:38:29.889[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/rec-io$ ls
+dyn-array.c  dyn-array.o      gen-rand-points.c  Makefile  points.dat	stat-points.c
+dyn-array.h  gen-rand-points  gen-rand-points.o  point2.h  stat-points	stat-points.o
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/rec-io$ valgring clean
+bash: valgring: command not found
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/rec-io$ valgring clean[1P cleand clean
+valgrind: clean: command not found
+trecupe1@g7-39:/import/linux/home1/trecupe1/i220b/work/lab13/rec-io$ valgrind clean[1Pclean-clean
+bash: valgrind-
