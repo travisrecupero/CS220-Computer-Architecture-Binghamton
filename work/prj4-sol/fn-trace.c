@@ -1,5 +1,6 @@
 
-#include "fn-trace.h" include "x86-64_lde.h"
+#include "fn-trace.h"
+#include "x86-64_lde.h"
 
 #include "memalloc.h"
 
@@ -24,13 +25,10 @@ static inline bool is_ret(unsigned op) {
 }
 
 typedef struct FnsData{
-  FnInfo *info; //each FnInfo is 24-bytes
+  FnInfo info[16]; //each FnInfo is 24-bytes
 } FnsData;
 
-/** Return pointer to opaque data structure containing collection of
- *  FnInfo's for functions which are callable directly or indirectly
- *  from the function whose address is rootFn.
- */
+typedef unsigned char Byte;
 
   /*  Class notes
       - declare pointer as char* and keep adding length to it
@@ -38,9 +36,26 @@ typedef struct FnsData{
       - every 4bytes after call are treated as an integer and
   */
   /*  Hints
+  //returns address of function being called
     Using the x86-64_lde module, have the new_fns_data() function
     print out the length of each instruction in the root function being traced.
     Your code should be setup to terminate when any RET opcode is seen.
+  */
+
+
+  Byte *
+  get_callee_address(Byte * p)
+  {
+    Byte* next_byte_p = p + 1; //get opcode without E8(call)
+    int offset = *(int *)next_byte_p; //offset to calculate next address
+    Byte *next_op_p = p + get_op_length(p);
+    return next_op_p + offset;
+  }
+
+
+  /** Return pointer to opaque data structure containing collection of
+  *  FnInfo's for functions which are callable directly or indirectly
+  *  from the function whose address is rootFn.
   */
   const FnsData *
   new_fns_data(void *rootFn)
@@ -49,26 +64,78 @@ typedef struct FnsData{
     assert(sizeof(int) == 4);
     //@TODO
     FnsData *fns_data = (FnsData *)calloc(1, sizeof(FnsData));
-
-    char *op = (char *)(rootFn);
-    printf("%x\n", *op);
-    
+    Byte op = *(Byte *)rootFn;
     int op_length = get_op_length(rootFn);
-	printf("op l %x\n",op_length);
-    for(int i = 0; i < sizeof(op_length); i++){
-	fns_data->info[i].address = op;
-	printf("fns test %d\n", fns_data->info[i].adress);
+
+    printf("%x\n", op);
+	  printf("op l %x\n",op_length);
+
+
+    Byte *p = rootFn; //op_code_byte
+
+    //int i = 0;
+    for(int i = 0; i < 15; i++){
+      while(!(is_ret(op))){
+          printf("p* %x\n", *p);
+          op_length = get_op_length(p);
+          printf("op_length %d\n", op_length);
+          p = p + op_length;
+          //check if address is 0
+          if(is_call(*p)){
+            printf("calle add %x\n", get_callee_address(p));
+            if(fns_data->info[i].address == 0){
+              fns_data->info[i].address = get_callee_address(p);
+              printf("calle address %x\n", fns_data->info[0].address);
+              fns_data->info[i].length = op_length;
+              fns_data->info[i].nInCalls++;
+              fns_data->info[i].nOutCalls++;
+
+            } else {
+              p = get_callee_address(p);
+              printf("test %x : \n", p);
+            }
+          }
+        //printf("xxx %d\n", op_length);
+        //printf("xx %p\n", p);
+        op = *p;
+        printf("op %x\n", op);
+      }
+
     }
 
-    for(int i = 0; i < sizeof(rootFn); i++){
-      if(is_ret(rootFn)){
-        //printf("%d\n", get_op_length(rootFn));
-      }
+    for(int i = 0; i < 15; i++){
+      printf("fns test: %x, %d, %d, %d\n",
+      fns_data->info[i].address,
+      fns_data->info[i].length,
+      fns_data->info[i].nInCalls,
+      fns_data->info[i].nOutCalls
+      );
     }
+
+    return fns_data;
+  }
+
+  /*
+  for(int i = 0; i < 15; i++){
+    printf("fns test: %d, %d, %d, %d\n",
+    *(Byte *)fns_data->info[i].address,
+    fns_data->info[i].length, fns_data->info[i].nInCalls,
+    fns_data->info[i].nOutCalls
+    );
+  }
+  */
+
+    /*
+    for(int i = 0; i < ; i++){
+	     fns_data->info[i].address = op;
+	      printf("fns test %d\n", fns_data->info[i].address);
+    }
+
+
 
     for(int i = 0; i < 1; i++){
 	      fns_data->info[i].address = &rootFn;
-        fns_data->info[i].length = get_op_length(fns_data->info[i].address);
+        fns_data-xx>info[i].length = get_op_length(fns_data->info[i].address);
 	      if(is_call(CALL_OP)){
 		        fns_data->info[i].nInCalls += fns_data->info[i].nInCalls;
 	      }
@@ -76,9 +143,8 @@ typedef struct FnsData{
 		        break;
 	      }
    }
+   */
 
-  return fns_data;
-}
 
 /** Free all resources occupied by fnsData. fnsData must have been
  *  returned by new_fns_data().  It is not ok to use to fnsData after
