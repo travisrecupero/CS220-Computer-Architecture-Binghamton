@@ -29,10 +29,6 @@ typedef struct FnsData{
 } FnsData;
 
 typedef unsigned char Byte;
-/** Return pointer to opaque data structure containing collection of
- *  FnInfo's for functions which are callable directly or indirectly
- *  from the function whose address is rootFn.
- */
 
   /*  Class notes
       - declare pointer as char* and keep adding length to it
@@ -48,14 +44,19 @@ typedef unsigned char Byte;
 
 
   Byte *
-  get_callee_address(Byte * p){
-    Byte* next_byte_p = p + 1;
-    int offset = *(int *)next_byte_p;
+  get_callee_address(Byte * p)
+  {
+    Byte* next_byte_p = p + 1; //get opcode without E8(call)
+    int offset = *(int *)next_byte_p; //offset to calculate next address
     Byte *next_op_p = p + get_op_length(p);
     return next_op_p + offset;
   }
 
 
+  /** Return pointer to opaque data structure containing collection of
+  *  FnInfo's for functions which are callable directly or indirectly
+  *  from the function whose address is rootFn.
+  */
   const FnsData *
   new_fns_data(void *rootFn)
   {
@@ -63,30 +64,66 @@ typedef unsigned char Byte;
     assert(sizeof(int) == 4);
     //@TODO
     FnsData *fns_data = (FnsData *)calloc(1, sizeof(FnsData));
-
-    unsigned char op = *(unsigned char *)rootFn;
-    printf("%x\n", op);
+    Byte op = *(Byte *)rootFn;
     int op_length = get_op_length(rootFn);
+
+    printf("%x\n", op);
 	  printf("op l %x\n",op_length);
 
-    unsigned char *p = rootFn;
 
+    Byte *p = rootFn; //op_code_byte
 
-    while(!(is_ret(op))){
-        op_length = get_op_length(p);
-        p = p + op_length;
-        printf("op %x\n", *p);
-        //check if address is 0
-        if(is_call(*p)){
-          printf("calle add %x\n", get_callee_address(p));
-        }
+    //int i = 0;
+    for(int i = 0; i < 15; i++){
+      while(!(is_ret(op))){
+          printf("p* %x\n", *p);
+          op_length = get_op_length(p);
+          printf("op_length %d\n", op_length);
+          p = p + op_length;
+          //check if address is 0
+          if(is_call(*p)){
+            printf("calle add %x\n", get_callee_address(p));
+            if(fns_data->info[i].address == 0){
+              fns_data->info[i].address = get_callee_address(p);
+              printf("calle address %x\n", fns_data->info[0].address);
+              fns_data->info[i].length = op_length;
+              fns_data->info[i].nInCalls++;
+              fns_data->info[i].nOutCalls++;
 
-        printf("xxx %d\n", op_length);
-        printf("xx %p\n", p);
+            } else {
+              p = get_callee_address(p);
+              printf("test %x : \n", p);
+            }
+          }
+        //printf("xxx %d\n", op_length);
+        //printf("xx %p\n", p);
         op = *p;
+        printf("op %x\n", op);
+      }
+
     }
 
+    for(int i = 0; i < 15; i++){
+      printf("fns test: %x, %d, %d, %d\n",
+      fns_data->info[i].address,
+      fns_data->info[i].length,
+      fns_data->info[i].nInCalls,
+      fns_data->info[i].nOutCalls
+      );
+    }
 
+    return fns_data;
+  }
+
+  /*
+  for(int i = 0; i < 15; i++){
+    printf("fns test: %d, %d, %d, %d\n",
+    *(Byte *)fns_data->info[i].address,
+    fns_data->info[i].length, fns_data->info[i].nInCalls,
+    fns_data->info[i].nOutCalls
+    );
+  }
+  */
 
     /*
     for(int i = 0; i < ; i++){
@@ -108,8 +145,6 @@ typedef unsigned char Byte;
    }
    */
 
-  return fns_data;
-}
 
 /** Free all resources occupied by fnsData. fnsData must have been
  *  returned by new_fns_data().  It is not ok to use to fnsData after
