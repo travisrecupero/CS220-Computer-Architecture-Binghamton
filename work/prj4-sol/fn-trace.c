@@ -87,6 +87,12 @@ typedef unsigned char Byte;
               fns_data->info[i].address = get_callee_address(p);
               fns_data->info[i].length = get_op_length((Byte *)p);
               fns_data->info[i].nInCalls++;
+              printf("fns test: %x, %d, %d, %d\n",
+                fns_data->info[i].address,
+                fns_data->info[i].length,
+                fns_data->info[i].nInCalls,
+                fns_data->info[i].nOutCalls
+              );
             } else {
               p = get_callee_address(p);
             }
