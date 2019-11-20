@@ -52,6 +52,61 @@ typedef unsigned char Byte;
     return next_op_p + offset;
   }
 
+  int
+  check_address_seen(Byte * p, FnsData * fns_data)
+  {
+    int seen = 0;
+    for(int j = 0; j < 15; j++){
+      if(fns_data->info[j].address == p){
+        printf("seen");
+        seen = 1;
+      }
+    }
+    return seen;
+  }
+
+  void
+  set_address(Byte * p, FnsData * fns_data)
+  {
+    //if not address not seen
+    if(check_address_seen(p, fns_data) == 0){
+      for(int j = 0; j < 15; j++){
+        //check first open space in array (address pointer == 0)
+        if(fns_data->info[j].address == 0){
+          fns_data->info[j].address = get_callee_address(p);
+          fns_data->info[j].length = get_op_length((Byte *)p);
+          fns_data->info[j].nInCalls++;
+          break;
+        }
+      }
+    }
+  }
+
+  int
+  get_call_address(Byte * p){
+    int address = *(int *)(p + 1);
+    return address;
+  }
+
+
+  void fn_trace(Byte * p, FnsData * fns_data) {
+    Byte op = *(Byte *)p;
+    int op_length = get_op_length(p);
+
+    while(!(is_ret(op))){
+      op_length = get_op_length(p); //get op_length
+      p = p + op_length; //get next instructions address
+      //int temp = (int)((unsigned char)op + 1);
+      if(is_call(*p)){
+        set_address(p, fns_data);
+        fn_trace(p + get_call_address(p), fns_data);
+        break;
+        printf("test\n");
+      }
+      op = *p;
+    }
+  }
+
 
   /** Return pointer to opaque data structure containing collection of
   *  FnInfo's for functions which are callable directly or indirectly
@@ -64,48 +119,38 @@ typedef unsigned char Byte;
     assert(sizeof(int) == 4);
     //@TODO
     FnsData *fns_data = (FnsData *)calloc(1, sizeof(FnsData));
-    Byte op = *(Byte *)rootFn;
-    int op_length = get_op_length(rootFn);
 
-    printf("%x\n", op);
-	  printf("op l %x\n",op_length);
+    fn_trace(rootFn, fns_data);
 
-
-    Byte *p = rootFn; //op_code_byte
-
-    //int i = 0;
+    return fns_data;
+  }
+    /*
     for(int i = 0; i < 15; i++){
-      //will use temp_op when function returns to get instruction after call
-      Byte *temp_op = p;
-      while(!(is_ret(op))){
-          op_length = get_op_length(p); //get op_length
-          p = p + op_length; //get next instructions address
-
-          //check if address is 0
-          if(is_call(*p)){
-            if(fns_data->info[i].address == 0){
-              fns_data->info[i].address = get_callee_address(p);
-              fns_data->info[i].length = get_op_length((Byte *)p);
-              fns_data->info[i].nInCalls++;
-              printf("fns test: %x, %d, %d, %d\n",
-              fns_data->info[i].address,
-              fns_data->info[i].length,
-              fns_data->info[i].nInCalls,
-              fns_data->info[i].nOutCalls
-              );
-            } else {
-              p = get_callee_address(p);
-            }
-          }
-
-          op = *p + 1;
-          printf("temp op: %x \n", temp_op);
-      }
-
-      op = temp_op + 1;
-      fns_data->info[i].nOutCalls++;
+      printf("fns test: %p, %d, %d, %d\n",
+      fns_data->info[i].address,
+      fns_data->info[i].length,
+      fns_data->info[i].nInCalls,
+      fns_data->info[i].nOutCalls
+    );
     }
+    */
 
+    /*
+    if(fns_data->info[i].address == 0){
+      fns_data->info[i].address = get_callee_address(p);
+      fns_data->info[i].length = get_op_length((Byte *)p);
+      fns_data->info[i].nInCalls++;
+      printf("fns test: %x, %d, %d, %d\n",
+      fns_data->info[i].address,
+      fns_data->info[i].length,
+      fns_data->info[i].nInCalls,
+      fns_data->info[i].nOutCalls
+    );
+  } else {
+
+  }
+  */
+    /*
     for(int i = 0; i < 15; i++){
       printf("fns test: %x, %d, %d, %d\n",
       fns_data->info[i].address,
@@ -114,9 +159,7 @@ typedef unsigned char Byte;
       fns_data->info[i].nOutCalls
       );
     }
-
-    return fns_data;
-  }
+*/
 
   /*
   for(int i = 0; i < 15; i++){
@@ -157,9 +200,22 @@ void
 free_fns_data(FnsData *fnsData)
 {
   //@TODO
+  free(fnsData->info);
+  free(fnsData);
 }
 
-/** Iterate over all FnInfo's in fnsData.  Make initial call with NULL
+
+ /*
+ const Byte
+ comparator(const void *p, const void *q)
+ {
+     Byte l = ((struct Student *)p)->address;
+     Byte r = ((struct Student *)q)->address;
+     return (l - r);
+ }
+ */
+
+ /** Iterate over all FnInfo's in fnsData.  Make initial call with NULL
  *  lastFnInfo.  Keep calling with return value as lastFnInfo, until
  *  next_fn_info() returns NULL.  Values must be returned sorted in
  *  increasing order by fnInfoP->address.
@@ -168,13 +224,29 @@ free_fns_data(FnsData *fnsData)
  *
  *  for (FnInfo *fnInfoP = next_fn_info(fnsData, NULL); fnInfoP != NULL;
  *       fnInfoP = next_fn_info(fnsData, fnInfoP)) {
- *    //body of iteration
- *  }
- *
- */
+   *    //body of iteration
+   *  }
+   *
+   */
+
 const FnInfo *
 next_fn_info(const FnsData *fnsData, const FnInfo *lastFnInfo)
 {
   //@TODO
-  return NULL;
+  //printf("nextnect");
+  lastFnInfo = NULL;
+  for(FnInfo *fnInfoP = next_fn_info(fnsData, NULL); fnInfoP != NULL;
+    fnInfoP = next_fn_info(fnsData, fnInfoP)) {
+      if(fnInfoP == NULL){
+        lastFnInfo = fnInfoP;
+        return lastFnInfo;
+      }
+  }
+  /*
+  for(int i = 0; i < 15; i++){
+    return lastFnInfo;
+  }
+  */
+
+  return lastFnInfo;
 }
