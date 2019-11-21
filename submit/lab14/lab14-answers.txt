@@ -1,3 +1,5 @@
+IN SEDCOND EXAMPLE ADD CMP AND JZ INSTRUCTIONS
+
 getchar:
 		push	%ax
 		mov     $0x08,%ah       #specify fn: read without echo into al
