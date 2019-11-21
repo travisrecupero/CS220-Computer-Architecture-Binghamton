@@ -59,6 +59,7 @@ typedef unsigned char Byte;
     for(int j = 0; j < 15; j++){
       if(fns_data->info[j].address == p){
         printf("seen");
+
         seen = 1;
       }
     }
@@ -82,9 +83,9 @@ typedef unsigned char Byte;
     }
   }
 
-  int
+  unsigned int
   get_call_address(Byte * p){
-    int address = *(int *)(p + 1);
+    unsigned int address = *(int *)(p + 1);
     return address;
   }
 
@@ -92,19 +93,32 @@ typedef unsigned char Byte;
   void fn_trace(Byte * p, FnsData * fns_data) {
     Byte op = *(Byte *)p;
     int op_length = get_op_length(p);
+    int offset = (int)((unsigned char)*p + 1); //offset
+    //Byte* next_byte_p = p + 1;
+    //int offset = *(int *)next_byte_p;
+
+    //base case
+    if(check_address_seen(get_callee_address(p), fns_data) == 1){
+      printf("seen");
+      return;
+    }
 
     while(!(is_ret(op))){
+      //printf("op: %x\n", op);
       op_length = get_op_length(p); //get op_length
       p = p + op_length; //get next instructions address
-      //int temp = (int)((unsigned char)op + 1);
       if(is_call(*p)){
-        set_address(p, fns_data);
-        fn_trace(p + get_call_address(p), fns_data);
-        break;
-        printf("test\n");
+        if(check_address_seen(get_callee_address(p), fns_data) == 0){
+          //printf("p:%x\n", p);
+          set_address(p, fns_data);
+          fn_trace(p + offset, fns_data);
+        } else {
+          return;
+        }
       }
       op = *p;
     }
+
   }
 
 
@@ -119,7 +133,6 @@ typedef unsigned char Byte;
     assert(sizeof(int) == 4);
     //@TODO
     FnsData *fns_data = (FnsData *)calloc(1, sizeof(FnsData));
-
     fn_trace(rootFn, fns_data);
 
     return fns_data;
@@ -234,19 +247,28 @@ next_fn_info(const FnsData *fnsData, const FnInfo *lastFnInfo)
 {
   //@TODO
   //printf("nextnect");
+
   lastFnInfo = NULL;
-  for(FnInfo *fnInfoP = next_fn_info(fnsData, NULL); fnInfoP != NULL;
+  for(const FnInfo *fnInfoP = next_fn_info(fnsData, NULL); fnInfoP != NULL;
     fnInfoP = next_fn_info(fnsData, fnInfoP)) {
       if(fnInfoP == NULL){
         lastFnInfo = fnInfoP;
         return lastFnInfo;
       }
   }
+
+  return lastFnInfo;
+}
+/*
+lastFnInfo = NULL;
+int i = 0;
+while(fnsData->info[i] != NULL){
+  i++;
+}
+return (fnsData->info[i] == NULL) ? fnsData->info[i] : lastFnInfo;
+*/
   /*
   for(int i = 0; i < 15; i++){
     return lastFnInfo;
   }
   */
-
-  return lastFnInfo;
-}
