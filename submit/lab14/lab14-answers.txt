@@ -1,1 +1,9 @@
-
+getchar:
+		push	%ax
+		mov     $0x08,%ah       #specify fn: read without echo into al
+		int     $DOS_INT        #read stdin into %al
+		mov     %al,inChar      #mov char read to inChar
+		cmp	$QUIT, %al	#is it a QUIT character?
+		jz	main3		#quit if got QUIT character
+		pop	%ax
+		ret
