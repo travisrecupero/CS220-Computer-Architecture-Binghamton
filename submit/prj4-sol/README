@@ -2,5 +2,7 @@ Name:		Travis Recupero
 B-Number:	B00725484
 Email:		trecupe1@binghamton.edu
 
-Add text here as needed.
+Had trouble getting the recursion working in fn_trace(). Because of this, I was not able to get it to print the output. I believe my 
+code is most of the way there in terms of requirements.
+Note -> The professor recommended I use a static array in FnsData in order to get my program functioning. 
 
