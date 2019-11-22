@@ -59,7 +59,6 @@ typedef unsigned char Byte;
     for(int j = 0; j < 15; j++){
       if(fns_data->info[j].address == p){
         printf("seen");
-
         seen = 1;
       }
     }
