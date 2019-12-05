@@ -1,0 +1,244 @@
+Script started on 2019-12-05 16:54:07-05:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="80" LINES="24"]
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10$ [Ktrecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10$ [Ktrecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10$ [Ktrecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10$ [Ktrecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10$ [Ktrecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10$ [Ktrecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10$ [Ktrecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10$ [Ktrecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10$ [Ktrecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10$ [Ktrecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10$ [Ktrecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10$ [Ktrecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10$ [Ktrecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10$ [Ktrecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10$ [Ktrecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10$ [Ktrecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10$ [Ktrecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10$ [Ktrecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10$ [Ktrecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10$ [Ktrecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10$ [Ktrecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10$ [Ktrecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10$ [Ktrecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10$ [Ktrecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10$ [Ktrecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10$ [Ktrecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10$ [Ktrecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10$ [Ktrecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10$ [Ktrecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10$ [Ktrecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10$ cd r==[K[K[K[K[K[Kls
+cpuid1	cpuid2	lab10.log  parity  rip	rotate	rsp
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10$ cd rotate/
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/rotate$ ls
+Makefile  rotate.c
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/rotate$ make
+cc -S -Wall -Og -std=c11 rotate.c
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/rotate$ ls
+Makefile  rotate.c  rotate.s
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/rotate$ gedit t [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr otate.s
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/rotate$ cd ..
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10$ ls
+cpuid1	cpuid2	lab10.log  parity  rip	rotate	rsp
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10$ cpuid1[Ccpuid1dcpuid1 cpuid1
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid1$ ls
+cpuid.s  main.c  Makefile
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid1$ make
+cc -g -Wall -std=c11 -Og   -c -o main.o main.c
+cc -c -g -Wall -std=c11 -Og cpuid.s -o cpuid.o
+cc main.o cpuid.o -o cpuid
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid1$ ./cpuid [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kd
+cpuid: eax = 0xd; ebx = 0x756e6547; edx = 0x49656e69; ecx = 0x6c65746e
+vendor: GenuineIntel
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid1$ cd ..
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10$ cd .../cpuid[3Pmake[2Plscd cpuid1[K2
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid2$ ls
+cpuid.s  main.c  Makefile
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid2$ e[Kgedit m ain.c 
+^C
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid2$ ls
+cpuid.s  main.c  Makefile
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid2$ make
+cc -g -Wall -std=c11    -c -o main.o main.c
+cc -c -g -Wall -std=c11  cpuid.s -o cpuid.o
+cc main.o cpuid.o -o cpuid
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid2$ ls
+cpuid  cpuid.o	cpuid.s  main.c  main.o  Makefile
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid2$ ./cpuid 
+usage: ./cpuid CPUID_OP
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid2$ ./cpuid 0x02
+Segmentation fault
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid2$ ;s[K[Kmake
+make: 'cpuid' is up to date.
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid2$ gedit c puid
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid2$ make cl ean
+rm -f *~ *.o cpuid
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid2$ make [K[K[K[K[Kgedit [K c puid.s [K[Kc
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid2$ ls
+cpuid.s  main.c  Makefile
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid2$ make cl ean
+rm -f *~ *.o cpuid
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid2$ ls
+cpuid.s  main.c  Makefile
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid2$ gedit [K c puid.s 
+
+(gedit:2393): Gtk-[1;33mWARNING[0m **: [34m17:06:58.607[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid2$ ls
+cpuid.s  main.c  Makefile
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid2$ make
+cc -g -Wall -std=c11    -c -o main.o main.c
+cc -c -g -Wall -std=c11  cpuid.s -o cpuid.o
+cc main.o cpuid.o -o cpuid
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid2$ m[K./cpuid 
+usage: ./cpuid CPUID_OP
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid2$ ./cpuid 0
+Segmentation fault
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid2$ ls
+cpuid  cpuid.o	cpuid.s  main.c  main.o  Makefile
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid2$ make cl ean
+rm -f *~ *.o cpuid
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid2$ gedit c puid.s 
+
+(gedit:2683): Gtk-[1;33mWARNING[0m **: [34m17:09:11.106[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid2$ ls
+cpuid.s  main.c  Makefile
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid2$ gedit c puid.s [K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[Kmake
+cc -g -Wall -std=c11    -c -o main.o main.c
+cc -c -g -Wall -std=c11  cpuid.s -o cpuid.o
+cpuid.s: Assembler messages:
+cpuid.s:10: Error: no such instruction: `get_cpuid'
+make: *** [Makefile:11: cpuid.o] Error 1
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid2$ make[2Plsgedit cpuid.s 
+
+(gedit:2884): Gtk-[1;33mWARNING[0m **: [34m17:10:34.100[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid2$ gedit cpuid.s [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pmake
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Plsmake
+cc -c -g -Wall -std=c11  cpuid.s -o cpuid.o
+cc main.o cpuid.o -o cpuid
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid2$ makegedit cpuid.s [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pmake
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Plsgedit cpuid.s [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake cle[4Pan[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./cpuid 0[K0[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pmake
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./cpuid 
+usage: ./cpuid CPUID_OP
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid2$ ./cpuid 1
+Segmentation fault
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid2$ ./cpuid 1[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pmake
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit cpuid.s [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pmake
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Plsgedit cpuid.s [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake cle[4Pan[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./cpuid 0[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pmake
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Pls[K[Kgedit cpuid.s [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit cpuid.s 
+
+(gedit:3751): Gtk-[1;33mWARNING[0m **: [34m17:17:20.040[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid2$ gedit cpuid.s [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./cpuid 1[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pmake
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+cc -c -g -Wall -std=c11  cpuid.s -o cpuid.o
+cc main.o cpuid.o -o cpuid
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid2$ makegedit cpuid.s [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./cpuid 1[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cd [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kd
+usage: ./cpuid CPUID_OP
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid2$ ./cpuid [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[Kmake
+make: 'cpuid' is up to date.
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid2$ make cl ean
+rm -f *~ *.o cpuid
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid2$ make
+cc -g -Wall -std=c11    -c -o main.o main.c
+cc -c -g -Wall -std=c11  cpuid.s -o cpuid.o
+cc main.o cpuid.o -o cpuid
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid2$ ./cpuid 1
+Segmentation fault
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid2$ ./cpuid 1[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pmake
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C clean[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./cpuid [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pmake
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit cpuid.s [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./cpuid 1[K[K1[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit cpuid.s 
+
+(gedit:3903): Gtk-[1;33mWARNING[0m **: [34m17:18:36.568[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid2$ gedit cpuid.s [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./cpuid 1[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pmake
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C clean[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+cc -c -g -Wall -std=c11  cpuid.s -o cpuid.o
+cc main.o cpuid.o -o cpuid
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid2$ makegedit cpuid.s [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./cpuid 1[K
+cpuid(1): eax = 0xd; ebx = 0x756e6547; edx = 0x49656e69; ecx = 0x6c65746e
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid2$ ./cpuid 1[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pmake
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit cpuid.s 
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid2$ ls
+cpuid  cpuid.o	cpuid.s  main.c  main.o  Makefile
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid2$ make cl ean
+rm -f *~ *.o cpuid
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid2$ , memory words often have an extra parity bit to allow detecting single-bit errors (for example, a 32-bit memory word will have 33-bits with the extra parity bit used to detect ^C
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid2$ ls
+cpuid.s  main.c  Makefile
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/cpuid2$ cd ..
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10$ ls
+cpuid1	cpuid2	lab10.log  parity  rip	rotate	rsp
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10$ cd parity/
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/parity$ ls
+main.c	Makefile  parity.s
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/parity$ gedit p arity.s 
+
+(gedit:4642): Gtk-[1;33mWARNING[0m **: [34m17:23:54.595[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/parity$ ls
+main.c	Makefile  parity.s
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/parity$ make
+cc -g -Wall -std=c11 -Og   -c -o main.o main.c
+cc -c -g -Wall -std=c11 -Og parity.s -o parity.o
+parity.s: Assembler messages:
+parity.s:8: Error: operand type mismatch for `push'
+parity.s:10: Error: number of operands mismatch for `jpe'
+make: *** [Makefile:9: parity.o] Error 1
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/parity$ make[2Plsgedit parity.s [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit parity.s 
+
+(gedit:5618): Gtk-[1;33mWARNING[0m **: [34m17:30:02.700[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/parity$ lsl[K
+main.c	main.o	Makefile  parity.s
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/parity$ make cl ean
+rm -f *.o parity
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/parity$ make
+cc -g -Wall -std=c11 -Og   -c -o main.o main.c
+cc -c -g -Wall -std=c11 -Og parity.s -o parity.o
+parity.s: Assembler messages:
+parity.s:8: Error: operand type mismatch for `push'
+parity.s:10: Error: number of operands mismatch for `jpe'
+make: *** [Makefile:9: parity.o] Error 1
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/parity$ make clean[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit parity.s 
+
+(gedit:5702): Gtk-[1;33mWARNING[0m **: [34m17:31:10.151[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/parity$ make
+cc -c -g -Wall -std=c11 -Og parity.s -o parity.o
+parity.s: Assembler messages:
+parity.s:12: Error: unknown pseudo-op: `.rec'
+make: *** [Makefile:9: parity.o] Error 1
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/parity$ makegedit parity.s [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pmake
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C clean[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit parity.s 
+
+(gedit:6936): Gtk-[1;33mWARNING[0m **: [34m17:38:55.113[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/parity$ gedit parity.s [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pmake
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+cc -c -g -Wall -std=c11 -Og parity.s -o parity.o
+cc main.o parity.o -o parity
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/parity$ makegedit parity.s [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pmake
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit parity.s [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pmake
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C clean[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit parity.s [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pmake
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Plsgedit parity.s [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd parity/[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd ..[3Plscd parity/[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K./parity 
+usage: ./parity INT1...
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/parity$ ./parity 1 2 3 4 5 6 7 1 [K5 21
+parity(1) = 1
+parity(2) = 1
+parity(3) = 1
+parity(4) = 1
+parity(5) = 1
+parity(6) = 1
+parity(7) = 1
+parity(15) = 1
+parity(21) = 1
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/parity$ gedit * [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K*
+
+(gedit:7074): Gtk-[1;33mWARNING[0m **: [34m17:39:46.958[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/parity$ make
+cc -c -g -Wall -std=c11 -Og parity.s -o parity.o
+cc main.o parity.o -o parity
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/parity$ makegedit * [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./parity 1 2 3 4 5 6 7 15 21[C[C[K1 2 3 4 5 6 7 15 21
+parity(1) = 0
+parity(2) = 0
+parity(3) = 1
+parity(4) = 0
+parity(5) = 1
+parity(6) = 1
+parity(7) = 0
+parity(15) = 1
+parity(21) = 0
+trecupe1@g7-29:/import/linux/home1/trecupe1/i220b/work/lab10/parity$ ./parity 1 2 3 4 5 6 7 15 21[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pmake
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit * [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./parity 1 2 3 4 5 6 7 15 21[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit * [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
